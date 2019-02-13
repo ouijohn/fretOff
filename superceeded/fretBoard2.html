@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+    <style media="screen">
+
+      /* .letter{
+        display: none;
+      } */
+      /* .noteLetter{
+        fill: pink;
+      }
+      .noteLetterVisible{
+        animation: visibleNote 2s forward;
+      } */
+
+      figure{
+        margin: 0em;
+        flex: 1;
+        height: 20em;
+      }
+      @keyframes noteDown{
+        0%{
+         fill-opacity: 0.5;
+        }
+        100%{
+          fill-opacity: 1;
+         }
+      }
+      @keyframes hoverOn{
+        0%{
+          fill-opacity: 0;
+         }
+        100%{
+          fill-opacity: 0.65;
+
+        }
+      }
+      @keyframes hoverOff{
+        0%{
+
+       }
+        100%{
+         fill-opacity: 0;
+         fill: white;
+        }
+      }
+
+
+      .noteButton{
+        fill-opacity: 0;
+        fill: white;
+      }
+      .noteButtonCorrect{
+          fill-opacity: 1;
+      }
+      .noteHover{
+          animation: hoverOn 2s forwards;
+       }
+      .noteHoverOff{
+          animation: hoverOff 2s forwards;
+      }
+      .noteKeyDown{
+        animation: noteDown 1s forwards;
+      }
+      main{
+        display: flex;
+        flex: 3;
+        flex-direction: column;
+        height: 60em;
+      }
+      header{
+        flex: 1 auto;
+        height: 30em;
+      }
+      footer{
+        flex: 1 auto;
+        height: 30em;
+      }
+
+ </style>
+  </head>
+  <body>
+<main>
+<header>
+  <p>header</p>
+<header>
+<figure class="fretBoard">
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="1360.5" height="252.5" viewBox="0 0 359.96564 66.807295">
+    <g>
+      <g>
+        <path fill="#fff" stroke="#000" stroke-width=".44487384" d="M81.274906 34.25505V12.98773s-37.499103-.94215-47.819579-7.0891c-3.626975-2.16024-3.727856-1.80468-4.165871-1.84933H1.081886m80.19302 30.20575v21.26729s-37.499103.94213-47.819579 7.08909c-3.626975 2.16025-3.727856 1.80469-4.165871 1.84933H1.081886V4.0493"/>
+        <path fill="none" stroke="#000" stroke-width=".14772786" d="M32.32459 47.71868l40.145568 3.19947"/>
+        <g transform="matrix(.65225 0 0 .60152 -35.253866 104.83284)">
+          <g>
+            <ellipse cx="97.116264" cy="-93.236458" fill="#f2f2f2" stroke="#000" stroke-width=".28965709" rx="6.6437573" ry="6.796617"/>
+          </g>
+          <ellipse cx="96.972801" cy="-93.066902" fill="#fff" stroke="#04090c" stroke-width=".12713526" rx="2.9160545" ry="2.9831471"/>
+        </g>
+        <path fill="none" stroke="#000" stroke-width=".14037323" d="M9.5425989 44.37213l62.5673521-6.1221.33105-.45915"/>
+        <g transform="matrix(.65225 0 0 -.60152 -57.089292 -9.09971)">
+          <g>
+            <ellipse cx="97.116264" cy="-93.236458" fill="#f2f2f2" stroke="#000" stroke-width=".28965709" rx="6.6437573" ry="6.796617"/>
+          </g>
+          <ellipse cx="96.972801" cy="-93.066902" fill="#fff" stroke="#04090c" stroke-width=".12713526" rx="2.9160545" ry="2.9831471"/>
+        </g>
+        <path fill="none" stroke="#000" stroke-width=".1483742" d="M32.361643 20.85266l40.10521-3.19969"/>
+        <g transform="matrix(.65225 0 0 -.60152 -34.96235 -36.79079)">
+          <g>
+            <ellipse cx="97.116264" cy="-93.236458" fill="#f2f2f2" stroke="#000" stroke-width=".28965709" rx="6.6437573" ry="6.796617"/>
+          </g>
+          <ellipse cx="96.972801" cy="-93.066902" fill="#fff" stroke="#04090c" stroke-width=".12713526" rx="2.9160545" ry="2.9831471"/>
+        </g>
+        <path fill="none" stroke="#000" stroke-width=".14054473" d="M9.3982742 23.83378l62.7203168 6.12209.331859.45916"/>
+        <g transform="matrix(.65225 0 0 .60152 -56.797776 76.80516)">
+          <g>
+            <ellipse cx="97.116264" cy="-93.236458" fill="#f2f2f2" stroke="#000" stroke-width=".28965709" rx="6.6437573" ry="6.796617"/>
+          </g>
+          <ellipse cx="96.972801" cy="-93.066902" fill="#fff" stroke="#04090c" stroke-width=".12713526" rx="2.9160545" ry="2.9831471"/>
+        </g>
+        <path fill="#f2f2f2" stroke="#040404" stroke-width=".15608783" d="M64.895676 56.37654h6.172658V12.167517h-6.172658z" opacity=".83300003"/>
+        <text x="67.527496" y="250.68034" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(0 -230.1927)" word-spacing="0">
+          <tspan x="67.527496" y="250.68034" font-family="Amatic SC" font-size="7.76111078" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">1</tspan>
+        </text>
+        <text x="67.195534" y="261.18958" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(0 -230.1927)" word-spacing="0">
+          <tspan x="67.195534" y="261.18958" font-family="Amatic SC" font-size="7.76111078" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">2</tspan>
+        </text>
+        <text x="66.942116" y="271.98828" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(0 -230.1927)" word-spacing="0">
+          <tspan x="66.942116" y="271.98828" font-family="Amatic SC" font-size="7.76111078" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">3</tspan>
+        </text>
+        <text x="67.280418" y="282.66516" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(0 -230.1927)" word-spacing="0">
+          <tspan x="67.280418" y="282.66516" font-family="Amatic SC" font-size="7.76111078" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">4</tspan>
+        </text>
+      </g>
+      <path fill="white" stroke="#000" stroke-width=".12692405" d="M72.558487 57.14965h284.78137V12.160114H72.558487z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".10749388" d="M72.482346 57.92382h10.947536V46.101684H72.482346z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M84.067917 56.42058h24.318367V45.453657H84.067917z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M84.067917 45.45363h24.318367V34.486707H84.067917z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M84.067917 34.48671h24.318367V23.519787H84.067917z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M108.82634 56.42058h24.318367V45.453657H108.82634z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M108.82634 45.45363h24.318367V34.486707H108.82634z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M108.82634 34.48671h24.318367V23.519787H108.82634z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M133.72008 56.42058h24.318367V45.453657H133.72008z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M133.72008 45.45363h24.318367V34.486707H133.72008z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M133.72008 34.48671h24.318367V23.519787H133.72008z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M158.47856 56.42058h24.318367V45.453657H158.47856z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M158.47856 45.45363h24.318367V34.486707H158.47856z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M158.47856 34.48668h24.318367V23.519757H158.47856z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M183.37228 56.42058h24.318367V45.453657H183.37228z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M183.37228 45.45363h24.318367V34.486707H183.37228z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M183.37228 34.48668h24.318367V23.519757H183.37228z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M208.13072 56.42058h24.318367V45.453657H208.13072z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M208.13072 45.45363h24.318367V34.486707H208.13072z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M208.13072 34.48668h24.318367V23.519757H208.13072z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M233.02443 56.42058h24.318367V45.453657H233.02443z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M233.02443 45.4536h24.318367V34.486677H233.02443z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M233.02443 34.48668h24.318367V23.519757H233.02443z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M257.78284 56.42058h24.318367V45.453657H257.78284z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M257.78284 45.4536h24.318367V34.486677H257.78284z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M257.78284 34.48665h24.318367V23.519727H257.78284z"/>
+
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M282.67654 56.42058h24.318367V45.453657H282.67654z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M282.67654 45.4536h24.318367V34.486677H282.67654z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M282.67654 34.48665h24.318367V23.519727H282.67654z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M307.43497 56.42058h24.318367V45.453657H307.43497z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M307.43497 45.4536h24.318367V34.486677H307.43497z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M307.43497 34.48665h24.318367V23.519727H307.43497z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M332.3287 56.42058h24.318367V45.453657H332.3287z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M332.3287 45.4536h24.318367V34.486677H332.3287z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M332.3287 34.48665h24.318367V23.519727H332.3287z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".20177935" d="M71.906967 46.10164h10.947536V34.279504H71.906967z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".20177935" d="M71.906967 34.27953h10.947536V22.457394H71.906967z"/>
+      <path fill="#fff" stroke="#040404" stroke-width=".20177935" d="M71.906967 57.92382h10.947536V46.101684H71.906967z"/>
+      <g class="string">
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M84.067917 23.519798h24.318367V12.552875H84.067917z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-64.166463 -213.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+
+        <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M108.826337 23.519798h24.318367V12.552875h-24.318367z"/>
+        <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M133.720077 23.519798h24.318367V12.552875h-24.318367z"/>
+        <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M158.478557 23.519768h24.318367V12.552845h-24.318367z"/>
+        <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M183.372277 23.519768h24.318367V12.552845h-24.318367z"/>
+        <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M208.130717 23.519768h24.318367V12.552845h-24.318367z"/>
+        <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M233.024427 23.519768h24.318367V12.552845h-24.318367z"/>
+        <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M257.782847 23.519768h24.318367V12.552845h-24.318367z"/>
+        <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M282.676557 23.519768h24.318367V12.552845h-24.318367z"/>
+        <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M307.434977 23.519738h24.318367V12.552815h-24.318367z"/>
+        <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M332.328717 23.519768h24.318367V12.552845h-24.318367z"/>
+
+        <path fill="#fff" stroke="#040404" stroke-width=".20177935" d="M71.906967 22.457358h10.947536V10.635222H71.906967z"/>
+      </g>
+    </g>
+  </svg>
+  </figure>
+  <footer>
+    <p>footer</p>
+  </footer>
+  </main>
+
+  <script type="text/javascript">
+//class constructor to be instansiated for each note
+// contains the methods and properties to be attached to each buton
+
+    class fret {
+      constructor(note, noteName, color, sound, onOff){
+        this.note = note;
+        this.noteName =  noteName;
+        this.color = '#' + color;
+        this.sound = note  + ".mp4";
+        this.onOff = onOff;
+        };
+        OnOrOff(a){
+          if(a.onOff == true){
+              console.log(this.noteName);
+              alert("its on");
+              a.children[1].classList.remove("noteButton");
+              a.children[0].classList.remove("noteButton");
+          }
+          else if (a.onOff == false) {
+              console.log(this.noteName);
+              alert("its off");
+              a.children[1].classList.add("noteButton");
+              a.children[0].classList.add("noteButton");
+          }
+          else{
+
+          }
+        }
+        colorIn(a, b){
+          b.style.fill = this.color;
+          a.note = this.note;
+          a.children[1].classList.add("noteButton");
+          a.children[0].classList.add("noteButton");
+          //a.noteName = this.noteName;
+        }
+        hoverOn(a){
+          //a.children[0].classList.remove("noteButton");
+          a.classList.remove("noteHoverOff");
+          a.classList.add("noteHover");
+          };
+        hoverOff(a){
+          a.children[0].classList.add("noteButton");
+          if (a.OnOff == true) {
+              a.children[0].classList.remove("noteButton");
+            }
+            else if (a.OnOff != true) {
+              a.classList.add("noteHoverOff");
+              a.classList.remove("noteHover");
+              //a.children[0].classList.add("noteButton");
+            }
+            else {
+                //a.classList.add("noteHoverOff");
+
+            }
+          };
+          clickOn(a){
+            //alert(a.noteName);
+            if (a.noteName == randomNote) {
+                a.onOff = true;
+                console.log(a.onOff);
+              }
+            else {
+                a.onOff = false;
+
+              }
+          };
+
+
+          soundOn(a){
+            var x = document.createElement("AUDIO");
+            x.setAttribute("src","sounds/" + a + ".wav");
+            //console.log(x.volume);
+            document.body.appendChild(x).play();
+            x.volume=0.1;
+          }
+        }
+      let randomNote = function(){
+          //return "aSharp";
+          return "a";
+        }();
+
+let noteColors =["FFCC00", "FFCC33","FF9933", "CC6633", "CC3366", "333399", "666699", "66CC33", "99CC33", "CCCC33", "FFCC00"];
+let noteLetters = ["c", "cSharp", "d", "dSharp", "e", "f", "fSharp", "g", "gSharp2", "a2", "aSharp2", "b2", "c2", "cSharp2", "d2", "dSharp2", "e2", "f2", "fSharp2", "g2", "gSharp2", "a3", "aSharp3", "b3", "c3"];
+let noteNames = ["c", "cSharp", "d", "dSharp", "e", "f", "fSharp", "g", "gsharp", "a", "b"];
+//FRETBOARD! this builds the fretboard frets from the fret constructor
+let noteObjects=(function(){
+    return {
+            c: new fret(noteLetters[3], noteNames[3], noteColors[3], noteLetters[3]),
+            cSharp: new fret(noteLetters[4], noteNames[4], noteColors[4], noteLetters[4]),
+            d: new fret(noteLetters[5], noteNames[5], noteColors[5], noteLetters[5]),
+            dSharp: new fret(noteLetters[6], noteNames[6], noteColors[6], noteLetters[6]),
+            e: new fret(noteLetters[7], noteNames[7], noteColors[7], noteLetters[7]),
+            f: new fret(noteLetters[8], noteNames[8], noteColors[8], noteLetters[8]),
+            fSharp: new fret(noteLetters[9], noteNames[9], noteColors[9], noteLetters[9]),
+            g: new fret(noteLetters[10], noteNames[10], noteColors[10], noteLetters[10]),
+            gSharp: new fret(noteLetters[11], noteNames[11], noteColors[11], noteLetters[11]),
+            a2: new fret(noteLetters[12], noteNames[0], noteColors[0], noteLetters[12]),
+            aSharp2: new fret(noteLetters[13], noteNames[1], noteColors[1], noteLetters[13]),
+            b2: new fret(noteLetters[14], noteNames[2], noteColors[2], noteLetters[14]),
+            c2: new fret(noteLetters[15], noteNames[3], noteColors[3], noteLetters[15]),
+            cSharp2: new fret(noteLetters[16], noteNames[4], noteColors[4], noteLetters[16]),
+            d2: new fret(noteLetters[17], noteNames[5], noteColors[5], noteLetters[17]),
+            dSharp2: new fret(noteLetters[18], noteNames[6], noteColors[6], noteLetters[18]),
+            e2: new fret(noteLetters[19], noteNames[7], noteColors[7], noteLetters[19]),
+            f2: new fret(noteLetters[20], noteNames[8], noteColors[8], noteLetters[20]),
+            fSharp2: new fret(noteLetters[21], noteNames[9], noteColors[9], noteLetters[21]),
+            g2: new fret(noteLetters[22], noteNames[10], noteColors[10], noteLetters[22]),
+            gSharp2: new fret(noteLetters[23], noteNames[11], noteColors[11], noteLetters[23]),
+            a3: new fret(noteLetters[24], noteNames[12], noteColors[12], noteLetters[24]),
+            aSharp3: new fret(noteLetters[24], noteNames[0], noteColors[0], noteLetters[24]),
+            b3: new fret(noteLetters[25], noteNames[1], noteColors[1], noteLetters[25]),
+            c3: new fret(noteLetters[26], noteNames[2], noteColors[2], noteLetters[26])
+          }
+        })();
+//this array contains two lots of the note objects for applying to the fretBoard
+let notes = [noteObjects.c, noteObjects.cSharp, noteObjects.d, noteObjects.dSharp, noteObjects.e, noteObjects.f, noteObjects.fSharp, noteObjects.g, noteObjects.gSharp, noteObjects.a2, noteObjects.aSharp2, noteObjects.b2, noteObjects.c2, noteObjects.cSharp2, noteObjects.d2, noteObjects.dSharp2, noteObjects.e2, noteObjects.f2, noteObjects.fSharp2, noteObjects.g2, noteObjects.gSharp2, noteObjects.a3, noteObjects.aSharp3, noteObjects.b3, noteObjects.c3];
+
+let eventBuilder = (function(){
+
+let strings = document.querySelectorAll(".string");
+
+  function buildFret(a){
+    strings.forEach(function(string){
+      for(i=0; i < string.children.length; i++){
+
+        string.children[i].onmouseover=function(){
+              notes[i].hoverOn(this);
+            }
+         string.children[i].onmouseleave=function(){
+                notes[i].hoverOff(this);
+              }
+         string.children[i].onclick=function(){
+              notes[i].clickOn(this);
+              notes[i].soundOn(this.note);
+              notes[i].OnOrOff(this);
+            }
+        };
+    });
+//console.log(strings);
+  }
+
+  for (var i = 0; i < 4; i++) {
+    buildFret(i);
+  }
+})();
+
+
+let colorIn = (function(){
+  let strings = document.querySelectorAll(".string");
+  let ukeStringNote = [8, 3, 5, 10];
+  console.log(strings[0].children[0].children[0]);
+
+  function colorFrets(a, b){
+    for (var i = 0; i < strings.length; i++) {
+      notes[b  + ukeStringNote[i]].colorIn(strings[i].children[a], strings[i].children[a].children[0]);
+      console.log(strings[i].children[a]);
+    }
+
+  }
+  for (var i = 0; i < notes.length; i++) {
+    colorFrets(i, i);
+  }
+
+})()
+
+
+
+
+
+
+
+
+  </script>
+
+  </body>
+</html>

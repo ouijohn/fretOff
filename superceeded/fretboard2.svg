@@ -1,0 +1,1170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1360.5"
+   height="252.5"
+   viewBox="0 0 359.96564 66.807295"
+   version="1.1"
+   id="svg1365"
+   sodipodi:docname="fretboard2.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata1371">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs1369" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1496"
+     inkscape:window-height="1860"
+     id="namedview1367"
+     showgrid="false"
+     inkscape:zoom="1"
+     inkscape:cx="-87.696879"
+     inkscape:cy="-111.91223"
+     inkscape:window-x="-11"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1365"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="83.254461,60.055466"
+       orientation="1,0"
+       id="guide1240"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="62.674707,127.59448"
+       orientation="0,1"
+       id="guide1242"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="182.41146,26.94077"
+       orientation="1,0"
+       id="guide1244"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="24.134439,86.24788"
+       orientation="0,1"
+       id="guide1246"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <path
+     style="fill:#dbdbdb;stroke:#000000;stroke-width:0.12692405"
+     inkscape:connector-curvature="0"
+     id="path815"
+     d="M 72.558487,57.14965 H 357.33986 V 12.160114 H 72.558487 Z" />
+  <g
+     id="g913"
+     class="headStock">
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.345"
+       inkscape:connector-curvature="0"
+       id="path817"
+       d="M 81.274906,34.25505 V 12.98773 c 0,0 -37.499103,-0.94215 -47.819579,-7.0891 C 29.828352,3.73839 29.727471,4.09395 29.289456,4.0493 H 1.081886 m 80.19302,30.20575 v 21.26729 c 0,0 -37.499103,0.94213 -47.819579,7.08909 -3.626975,2.16025 -3.727856,1.80469 -4.165871,1.84933 H 1.081886 V 4.0493" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.14772786"
+       inkscape:connector-curvature="0"
+       id="path819"
+       d="m 32.32459,47.71868 40.145568,3.19947" />
+    <g
+       id="g827"
+       transform="matrix(0.65225,0,0,0.60152,-35.253866,104.83284)">
+      <g
+         id="g823">
+        <ellipse
+           style="fill:#f2f2f2;stroke:#000000;stroke-width:0.28965709"
+           id="ellipse821"
+           ry="6.796617"
+           rx="6.6437573"
+           cy="-93.236458"
+           cx="97.116264" />
+      </g>
+      <ellipse
+         style="fill:#ffffff;stroke:#04090c;stroke-width:0.12713526"
+         id="ellipse825"
+         ry="2.9831471"
+         rx="2.9160545"
+         cy="-93.066902"
+         cx="96.972801" />
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.14037323"
+       inkscape:connector-curvature="0"
+       id="path829"
+       d="m 9.5425989,44.37213 62.5673521,-6.1221 0.33105,-0.45915" />
+    <g
+       id="g837"
+       transform="matrix(0.65225,0,0,-0.60152,-57.089292,-9.09971)">
+      <g
+         id="g833">
+        <ellipse
+           style="fill:#f2f2f2;stroke:#000000;stroke-width:0.28965709"
+           id="ellipse831"
+           ry="6.796617"
+           rx="6.6437573"
+           cy="-93.236458"
+           cx="97.116264" />
+      </g>
+      <ellipse
+         style="fill:#ffffff;stroke:#04090c;stroke-width:0.12713526"
+         id="ellipse835"
+         ry="2.9831471"
+         rx="2.9160545"
+         cy="-93.066902"
+         cx="96.972801" />
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.1483742"
+       inkscape:connector-curvature="0"
+       id="path839"
+       d="m 32.361643,20.85266 40.10521,-3.19969" />
+    <g
+       id="g847"
+       transform="matrix(0.65225,0,0,-0.60152,-34.96235,-36.79079)">
+      <g
+         id="g843">
+        <ellipse
+           style="fill:#f2f2f2;stroke:#000000;stroke-width:0.28965709"
+           id="ellipse841"
+           ry="6.796617"
+           rx="6.6437573"
+           cy="-93.236458"
+           cx="97.116264" />
+      </g>
+      <ellipse
+         style="fill:#ffffff;stroke:#04090c;stroke-width:0.12713526"
+         id="ellipse845"
+         ry="2.9831471"
+         rx="2.9160545"
+         cy="-93.066902"
+         cx="96.972801" />
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.14054473"
+       inkscape:connector-curvature="0"
+       id="path849"
+       d="m 9.3982742,23.83378 62.7203168,6.12209 0.331859,0.45916" />
+    <g
+       id="g857"
+       transform="matrix(0.65225,0,0,0.60152,-56.797776,76.80516)">
+      <g
+         id="g853">
+        <ellipse
+           style="fill:#f2f2f2;stroke:#000000;stroke-width:0.28965709"
+           id="ellipse851"
+           ry="6.796617"
+           rx="6.6437573"
+           cy="-93.236458"
+           cx="97.116264" />
+      </g>
+      <ellipse
+         style="fill:#ffffff;stroke:#04090c;stroke-width:0.12713526"
+         id="ellipse855"
+         ry="2.9831471"
+         rx="2.9160545"
+         cy="-93.066902"
+         cx="96.972801" />
+    </g>
+    <!--string numbers  -->
+    <g
+       id="g877"
+       class="stringNumbers">
+      <path
+         style="opacity:0.83300003;fill:#f2f2f2;stroke:#040404;stroke-width:0.15608783"
+         inkscape:connector-curvature="0"
+         id="path859"
+         d="m 64.895676,56.37654 h 6.172658 V 12.167517 h -6.172658 z" />
+      <text
+         id="text863"
+         word-spacing="0"
+         transform="translate(0,-230.1927)"
+         style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+         letter-spacing="0"
+         font-weight="400"
+         font-size="10.58333302"
+         y="250.68034"
+         x="67.527496">
+        <tspan
+           id="tspan861"
+           style="font-weight:700;font-size:7.76111078px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+           font-weight="700"
+           font-size="7.76111078"
+           y="250.68034"
+           x="67.527496">1</tspan>
+      </text>
+      <text
+         id="text867"
+         word-spacing="0"
+         transform="translate(0,-230.1927)"
+         style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+         letter-spacing="0"
+         font-weight="400"
+         font-size="10.58333302"
+         y="261.18958"
+         x="67.195534">
+        <tspan
+           id="tspan865"
+           style="font-weight:700;font-size:7.76111078px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+           font-weight="700"
+           font-size="7.76111078"
+           y="261.18958"
+           x="67.195534">2</tspan>
+      </text>
+      <text
+         id="text871"
+         word-spacing="0"
+         transform="translate(0,-230.1927)"
+         style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+         letter-spacing="0"
+         font-weight="400"
+         font-size="10.58333302"
+         y="271.98828"
+         x="66.942116">
+        <tspan
+           id="tspan869"
+           style="font-weight:700;font-size:7.76111078px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+           font-weight="700"
+           font-size="7.76111078"
+           y="271.98828"
+           x="66.942116">3</tspan>
+      </text>
+      <text
+         id="text875"
+         word-spacing="0"
+         transform="translate(0,-230.1927)"
+         style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+         letter-spacing="0"
+         font-weight="400"
+         font-size="10.58333302"
+         y="282.66516"
+         x="67.280418">
+        <tspan
+           id="tspan873"
+           style="font-weight:700;font-size:7.76111078px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+           font-weight="700"
+           font-size="7.76111078"
+           y="282.66516"
+           x="67.280418">4</tspan>
+      </text>
+    </g>
+    <!--string letters -->
+    <g
+       id="g911"
+       class="stringLetters">
+      <g
+         id="g885">
+        <path
+           style="fill:#ffffff;stroke:#040404;stroke-width:0.20177935"
+           inkscape:connector-curvature="0"
+           id="path879"
+           d="M 71.906967,34.279502 H 82.854503 V 22.457366 H 71.906967 Z" />
+        <text
+           id="text883"
+           word-spacing="0"
+           transform="translate(-64.166463,-201.65681)"
+           style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+           letter-spacing="0"
+           font-weight="400"
+           font-size="10.58333302"
+           y="235.01895"
+           x="139.62405">
+          <tspan
+             id="tspan881"
+             style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+             font-weight="700"
+             font-size="14.11111069"
+             y="235.01895"
+             x="139.62405">e</tspan>
+        </text>
+      </g>
+      <g
+         id="g893">
+        <path
+           style="fill:#ffffff;stroke:#040404;stroke-width:0.20177935"
+           inkscape:connector-curvature="0"
+           id="path887"
+           d="M 71.906967,46.101646 H 82.854503 V 34.27951 H 71.906967 Z" />
+        <text
+           id="text891"
+           word-spacing="0"
+           transform="translate(-64.166463,-189.83466)"
+           style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+           letter-spacing="0"
+           font-weight="400"
+           font-size="10.58333302"
+           y="235.01895"
+           x="139.62405">
+          <tspan
+             id="tspan889"
+             style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+             font-weight="700"
+             font-size="14.11111069"
+             y="235.01895"
+             x="139.62405">c</tspan>
+        </text>
+      </g>
+      <g
+         id="g901">
+        <path
+           style="fill:#ffffff;stroke:#040404;stroke-width:0.20177935"
+           inkscape:connector-curvature="0"
+           id="path895"
+           d="M 71.906967,57.92379 H 82.854503 V 46.101654 H 71.906967 Z" />
+        <text
+           id="text899"
+           word-spacing="0"
+           transform="translate(-64.166463,-178.01252)"
+           style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+           letter-spacing="0"
+           font-weight="400"
+           font-size="10.58333302"
+           y="235.01895"
+           x="139.62405">
+          <tspan
+             id="tspan897"
+             style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+             font-weight="700"
+             font-size="14.11111069"
+             y="235.01895"
+             x="139.62405">g</tspan>
+        </text>
+      </g>
+      <g
+         id="g909">
+        <path
+           style="fill:#ffffff;stroke:#040404;stroke-width:0.20177935"
+           inkscape:connector-curvature="0"
+           id="path903"
+           d="M 71.906967,22.457358 H 82.854503 V 10.635222 H 71.906967 Z" />
+        <text
+           id="text907"
+           word-spacing="0"
+           transform="translate(-64.166463,-213.47895)"
+           style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+           letter-spacing="0"
+           font-weight="400"
+           font-size="10.58333302"
+           y="235.01895"
+           x="139.62405">
+          <tspan
+             id="tspan905"
+             style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+             font-weight="700"
+             font-size="14.11111069"
+             y="235.01895"
+             x="139.62405">a</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+  <g
+     id="g1025">
+    <g
+       id="g923">
+      <g
+         id="g921">
+        <path
+           style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754"
+           inkscape:connector-curvature="0"
+           id="path915"
+           d="M 84.067917,23.519798 H 108.38628 V 12.552875 H 84.067917 Z" />
+        <text
+           id="text919"
+           word-spacing="0"
+           transform="translate(-64.166463,-213.47895)"
+           style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+           letter-spacing="0"
+           font-weight="400"
+           font-size="10.58333302"
+           y="236.05843"
+           x="158.26093">
+          <tspan
+             id="tspan917"
+             style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+             font-weight="700"
+             font-size="14.11111069"
+             y="236.05843"
+             x="158.26093">a</tspan>
+        </text>
+      </g>
+    </g>
+    <g
+       id="g933">
+      <g
+         id="g931">
+        <path
+           style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754"
+           inkscape:connector-curvature="0"
+           id="path925"
+           d="m 108.82635,23.519795 h 24.31836 V 12.552872 h -24.31836 z" />
+        <text
+           id="text929"
+           word-spacing="0"
+           transform="translate(-39.408035,-213.47896)"
+           style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+           letter-spacing="0"
+           font-weight="400"
+           font-size="10.58333302"
+           y="236.05843"
+           x="158.26093">
+          <tspan
+             id="tspan927"
+             style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+             font-weight="700"
+             font-size="14.11111069"
+             y="236.05843"
+             x="158.26093">a</tspan>
+        </text>
+      </g>
+    </g>
+    <g
+       id="g943">
+      <g
+         id="g941">
+        <path
+           style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754"
+           inkscape:connector-curvature="0"
+           id="path935"
+           d="m 133.72008,23.519795 h 24.31837 V 12.552872 h -24.31837 z" />
+        <text
+           id="text939"
+           word-spacing="0"
+           transform="translate(-14.514297,-213.47896)"
+           style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+           letter-spacing="0"
+           font-weight="400"
+           font-size="10.58333302"
+           y="236.05843"
+           x="158.26093">
+          <tspan
+             id="tspan937"
+             style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+             font-weight="700"
+             font-size="14.11111069"
+             y="236.05843"
+             x="158.26093">a</tspan>
+        </text>
+      </g>
+    </g>
+    <g
+       id="g953">
+      <g
+         id="g951">
+        <path
+           style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754"
+           inkscape:connector-curvature="0"
+           id="path945"
+           d="m 158.47857,23.519765 h 24.31836 V 12.552842 h -24.31836 z" />
+        <text
+           id="text949"
+           word-spacing="0"
+           transform="translate(10.244186,-213.47898)"
+           style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+           letter-spacing="0"
+           font-weight="400"
+           font-size="10.58333302"
+           y="236.05843"
+           x="158.26093">
+          <tspan
+             id="tspan947"
+             style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+             font-weight="700"
+             font-size="14.11111069"
+             y="236.05843"
+             x="158.26093">a</tspan>
+        </text>
+      </g>
+    </g>
+    <g
+       id="g963">
+      <g
+         id="g961">
+        <path
+           style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754"
+           inkscape:connector-curvature="0"
+           id="path955"
+           d="m 183.237,23.519762 h 24.31836 V 12.552839 H 183.237 Z" />
+        <text
+           id="text959"
+           word-spacing="0"
+           transform="translate(35.002616,-213.47899)"
+           style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+           letter-spacing="0"
+           font-weight="400"
+           font-size="10.58333302"
+           y="236.05843"
+           x="158.26093">
+          <tspan
+             id="tspan957"
+             style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+             font-weight="700"
+             font-size="14.11111069"
+             y="236.05843"
+             x="158.26093">a</tspan>
+        </text>
+      </g>
+    </g>
+    <g
+       id="g973">
+      <g
+         id="g971">
+        <path
+           style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754"
+           inkscape:connector-curvature="0"
+           id="path965"
+           d="M 208.13073,23.519762 H 232.4491 V 12.552839 h -24.31837 z" />
+        <text
+           id="text969"
+           word-spacing="0"
+           transform="translate(59.896351,-213.47899)"
+           style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+           letter-spacing="0"
+           font-weight="400"
+           font-size="10.58333302"
+           y="236.05843"
+           x="158.26093">
+          <tspan
+             id="tspan967"
+             style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+             font-weight="700"
+             font-size="14.11111069"
+             y="236.05843"
+             x="158.26093">a</tspan>
+        </text>
+      </g>
+    </g>
+    <g
+       id="g983">
+      <g
+         id="g981">
+        <path
+           style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754"
+           inkscape:connector-curvature="0"
+           id="path975"
+           d="M 233.02443,23.519765 H 257.3428 V 12.552842 h -24.31837 z" />
+        <text
+           id="text979"
+           word-spacing="0"
+           transform="translate(84.790054,-213.47898)"
+           style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+           letter-spacing="0"
+           font-weight="400"
+           font-size="10.58333302"
+           y="236.05843"
+           x="158.26093">
+          <tspan
+             id="tspan977"
+             style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+             font-weight="700"
+             font-size="14.11111069"
+             y="236.05843"
+             x="158.26093">a</tspan>
+        </text>
+      </g>
+    </g>
+    <g
+       id="g993">
+      <g
+         id="g991">
+        <path
+           style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754"
+           inkscape:connector-curvature="0"
+           id="path985"
+           d="m 257.78286,23.519763 h 24.31837 V 12.55284 h -24.31837 z" />
+        <text
+           id="text989"
+           word-spacing="0"
+           transform="translate(109.54848,-213.47899)"
+           style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+           letter-spacing="0"
+           font-weight="400"
+           font-size="10.58333302"
+           y="236.05843"
+           x="158.26093">
+          <tspan
+             id="tspan987"
+             style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+             font-weight="700"
+             font-size="14.11111069"
+             y="236.05843"
+             x="158.26093">a</tspan>
+        </text>
+      </g>
+    </g>
+    <g
+       id="g1003">
+      <g
+         id="g1001">
+        <path
+           style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754"
+           inkscape:connector-curvature="0"
+           id="path995"
+           d="m 282.6766,23.519763 h 24.31837 V 12.55284 H 282.6766 Z" />
+        <text
+           id="text999"
+           word-spacing="0"
+           transform="translate(134.44222,-213.47899)"
+           style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+           letter-spacing="0"
+           font-weight="400"
+           font-size="10.58333302"
+           y="236.05843"
+           x="158.26093">
+          <tspan
+             id="tspan997"
+             style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+             font-weight="700"
+             font-size="14.11111069"
+             y="236.05843"
+             x="158.26093">a</tspan>
+        </text>
+      </g>
+    </g>
+    <g
+       id="g1013">
+      <g
+         id="g1011">
+        <path
+           style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754"
+           inkscape:connector-curvature="0"
+           id="path1005"
+           d="m 307.43508,23.519731 h 24.31837 V 12.552808 h -24.31837 z" />
+        <text
+           id="text1009"
+           word-spacing="0"
+           transform="translate(159.2007,-213.47902)"
+           style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+           letter-spacing="0"
+           font-weight="400"
+           font-size="10.58333302"
+           y="236.05843"
+           x="158.26093">
+          <tspan
+             id="tspan1007"
+             style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+             font-weight="700"
+             font-size="14.11111069"
+             y="236.05843"
+             x="158.26093">a</tspan>
+        </text>
+      </g>
+    </g>
+    <g
+       id="g1023">
+      <g
+         id="g1021">
+        <path
+           style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754"
+           inkscape:connector-curvature="0"
+           id="path1015"
+           d="m 332.19351,23.519728 h 24.31837 V 12.552805 h -24.31837 z" />
+        <text
+           id="text1019"
+           word-spacing="0"
+           transform="translate(183.95913,-213.47902)"
+           style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+           letter-spacing="0"
+           font-weight="400"
+           font-size="10.58333302"
+           y="236.05843"
+           x="158.26093">
+          <tspan
+             id="tspan1017"
+             style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+             font-weight="700"
+             font-size="14.11111069"
+             y="236.05843"
+             x="158.26093">a</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+  <g
+     id="g1249">
+    <g
+       id="g1147">
+      <g
+         id="g1145">
+        <path
+           id="path1139"
+           d="M 84.067917,45.453636 H 108.38628 V 34.486713 H 84.067917 Z"
+           inkscape:connector-curvature="0"
+           style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754" />
+        <text
+           id="text1143"
+           word-spacing="0"
+           transform="translate(-64.166463,-191.54511)"
+           style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+           letter-spacing="0"
+           font-weight="400"
+           font-size="10.58333302"
+           y="236.05843"
+           x="158.26093">
+          <tspan
+             id="tspan1141"
+             style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+             font-weight="700"
+             font-size="14.11111069"
+             y="236.05843"
+             x="158.26093">a</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+  <g
+     id="g1259">
+    <g
+       id="g1257">
+      <path
+         d="M 84.067917,56.420555 H 108.38628 V 45.453632 H 84.067917 Z"
+         id="path1251"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754" />
+      <text
+         x="158.26093"
+         y="236.05843"
+         font-size="10.58333302"
+         font-weight="400"
+         letter-spacing="0"
+         style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+         transform="translate(-64.166463,-180.57819)"
+         word-spacing="0"
+         id="text1255">
+        <tspan
+           x="158.26093"
+           y="236.05843"
+           font-size="14.11111069"
+           font-weight="700"
+           style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+           id="tspan1253">a</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     id="g1249-7"
+     transform="translate(0,-10.966923)">
+    <g
+       id="g1147-5">
+      <g
+         id="g1145-6">
+        <path
+           id="path1139-6"
+           d="M 84.067917,45.453636 H 108.38628 V 34.486713 H 84.067917 Z"
+           inkscape:connector-curvature="0"
+           style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754" />
+        <text
+           id="text1143-4"
+           word-spacing="0"
+           transform="translate(-64.166463,-191.54511)"
+           style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+           letter-spacing="0"
+           font-weight="400"
+           font-size="10.58333302"
+           y="236.05843"
+           x="158.26093">
+          <tspan
+             id="tspan1141-3"
+             style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+             font-weight="700"
+             font-size="14.11111069"
+             y="236.05843"
+             x="158.26093">a</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+  <g
+     id="g933-8"
+     transform="matrix(0.76992087,0,0,0.97799701,0.3434456,66.305555)">
+    <g
+       id="g931-0">
+      <path
+         id="path925-1"
+         d="m 108.82635,23.519795 h 24.31836 V 12.552872 h -24.31836 z"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754" />
+      <text
+         id="text929-4"
+         word-spacing="0"
+         transform="translate(-39.408035,-213.47896)"
+         style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+         letter-spacing="0"
+         font-weight="400"
+         font-size="10.58333302"
+         y="236.05843"
+         x="158.26093">
+        <tspan
+           id="tspan927-7"
+           style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+           font-weight="700"
+           font-size="14.11111069"
+           y="236.05843"
+           x="158.26093">a</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     id="g943-6"
+     transform="matrix(0.76992087,0,0,0.97799701,8.1062972,66.305555)">
+    <g
+       id="g941-6">
+      <path
+         id="path935-2"
+         d="m 133.72008,23.519795 h 24.31837 V 12.552872 h -24.31837 z"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754" />
+      <text
+         id="text939-9"
+         word-spacing="0"
+         transform="translate(-14.514297,-213.47896)"
+         style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+         letter-spacing="0"
+         font-weight="400"
+         font-size="10.58333302"
+         y="236.05843"
+         x="158.26093">
+        <tspan
+           id="tspan937-3"
+           style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+           font-weight="700"
+           font-size="14.11111069"
+           y="236.05843"
+           x="158.26093">a</tspan>
+      </text>
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5195"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.34365005,0,0,0.27053595,-10.528741,-67.797298)"><flowRegion
+         id="flowRegion5197"><rect
+           id="rect5199"
+           width="304"
+           height="98"
+           x="355"
+           y="-190.5" /></flowRegion><flowPara
+         id="flowPara5201">a</flowPara></flowRoot>  </g>
+  <g
+     id="g953-0"
+     transform="matrix(0.76992087,0,0,0.97799701,15.35163,66.305555)">
+    <g
+       id="g951-0">
+      <path
+         id="path945-3"
+         d="m 158.47857,23.519765 h 24.31836 V 12.552842 h -24.31836 z"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754" />
+      <text
+         id="text949-3"
+         word-spacing="0"
+         transform="translate(10.244186,-213.47898)"
+         style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+         letter-spacing="0"
+         font-weight="400"
+         font-size="10.58333302"
+         y="236.05843"
+         x="158.26093">
+        <tspan
+           id="tspan947-6"
+           style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+           font-weight="700"
+           font-size="14.11111069"
+           y="236.05843"
+           x="158.26093">a</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     id="g963-4"
+     transform="matrix(0.76992087,0,0,0.97799701,22.079439,66.305555)">
+    <g
+       id="g961-2">
+      <path
+         id="path955-6"
+         d="m 183.237,23.519762 h 24.31836 V 12.552839 H 183.237 Z"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754" />
+      <text
+         id="text959-2"
+         word-spacing="0"
+         transform="translate(35.002616,-213.47899)"
+         style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+         letter-spacing="0"
+         font-weight="400"
+         font-size="10.58333302"
+         y="236.05843"
+         x="158.26093">
+        <tspan
+           id="tspan957-0"
+           style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+           font-weight="700"
+           font-size="14.11111069"
+           y="236.05843"
+           x="158.26093">a</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     id="g973-7"
+     transform="matrix(0.76992087,0,0,0.97799701,-75.169118,84.813348)">
+    <g
+       id="g971-1">
+      <path
+         id="path965-7"
+         d="M 208.13073,23.519762 H 232.4491 V 12.552839 h -24.31837 z"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754" />
+      <text
+         id="text969-9"
+         word-spacing="0"
+         transform="translate(59.896351,-213.47899)"
+         style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+         letter-spacing="0"
+         font-weight="400"
+         font-size="10.58333302"
+         y="236.05843"
+         x="158.26093">
+        <tspan
+           id="tspan967-6"
+           style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+           font-weight="700"
+           font-size="14.11111069"
+           y="236.05843"
+           x="158.26093">a</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     id="g943-6-3"
+     transform="matrix(0.76992087,0,0,0.97799701,7.8696182,84.813315)">
+    <g
+       id="g941-6-6">
+      <path
+         id="path935-2-7"
+         d="m 133.72008,23.519795 h 24.31837 V 12.552872 h -24.31837 z"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754" />
+      <text
+         id="text939-9-7"
+         word-spacing="0"
+         transform="translate(-14.514297,-213.47896)"
+         style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+         letter-spacing="0"
+         font-weight="400"
+         font-size="10.58333302"
+         y="236.05843"
+         x="158.26093">
+        <tspan
+           id="tspan937-3-0"
+           style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+           font-weight="700"
+           font-size="14.11111069"
+           y="236.05843"
+           x="158.26093">a</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     id="g953-0-7"
+     transform="matrix(0.76992087,0,0,0.97799701,14.597469,84.813315)">
+    <g
+       id="g951-0-8">
+      <path
+         id="path945-3-4"
+         d="m 158.47857,23.519765 h 24.31836 V 12.552842 h -24.31836 z"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754" />
+      <text
+         id="text949-3-3"
+         word-spacing="0"
+         transform="translate(10.244186,-213.47898)"
+         style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+         letter-spacing="0"
+         font-weight="400"
+         font-size="10.58333302"
+         y="236.05843"
+         x="158.26093">
+        <tspan
+           id="tspan947-6-5"
+           style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+           font-weight="700"
+           font-size="14.11111069"
+           y="236.05843"
+           x="158.26093">a</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     id="g963-4-8"
+     transform="matrix(0.76992087,0,0,0.97799701,21.325319,84.813315)">
+    <g
+       id="g961-2-6">
+      <path
+         id="path955-6-3"
+         d="m 183.237,23.519762 h 24.31836 V 12.552839 H 183.237 Z"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754" />
+      <text
+         id="text959-2-3"
+         word-spacing="0"
+         transform="translate(35.002616,-213.47899)"
+         style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+         letter-spacing="0"
+         font-weight="400"
+         font-size="10.58333302"
+         y="236.05843"
+         x="158.26093">
+        <tspan
+           id="tspan957-0-9"
+           style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+           font-weight="700"
+           font-size="14.11111069"
+           y="236.05843"
+           x="158.26093">a</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     id="g973-7-4"
+     transform="matrix(0.76992087,0,0,0.97799701,-75.193011,105.81654)">
+    <g
+       id="g971-1-1">
+      <path
+         id="path965-7-7"
+         d="M 208.13073,23.519762 H 232.4491 V 12.552839 h -24.31837 z"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754" />
+      <text
+         id="text969-9-3"
+         word-spacing="0"
+         transform="translate(59.896351,-213.47899)"
+         style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+         letter-spacing="0"
+         font-weight="400"
+         font-size="10.58333302"
+         y="236.05843"
+         x="158.26093">
+        <tspan
+           id="tspan967-6-6"
+           style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+           font-weight="700"
+           font-size="14.11111069"
+           y="236.05843"
+           x="158.26093">a</tspan>
+      </text>
+    </g>
+  </g>
+  <path
+     id="path965-7-7-1-4"
+     d="m 0.762364,-53.778896 h 42.145373 v -7.020291 H 0.762364 Z"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;stroke:#040404;stroke-width:0.16252854" />
+  <path
+     id="path965-7-7-1-4-5"
+     d="M 1.5941426,-42.539924 H 43.739515 v -7.020291 H 1.5941426 Z"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;stroke:#040404;stroke-width:0.16252854" />
+  <path
+     id="path965-7-7-1-4-4"
+     d="M 0.97033489,-29.729542 H 43.115708 v -7.020291 H 0.97033489 Z"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;stroke:#040404;stroke-width:0.16252854" />
+  <g
+     id="g943-6-2"
+     transform="matrix(0.76992087,0,0,0.97799701,32.925019,105.81651)">
+    <g
+       id="g941-6-63">
+      <path
+         id="path935-2-0"
+         d="m 133.72008,23.519795 h 24.31837 V 12.552872 h -24.31837 z"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754" />
+      <text
+         id="text939-9-3"
+         word-spacing="0"
+         transform="translate(-14.514297,-213.47896)"
+         style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+         letter-spacing="0"
+         font-weight="400"
+         font-size="10.58333302"
+         y="236.05843"
+         x="158.26093">
+        <tspan
+           id="tspan937-3-1"
+           style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+           font-weight="700"
+           font-size="14.11111069"
+           y="236.05843"
+           x="158.26093">a</tspan>
+      </text>
+    </g>
+  </g>
+  <path
+     id="path965-7-7-1-4-5-8"
+     d="M 1.8021135,-18.490571 H 43.947486 v -7.020291 H 1.8021135 Z"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;stroke:#040404;stroke-width:0.16252854" />
+  <g
+     id="g933-8-5"
+     transform="matrix(0.76992087,0,0,0.97799701,26.714699,105.81651)">
+    <g
+       id="g931-0-6">
+      <path
+         id="path925-1-6"
+         d="m 108.82635,23.519795 h 24.31836 V 12.552872 h -24.31836 z"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;stroke:#040404;stroke-width:0.15430754" />
+      <text
+         id="text929-4-4"
+         word-spacing="0"
+         transform="translate(-39.408035,-213.47896)"
+         style="font-weight:400;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;stroke-width:0.26458332"
+         letter-spacing="0"
+         font-weight="400"
+         font-size="10.58333302"
+         y="236.05843"
+         x="158.26093">
+        <tspan
+           id="tspan927-7-8"
+           style="font-weight:700;font-size:14.11111069px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC Bold'"
+           font-weight="700"
+           font-size="14.11111069"
+           y="236.05843"
+           x="158.26093">a</tspan>
+      </text>
+    </g>
+  </g>
+  <path
+     style="fill:#ffffff;fill-opacity:1;stroke:#040404;stroke-width:0.75590557;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 329.66211 -229.74609 C 321.35211 -229.74609 314.66211 -223.05609 314.66211 -214.74609 L 314.66211 -88.476562 C 314.66211 -80.166562 321.35211 -73.476562 329.66211 -73.476562 L 347.67383 -73.476562 L 314.66211 -5.5 L 417.85938 -73.476562 L 674.42969 -73.476562 C 682.73969 -73.476562 689.42969 -80.166562 689.42969 -88.476562 L 689.42969 -214.74609 C 689.42969 -223.05609 682.73969 -229.74609 674.42969 -229.74609 L 329.66211 -229.74609 z "
+     transform="scale(0.26458335)"
+     id="rect1254" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path1260"
+     d="m 72.62813,-81.028649 -12.657,22.489584 35.609606,-21.298959 z"
+     style="fill:none;stroke:#000000;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+</svg>

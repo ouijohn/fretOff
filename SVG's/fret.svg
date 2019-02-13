@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1134" height="1134" viewBox="0 0 300 300" version="1">
+  <path class="noteButton" d="M22 30h239v239H22z"/>
+  <text class="noteLetter" style="line-height:1.25" x="63" y="215" font-weight="400" font-size="11" font-family="sans-serif" letter-spacing="0" word-spacing="0" stroke="#040404" stroke-width="0" transform="translate(0 3)">
+    <tspan x="63" y="215" style="-inkscape-font-specification:'sans-serif Bold'" font-weight="700" font-size="212">A</tspan>
+  </text>
+</svg>

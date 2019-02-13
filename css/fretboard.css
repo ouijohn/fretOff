@@ -1,0 +1,179 @@
+
+      /* .letter{
+        display: none;
+      } */
+      /* .noteLetter{
+        fill: pink;
+      }
+      .noteLetterVisible{
+        animation: visibleNote 2s forward;
+      } */
+
+
+      .message{
+        /* display: none;
+        opacity: 0; */
+      }
+      messageOn{
+        animation: change 1s forward;
+      }
+      messageOff{
+        animation: change 1s forward;
+      }
+      @keyframes messageIn{
+          0%{
+            opacity: 0;
+          }
+          5%{
+          display: block;
+        }
+          100%{
+            opacity: 1;
+          }
+      }
+      @keyframes messageOut{
+          0%{
+            opacity: 1;
+          }
+          5%{
+            display: block;
+          }
+          100%{
+            opacity: 1;
+          }
+      }
+
+      *{
+        font-family:'Amatic SC', cursive;
+      }
+      body{
+        margin: 0em
+      }
+
+      figure{
+        margin: 0em;
+        flex: 1;
+
+        width: 100%;
+
+      }
+      .drawing{
+        width: 100%;
+      }
+      @keyframes noteDown{
+        0%{
+         fill-opacity: 0.25;
+        }
+        100%{
+          fill-opacity: 1;
+         }
+      }
+      @keyframes hoverOn{
+        0%{
+          fill-opacity: 0;
+         }
+        100%{
+          fill-opacity: 0.25;
+
+        }
+      }
+      @keyframes hoverOff{
+        0%{
+          fill-opacity: 0.25;
+       }
+        100%{
+         fill-opacity: 0;
+         fill: white;
+        }
+      }
+      @keyframes clicked{
+        0%{
+          fill-opacity: 0.1;
+       }
+        50%{
+         fill-opacity: 0.75;
+
+        }
+        50%{
+         fill-opacity: 0.25;
+
+        }
+      }
+
+      .clickedIt{
+          animation: clicked 0.5s forwards;
+      }
+
+      .noteButton{
+        fill-opacity: 0;
+        fill: white;
+      }
+      .noteButtonOneCorrect{
+          animation: noteButtonCorrectOn 1s forwards;
+      }
+      .noteButtonTwoCorrect{
+
+          animation: noteButtonCorrectOn 1s forwards;
+          animation-delay: 0.25s;
+      }
+      .noteButtonThreeCorrect{
+
+          animation: noteButtonCorrectOn 1s forwards;
+          animation-delay: 0.5s;
+      }
+      .noteButtonFourCorrect{
+            animation: noteButtonCorrectOn 1s forwards;
+            animation-delay: 0.75s;
+      }
+
+      .noteButtonOneCorrectOFF{
+          animation: noteButtonCorrectOff 1s forwards;
+          animation-delay: 0.75s;
+      }
+      .noteButtonTwoCorrectOFF{
+
+          animation: noteButtonCorrectOff 1s forwards;
+          animation-delay: 0.5s;
+      }
+      .noteButtonThreeCorrectOFF{
+
+          animation: noteButtonCorrectOff 1s forwards;
+          animation-delay: 0.25s;
+      }
+      .noteButtonFourCorrectOFF{
+            animation: noteButtonCorrectOff 1s forwards;
+
+      }
+      @keyframes noteButtonCorrectOn {
+        0%{fill-opacity: 1;}
+        100%{fill-opacity: 0;}
+      }
+      @keyframes noteButtonCorrectOff{
+        0%{fill-opacity: 0;}
+      
+        100%{fill-opacity: 1;}
+      }
+
+      .noteHover{
+          animation: hoverOn 2s forwards;
+       }
+      .noteHoverOff{
+          animation: hoverOff 2s forwards;
+      }
+      .noteKeyDown{
+        animation: noteDown 2s forwards;
+      }
+      main{
+        display: flex;
+        flex: 3;
+        flex-direction: column;
+        height: 60em;
+      }
+      header{
+        flex: 1 auto;
+        height: 30em;
+      }
+      footer{
+        flex: 1 auto;
+        height: 30em;
+      }
