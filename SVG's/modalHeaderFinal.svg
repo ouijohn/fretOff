@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360.5" height="504" viewBox="0 0 359.96564 133.35001">
+  <g>
+    <path fill="#fff" stroke="#040404" stroke-width=".24189505" d="M292.21854 17.39788h60.79258V6.617149h-60.79258z"/>
+    <text x="325.267" y="108.30771" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(0 -163.64999)" word-spacing="0"/>
+    <path fill="#fff" stroke="#040404" stroke-width=".24188218" d="M292.22501 31.01059h60.786114V20.229859H292.22501z"/>
+    <path fill="#fff" stroke="#040404" stroke-width=".24188218" d="M292.22501 44.56342h60.786114V33.782689H292.22501z"/>
+    <text x="294.46371" y="179.34158" stroke-width=".26875445" font-family="sans-serif" font-size="10.75017929" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(0 -163.64999)" word-spacing="0">
+      <tspan x="294.46371" y="179.34158" font-family="Amatic SC" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'"><tspan fill="#838383" font-weight="400" style="-inkscape-font-specification:'Amatic SC'">fret</tspan> start</tspan>
+    </text>
+    <text x="294.28174" y="206.13571" stroke-width=".26875445" font-family="sans-serif" font-size="10.75017929" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(0 -163.64999)" word-spacing="0">
+      <tspan x="294.28174" y="206.13571" font-family="Amatic SC" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'"><tspan fill="#838383" font-weight="400" style="-inkscape-font-specification:'Amatic SC'">fret</tspan> restart</tspan>
+    </text>
+    <text x="293.76169" y="192.67514" stroke-width=".26875445" font-family="sans-serif" font-size="10.75017929" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(0 -163.64999)" word-spacing="0">
+      <tspan x="293.76169" y="192.67514" font-family="Amatic SC" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'"><tspan fill="#838383" font-weight="400" style="-inkscape-font-specification:'Amatic SC'">fret</tspan> information</tspan>
+    </text>
+    <path fill="#fff" stroke="#040404" stroke-width=".38305214" d="M112.4347 4.26472c-3.97836 0-7.18114 3.58844-7.18114 8.04585v67.72971c0 4.45741 3.20278 8.04589 7.18114 8.04589l3.2758.19141-1.55921 19.92394 17.91831-19.01606 145.41918-1.09942c3.97828-.0301 7.18108-3.58844 7.18108-8.04587V12.31044c0-4.45738-3.20276-8.04584-7.18108-8.04584z"/>
+  </g>
+</svg>

@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/fretboard.css">
+    <style media="screen">
+
+
+ </style>
+  </head>
+  <body>
+<main style="background-color: #E5E5E5;">
+<header>
+  <section class="heads" >
+    <svg  class="headsvg" xmlns="http://www.w3.org/2000/svg" width="1360.5" height="252.5" viewBox="0 0 359.96564 66.807295">
+      <g>
+      <!--BUBBLE MESSAGE-->
+        <path fill="#fff" stroke="#040404" stroke-width=".24199949" d="M112.4347 6.13565c-3.97836 0-7.18114 1.43225-7.18114 3.21133v27.03289c0 1.77908 3.20278 3.21134 7.18114 3.21134l3.2758.0764-8.43919 19.23428 24.79829-18.87192 145.41918-.43881c3.97828-.012 7.18108-1.43225 7.18108-3.21134V9.34693c0-1.77907-3.20276-3.21133-7.18108-3.21133z"/>
+        <text class="message" x="135.96744" y="257.1297" stroke-width=".39594424" font-family="sans-serif" font-size="15.83777046" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(0 -230.1927)" word-spacing="0">
+          <tspan x="111.96744" y="257.1297" font-family="Amatic SC" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">not quite, gz 4 more e sharps&apos;s please</tspan>
+        </text>
+      <!--BUBBLE MESSAGE-->
+        <path class="buttonStart menuButton" fill="#fff" stroke="#040404" stroke-width=".24189505" d="M296.45193 17.68134h60.79258V6.900609h-60.79258z"/>
+        <text x="7.3991165" y="279.54727" stroke-width=".89041811" font-family="sans-serif" font-size="35.61672592" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="matrix(1.04727 0 0 .95486 0 -230.1927)" word-spacing="0">
+          <tspan x="7.3991165" y="279.54727" fill="#787878" font-family="Amatic SC" style="-inkscape-font-specification:'Amatic SC'"><tspan fill="#000">fret</tspan> <tspan font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">off</tspan></tspan>
+        </text>
+        <text x="325.267" y="108.30771" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(0 -230.1927)" word-spacing="0"/>
+        <path class=" menuButton" fill="#fff" stroke="#040404" stroke-width=".24188218" d="M296.4584 31.29406h60.786114V20.513329H296.4584z"/>
+        <path class="buttonInfo menuButton" fill="#fff" stroke="#040404" stroke-width=".24188218" d="M296.4584 44.84688h60.786114V34.066149H296.4584z"/>
+        <text class="menuText" x="298.69711" y="246.16776" stroke-width=".26875445" font-family="sans-serif" font-size="10.75017929" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(0 -230.1927)" word-spacing="0">
+        <tspan x="298.69711" y="246.16776" font-family="Amatic SC" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'"><tspan fill="#838383" font-weight="400" style="-inkscape-font-specification:'Amatic SC'">fret</tspan> start</tspan>
+        </text>
+        <text class="menuText" x="298.51514" y="272.96188" stroke-width=".26875445" font-family="sans-serif" font-size="10.75017929" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(0 -230.1927)" word-spacing="0">
+          <tspan x="298.51514" y="272.96188" font-family="Amatic SC" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'"><tspan fill="#838383" font-weight="400" style="-inkscape-font-specification:'Amatic SC'">fret</tspan> restart</tspan>
+        </text>
+        <text class="menuText" x="297.99509" y="259.50131" stroke-width=".26875445" font-family="sans-serif" font-size="10.75017929" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(0 -230.1927)" word-spacing="0">
+          <tspan x="297.99509" y="259.50131" font-family="Amatic SC" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'"><tspan fill="#838383" font-weight="400" style="-inkscape-font-specification:'Amatic SC'">fret</tspan> info</tspan>
+        </text>
+      </g>
+    </svg>
+  </section>
+  <audio class="ukuleleAudio">
+      <source src="F:\UniServerZ\www\digital_design_unit\fretboard\sounds\ukuleleSample.mp3" type="audio/mp3">
+  </audio>
+
+<style media="screen">
+
+</style>
+
+
+
+<script type="text/javascript">
+      let buttonInfo =  document.querySelector(".buttonInfo");
+
+
+
+              let openInfo = document.querySelector(".buttonInfo");
+              let start = document.querySelector(".buttonStart");
+              let restart = document.querySelector(".buttonRestart");
+              let menuText = document.querySelectorAll(".menuText");
+              let menuButton = document.querySelectorAll(".menuButton");
+              let  x = document.querySelector(".ukuleleAudio");
+
+
+
+
+//THIS OPENS THE MODAL WINDOW BACK UP- do this with CSS instead!!!
+
+
+let menuFunctions = (function(){
+
+    menuButton[0].onclick = function(){
+        open(playAudio);
+      }
+      menuText[0].onclick = function(){
+        open(playAudio);
+      }
+      function open(callback){
+        modal.style.display = "block";
+        modal.style.transition = "all 2s";
+        callback();
+      }
+
+
+    // let closeIt = document.querySelector(".close");
+    // closeIt.onclick=function(){
+    //   alert("working?");
+    // }
+
+    function playAudio(){
+      x.play();
+    }
+  function pauseAudio() {
+      x.pause();
+  }
+
+})();
+
+
+  //EVENTS FOR LIGHTING UP THE BUTTONS USING JS
+
+              // let menuEvents = (function(a){
+              //   function hoverMenu(){
+              //     menuButton[1].classList.add("hoverMenu");
+              //   }
+              //   function clickMenu(){menuButton[1].classList.add("clickMenu")}
+              //     return{
+              //         hoverMenu: hoverMenu;
+              //     }
+              // })();
+
+            //   for (var i = 0; i < buttonText.length; i++) {
+            //     menuText[i].onmouseover=function(){
+            //         buttonInfo();
+            //     }
+            //     menuText[i].onmousedown=function(){
+            //         buttonInfo();
+            //     }
+            //     menuText[i].onmouseleave=function(){
+            //         buttonInfo();
+            //     }
+            //     menuText[i].onmouseup=function(){
+            //       buttonInfo();
+            //   }
+            // }
+
+
+
+</script>
+
+
+
+
+
+</header>
+
+<figure class="fretBoard">
+<!-- viebox is how we scale this!!! -->
+  <svg class="drawing" xmlns="http://www.w3.org/2000/svg" width="1360.5" height="252.5" viewBox="0 0 359.96564 66.807295" >
+    <g>
+      <g>
+        <path fill="#fff" stroke="#000" stroke-width=".44487384" d="M81.274906 34.25505V12.98773s-37.499103-.94215-47.819579-7.0891c-3.626975-2.16024-3.727856-1.80468-4.165871-1.84933H1.081886m80.19302 30.20575v21.26729s-37.499103.94213-47.819579 7.08909c-3.626975 2.16025-3.727856 1.80469-4.165871 1.84933H1.081886V4.0493"/>
+        <path fill="none" stroke="#000" stroke-width=".14772786" d="M32.32459 47.71868l40.145568 3.19947"/>
+        <g transform="matrix(.65225 0 0 .60152 -35.253866 104.83284)">
+          <g>
+            <ellipse cx="97.116264" cy="-93.236458" fill="#f2f2f2" stroke="#000" stroke-width=".28965709" rx="6.6437573" ry="6.796617"/>
+          </g>
+          <ellipse cx="96.972801" cy="-93.066902" fill="#fff" stroke="#04090c" stroke-width=".12713526" rx="2.9160545" ry="2.9831471"/>
+        </g>
+        <path fill="none" stroke="#000" stroke-width=".14037323" d="M9.5425989 44.37213l62.5673521-6.1221.33105-.45915"/>
+        <g transform="matrix(.65225 0 0 -.60152 -57.089292 -9.09971)">
+          <g>
+            <ellipse cx="97.116264" cy="-93.236458" fill="#f2f2f2" stroke="#000" stroke-width=".28965709" rx="6.6437573" ry="6.796617"/>
+          </g>
+          <ellipse cx="96.972801" cy="-93.066902" fill="#fff" stroke="#04090c" stroke-width=".12713526" rx="2.9160545" ry="2.9831471"/>
+        </g>
+        <path fill="none" stroke="#000" stroke-width=".1483742" d="M32.361643 20.85266l40.10521-3.19969"/>
+        <g transform="matrix(.65225 0 0 -.60152 -34.96235 -36.79079)">
+          <g>
+            <ellipse cx="97.116264" cy="-93.236458" fill="#f2f2f2" stroke="#000" stroke-width=".28965709" rx="6.6437573" ry="6.796617"/>
+          </g>
+          <ellipse cx="96.972801" cy="-93.066902" fill="#fff" stroke="#04090c" stroke-width=".12713526" rx="2.9160545" ry="2.9831471"/>
+        </g>
+        <path fill="none" stroke="#000" stroke-width=".14054473" d="M9.3982742 23.83378l62.7203168 6.12209.331859.45916"/>
+        <g transform="matrix(.65225 0 0 .60152 -56.797776 76.80516)">
+          <g>
+            <ellipse cx="97.116264" cy="-93.236458" fill="#f2f2f2" stroke="#000" stroke-width=".28965709" rx="6.6437573" ry="6.796617"/>
+          </g>
+          <ellipse cx="96.972801" cy="-93.066902" fill="#fff" stroke="#04090c" stroke-width=".12713526" rx="2.9160545" ry="2.9831471"/>
+        </g>
+        <path fill="#f2f2f2" stroke="#040404" stroke-width=".15608783" d="M64.895676 56.37654h6.172658V12.167517h-6.172658z" opacity=".83300003"/>
+        <text x="67.527496" y="250.68034" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(0 -230.1927)" word-spacing="0">
+          <tspan x="67.527496" y="250.68034" font-family="Amatic SC" font-size="7.76111078" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">1</tspan>
+        </text>
+        <text x="67.195534" y="261.18958" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(0 -230.1927)" word-spacing="0">
+          <tspan x="67.195534" y="261.18958" font-family="Amatic SC" font-size="7.76111078" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">2</tspan>
+        </text>
+        <text x="66.942116" y="271.98828" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(0 -230.1927)" word-spacing="0">
+          <tspan x="66.942116" y="271.98828" font-family="Amatic SC" font-size="7.76111078" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">3</tspan>
+        </text>
+        <text x="67.280418" y="282.66516" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(0 -230.1927)" word-spacing="0">
+          <tspan x="67.280418" y="282.66516" font-family="Amatic SC" font-size="7.76111078" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">4</tspan>
+        </text>
+      </g>
+      <path fill="white" stroke="#000" stroke-width=".12692405" d="M72.558487 57.14965h284.78137V12.160114H72.558487z"/>
+<!--HERE EHRE HERE HERE HERE HERE  -->
+      <g class="string">
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M71.906967 56.92382h10.947536V46.101684H71.906967z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-90s -180.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754"  d="M84.067917 56.42058h24.318367V45.453657H84.067917z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-65 -180.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M108.82634 56.42058h24.318367V45.453657H108.82634z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-40 -180.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M133.72008 56.42058h24.318367V45.453657H133.72008z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-15 -180.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M158.47856 56.42058h24.318367V45.453657H158.47856z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(10 -180.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M183.37228 56.42058h24.318367V45.453657H183.37228z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(35 -180.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M208.13072 56.42058h24.318367V45.453657H208.13072z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(60 -180.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M233.02443 56.42058h24.318367V45.453657H233.02443z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(110 -180.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M257.78284 56.42058h24.318367V45.453657H257.78284z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(85 -180.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M282.67654 56.42058h24.318367V45.453657H282.67654z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(135 -180.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M307.43497 56.42058h24.318367V45.453657H307.43497z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(160 -180.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754"  d="M332.3287 56.42058h24.318367V45.453657H332.3287z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(185 -180.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+
+      </g>
+      <!-- end of string -->
+
+
+      <g class="string">
+        <!-- OPEN STRING -->
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".20177935" d="M71.906967 46.101646h10.947536V34.27951H71.906967z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-90s -191.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret">
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754"  d="M84.067917 45.45363h24.318367V34.486707H84.067917z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-65 -191.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M108.82634 45.45363h24.318367V34.486707H108.82634z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-40 -191.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M133.72008 45.45363h24.318367V34.486707H133.72008z"/>>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-15 -191.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M158.47856 45.45363h24.318367V34.486707H158.47856z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(10 -191.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M183.37228 45.45363h24.318367V34.486707H183.37228z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(35 -191.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M208.13072 45.45363h24.318367V34.486707H208.13072z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(60 -191.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M233.02443 45.4536h24.318367V34.486677H233.02443z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(85 -191.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M257.78284 45.4536h24.318367V34.486677H257.78284z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(110 -191.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M282.67654 45.4536h24.318367V34.486677H282.67654z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(135 -191.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M307.43497 45.4536h24.318367V34.486677H307.43497z"/>>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(160 -191.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754"  d="M332.3287 45.4536h24.318367V34.486677H332.3287z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(185 -191.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <!-- STRING LETTER -->
+      </g>
+    <!-- end of string -->
+
+
+      <g class="string">
+        <!-- OPEN -->
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".20177935" d="M71.906967 34.27953h10.947536V22.457394H71.906967z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-90s -213.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M84.067917 34.48671h24.318367V23.519787H84.067917z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-65 -202.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M108.82634 34.48671h24.318367V23.519787H108.82634z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-40 -202.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M133.72008 34.48671h24.318367V23.519787H133.72008z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-15 -202.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M158.47856 34.48668h24.318367V23.519757H158.47856z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(10 -202.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M183.37228 34.48668h24.318367V23.519757H183.37228z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(35 -202.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M208.130717 34.48668h24.318367V23.519757H208.13072z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(60 -202.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M233.02443 34.48668h24.318367V23.519757H233.02443z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(85 -202.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M257.78284 34.48665h24.318367V23.519727H257.78284z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(110 -202.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M282.67654 34.48665h24.318367V23.519727H282.67654z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(135 -202.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M307.43497 34.48665h24.318367V23.519727H307.43497z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(160 -202.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754"  d="M332.3287 34.48665h24.318367V23.519727H332.3287z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(185 -202.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <!-- STRING LETTER -->
+      </g>
+    <!-- end of string -->
+    <!--OPEN FRET-->
+      <g class="string">
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".20177935" d="M71.906967 22.457358h10.947536V10.635222H71.906967z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-90s -213.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M84.067917 23.519798h24.318367V12.552875H84.067917z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-65 -213.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M108.826337 23.519798h24.318367V12.552875h-24.318367z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-40 -213.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M133.720077 23.519798h24.318367V12.552875h-24.318367z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-15 -213.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M158.478557 23.519768h24.318367V12.552845h-24.318367z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(10 -213.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M183.372277 23.519768h24.318367V12.552845h-24.318367z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(35 -213.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M208.130717 23.519768h24.318367V12.552845h-24.318367z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(60 -213.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M233.024427 23.519768h24.318367V12.552845h-24.318367z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(85 -213.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M257.782847 23.519768h24.318367V12.552845h-24.318367z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(110 -213.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M282.676557 23.519768h24.318367V12.552845h-24.318367z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(135 -213.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M307.434977 23.519738h24.318367V12.552815h-24.318367z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(160 -213.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+        <g class="fret" >
+          <path fill="#fff" stroke="#040404" stroke-width=".15430754"  d="M332.328717 23.519768h24.318367V12.552845h-24.318367z"/>
+          <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(185 -213.478952)" word-spacing="0">
+            <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+          </text>
+        </g>
+      </g>
+    <!-- end of string -->
+    </g>
+  </svg>
+  </figure>
+  <footer>
+    <svg class="onOffBtns" xmlns="http://www.w3.org/2000/svg" width="1360.5" height="252.5" viewBox="0 0 359.96564 66.807295">
+    <g transform="translate(0 -230.1927)">
+      <!-- <rect width="361.34839" height="67.886459" x="-1.0690781" y="230.18262" fill="#fff" fill-opacity=".97741276" stroke="#fcfcfc" stroke-width=".2" rx="3.96875"/> -->
+      <g></g>
+      <g>
+        <!-- WHITE BACKGROUND---WHITE BACKGROUND---WHITE BACKGROUND -->
+        <path class="onOffNoteButton" fill="#fff" stroke="#040404" stroke-width=".13851485" d="M101.40283 259.582259h14.659485v-14.659485H101.40283z"/>
+
+        <path  fill="#fff" stroke="#040404" stroke-width=".13851485" d="M101.40283 259.582259h14.659485v-14.659485H101.40283z"/>
+        <text x="107.02824" y="321.12946" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(0 -63.393481)" word-spacing="0">
+          <tspan x="107.02824" y="321.12946" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
+        </text>
+      </g>
+      <g>
+        <path fill="#fff" stroke="#040404" stroke-width=".13851485" d="M126.282354 259.582259h14.659485v-14.659485h-14.659485z"/>
+        <text x="104.91156" y="321.12946" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(24.879524 -63.393481)" word-spacing="0">
+          <tspan x="104.91156" y="321.12946" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a#</tspan>
+        </text>
+      </g>
+      <g>
+        <path fill="#fff" stroke="#040404" stroke-width=".13851485" d="M150.510342 259.582259h14.659485v-14.659485h-14.659485z"/>
+        <text x="107.02824" y="321.12946" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(49.107512 -63.393481)" word-spacing="0">
+          <tspan x="107.02824" y="321.12946" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">b</tspan>
+        </text>
+      </g>
+      <g>
+        <path fill="#fff" stroke="#040404" stroke-width=".13851485" d="M175.919038 259.582259h14.659485v-14.659485h-14.659485z"/>
+        <text x="107.02824" y="321.12946" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(74.516208 -63.393481)" word-spacing="0">
+          <tspan x="107.02824" y="321.12946" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">c</tspan>
+        </text>
+      </g>
+      <g>
+        <path fill="#fff" stroke="#040404" stroke-width=".13851485" d="M199.96964 259.582259h14.659485v-14.659485H199.96964z"/>
+        <text x="104.91156" y="321.12946" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(98.56681 -63.393481)" word-spacing="0">
+          <tspan x="104.91156" y="321.12946" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">c#</tspan>
+        </text>
+      </g>
+      <g>
+        <path fill="#fff" stroke="#040404" stroke-width=".13851485" d="M225.2478 259.582259h14.659485v-14.659485H225.2478z"/>
+        <text x="107.02824" y="321.12946" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(123.84497 -63.393481)" word-spacing="0">
+          <tspan x="107.02824" y="321.12946" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">d</tspan>
+        </text>
+      </g>
+      <g>
+        <path fill="#fff" stroke="#040404" stroke-width=".13851485" d="M101.40283 283.237583h14.659485v-14.659485H101.40283z"/>
+        <text x="104.91156" y="321.12946" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(0 -39.738157)" word-spacing="0">
+          <tspan x="104.91156" y="321.12946" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">d#</tspan>
+        </text>
+      </g>
+      <g>
+        <path fill="#fff" stroke="#040404" stroke-width=".13851485" d="M126.282357 283.237583h14.659485v-14.659485h-14.659485z"/>
+        <text x="107.02824" y="321.12946" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(24.879527 -39.738157)" word-spacing="0">
+          <tspan x="107.02824" y="321.12946" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">e</tspan>
+        </text>
+      </g>
+      <g>
+        <path fill="#fff" stroke="#040404" stroke-width=".13851485" d="M150.510346 283.237583h14.659485v-14.659485h-14.659485z"/>
+        <text x="107.02824" y="321.12946" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(49.107516 -39.738157)" word-spacing="0">
+          <tspan x="107.02824" y="321.12946" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">f</tspan>
+        </text>
+      </g>
+      <g>
+        <path fill="#fff" stroke="#040404" stroke-width=".13851485" d="M175.919042 283.237583h14.659485v-14.659485h-14.659485z"/>
+        <text x="104.91156" y="321.12946" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(74.516212 -39.738157)" word-spacing="0">
+          <tspan x="104.91156" y="321.12946" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">f#</tspan>
+        </text>
+      </g>
+      <g>
+        <path fill="#fff" stroke="#040404" stroke-width=".13851485" d="M199.969641 283.237583h14.659485v-14.659485h-14.659485z"/>
+        <text x="107.02824" y="321.12946" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(98.566811 -39.738157)" word-spacing="0">
+          <tspan x="107.02824" y="321.12946" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">g</tspan>
+        </text>
+      </g>
+      <g>
+        <path fill="#fff" stroke="#040404" stroke-width=".13851485" d="M225.2478 283.237583h14.659485v-14.659485H225.2478z"/>
+        <text x="104.91156" y="321.12946" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(123.84497 -39.738157)" word-spacing="0">
+          <tspan x="104.91156" y="321.12946" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">g#</tspan>
+        </text>
+      </g>
+    </g>
+  </svg>
+  </footer>
+
+  <!-- MODAL-WINDOW-----MODAL-WINDOW-----MODAL-WINDOW-----MODAL-WINDOW-----MODAL-WINDOW-----MODAL-WINDOW-----MODAL-WINDOW-----MODAL-WINDOW-----MODAL-WINDOW -->
+
+  <!-- THE ACTUAL WINDOW -->
+
+
+  <style media="screen">
+  .modal{
+      display: block;
+      margin: auto;
+      position: fixed;
+      z-index: 1;
+      padding-top: 0em;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.6);
+   }
+
+
+   .modalGrid{
+     display: flex;
+     flex-direction: column;
+     background-color: #fefefe;
+     margin: auto;
+     padding: 3em;
+     border: solid #888;
+     /* width: 100%; */
+
+   }
+    .modalContent{
+      display: flex;
+      flex-direction: row;
+      font-size: 8em;
+      padding 1em;
+      flex: 3;
+
+    }
+    .fBoard{
+      /* width: 95%;
+      margin: auto; */
+      /* height: 100%; */
+    }
+    .fBoardImg{
+
+      width: 100%;
+      height: 100%;
+      /* flex 3; */
+    }
+
+
+    /* .modalContent:nth-child(2){
+        background-color: pink;
+
+    } */
+.modalGrid{
+  background-color: transparent;
+}
+.close {
+  color: #aaaaaa;
+  background-color: transparent;
+  margin-top: -0.45em;
+  font-size: 1.25em;
+  font-weight: bold;
+  height: 100%;
+  flex: 1;
+  float: right;
+
+}
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.closeButton{
+  height: 1em;
+}
+
+/*MENU BUTTONS----MENU BUTTONS----MENU BUTTONS----MENU BUTTONS----MENU BUTTONS----MENU BUTTONS----MENU BUTTONS----MENU BUTTONS*/
+
+.buttonStart{
+
+}
+.buttonInfo{
+
+}
+.buttonRestart{
+
+}
+
+/* .mmenuButton:hover{
+
+} */
+
+
+
+
+</style>
+
+  <section id="myModal" class="modal">
+    <section class="modalGrid" >
+      <aside class="modalContent">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1360.5" height="252" viewBox="0 0 359.96564 66.675005">
+          <g transform="translate(0 -230.32499)">
+            <text x="325.267" y="108.30771" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" word-spacing="0"/>
+            <path fill="#fff" stroke="#040404" stroke-width=".2527476" d="M159.17209 231.62486c2.80758 0 5.06783 2.21379 5.06783 4.96366v41.78388c0 2.74988-2.26025 4.96369-5.06783 4.96369l-2.31178.11807 1.10036 12.2915-12.64521-11.7314-102.624348-.67826c-2.80752-.0187-5.06778-2.21377-5.06778-4.96367v-41.78387c0-2.74987 2.26022-4.96366 5.06778-4.96366z"/>
+            <path fill="#fff" stroke="#040404" stroke-width=".21006934" d="M245.83627 234.15321c-2.03796 0-3.67861 2.10681-3.67861 4.7238v39.76483c0 2.617 1.64065 4.72383 3.67861 4.72383l1.67806.11237-.79872 11.69755 9.17881-11.16452 74.4923-.64549c2.03791-.0177 3.67857-2.1068 3.67857-4.72381v-39.76483c0-2.61698-1.64064-4.7238-3.67857-4.7238z"/>
+            <flowRoot fill="#000" fill-opacity="1" stroke="none" font-family="Amatic SC" font-size="24" font-stretch="normal" font-style="normal" font-variant="normal" font-weight="400" letter-spacing="0" style="line-height:1.25;-inkscape-font-specification:'Amatic SC'" transform="matrix(.26458 0 0 -.26458 -190.76458 297.80331)" word-spacing="0" xml:space="preserve">
+              <flowRegion>
+                <path d="M911.5 76.500008H1312v150H911.5z"/>
+              </flowRegion>
+              <flowPara/>
+            </flowRoot>
+            <text x="41.158268" y="242.7682" stroke-width=".26458332" font-family="Amatic SC" font-size="5.11527777" font-weight="400" letter-spacing="0" style="line-height:1.25;-inkscape-font-specification:'Amatic SC'" word-spacing="0">
+              <tspan x="41.158268" y="242.7682" font-size="9.87777805">You don&apos;t need to memorize this diagram. </tspan><tspan x="41.158268" y="255.11543" font-size="9.87777805">But you do need to understand how to </tspan><tspan x="41.158268" y="267.46265" font-size="9.87777805">find the notes. To do this, you&apos;ll need </tspan><tspan x="41.158268" y="279.80988" font-size="9.87777805">to know two things:</tspan>
+            </text>
+            <text x="245.8743" y="243.38992" stroke-width=".23850283" font-family="Amatic SC" font-size="4.6110549" font-weight="400" letter-spacing="0" style="line-height:1.25;-inkscape-font-specification:'Amatic SC'" transform="scale(.99395 1.00609)" word-spacing="0">
+              <tspan x="245.8743" y="243.38992" font-size="8.90410614">(1)the open tones of each string, </tspan><tspan x="245.8743" y="254.52005" font-size="8.90410614">and</tspan><tspan x="245.8743" y="265.65018" font-size="8.90410614">(2)the notes of the chromatic scale</tspan>
+            </text>
+          </g>
+        </svg>
+          <span class="close">&times;</span>
+        </aside>
+      <aside class="modalContent fBoard">
+     <img class="fBoardImg" src="images\fretBoardDiagramWithcircles.png" alt="">
+      </aside>
+      <aside class="modalContent">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1360.5" height="252" viewBox="0 0 359.96564 66.675005">
+          <g>
+            <text x="325.267" y="108.30771" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(0 -230.32499)" word-spacing="0"/>
+            <path fill="#fff" stroke="#040404" stroke-width=".2428156" d="M233.38233 64.60922c-2.76691 0-4.99442-2.07325-4.99442-4.64855V20.82934c0-2.57531 2.22751-4.64858 4.99442-4.64858l2.2783-.11058-1.08442-11.5112 12.46204 10.98666 101.13785.6352c2.76686.0175 4.99438 2.07324 4.99438 4.64856v39.13133c0 2.5753-2.22749 4.64855-4.99438 4.64855z"/>
+            <path fill="#fff" stroke="#040404" stroke-width=".21527939" d="M138.29919 64.70843c2.03796 0 3.67861-2.21261 3.67861-4.96102V17.98566c0-2.74842-1.64065-4.96105-3.67861-4.96105l-1.67806-.11802.79872-12.28498-9.17881 11.72519-74.492303.6779c-2.03791.0186-3.67857 2.2126-3.67857 4.96103v41.76175c0 2.7484 1.64064 4.96102 3.67857 4.96102z"/>
+            <text x="52.353523" y="257.34756" stroke-width=".21378283" font-family="Amatic SC" font-size="5.13078785" font-weight="400" letter-spacing="0" style="line-height:1.25;-inkscape-font-specification:'Amatic SC'" transform="matrix(1.01035 0 0 .98976 0 -230.32499)" word-spacing="0">
+              <tspan x="52.353523" y="257.34756" font-size="9.87777805">The open tones (the note that </tspan><tspan x="52.353523" y="269.69479" font-size="9.87777805">sounds when thestring is </tspan><tspan x="52.353523" y="282.04202"><tspan font-size="9.87777805">unfretted) of the </tspan><tspan font-size="9.87777805">four strings </tspan></tspan><tspan x="52.353523" y="294.38922"><tspan font-size="9.87777805">are G, C, E, and A</tspan>.</tspan><tspan x="52.353523" y="302.31839">.</tspan>
+            </text>
+            <text x="236.71584" y="255.502" stroke-width=".26458332" font-family="Amatic SC" font-size="5.11527777" font-weight="400" letter-spacing="0" style="line-height:1.25;-inkscape-font-specification:'Amatic SC'" transform="translate(0 -230.32499)" word-spacing="0">
+              <tspan x="236.71584" y="255.502" font-size="9.87777805">Looking at the diagram, you can see how </tspan><tspan x="236.71584" y="267.84921" font-size="9.87777805">the chromatic scale extends up the </tspan><tspan x="236.71584" y="280.19644" font-size="9.87777805">fretboard, one note at a time,starting</tspan><tspan x="236.71584" y="292.54367" font-size="9.87777805"> at the open tone for each string</tspan>
+            </text>
+          </g>
+        </svg>
+      </aside>
+    </section>
+  </section>
+
+  </main>
+
+  <script type="text/javascript">
+      let modal = document.querySelector(".modal");
+      let close = document.querySelector(".close");
+
+      function closeModal (){
+        //alert("closing!");
+        modal.style.display = "none";
+      }
+
+      close.onclick=function(){
+        closeModal();
+      }
+
+  </script>
+
+  <script type="text/javascript">
+//class constructor to be instansiated for each note
+// contains the methods and properties to be attached to each buton
+
+class button {
+  constructor(note, noteName, color, sound, onOff, correct){
+      this.note = note;
+      this.noteName =  noteName;
+      this.color = '#' + color;
+      this.sound = sound;
+      this.onOff = onOff;
+      //this.correct = correct;
+      }
+
+      hoverOff(a, b, c){
+          b.classList.add("noteHoverOff");
+          b.classList.remove("noteHover");
+          c.classList.add("noteHoverOff");
+          c.classList.remove("noteHover");
+          a.classList.remove("clickedIt");
+
+          if (a.onOff===true) {
+            b.classList.remove("noteHoverOff");
+            b.classList.remove("noteHoverOff");
+            c.classList.remove("noteHoverOff");
+            c.classList.remove("noteHoverOff");
+            //this.correct= true;
+          }
+        else if (a.onOff == false) {
+          b.classList.add("noteButton");
+          c.classList.add("noteButton");
+          //correct = false;
+        }
+      };
+
+      hoverOn(a, b, c){
+            b.classList.add("noteHover");
+            b.classList.remove("noteButton");
+            b.classList.remove("noteHoverOff");
+        if (a.onOff===true) {
+
+        }
+        else if (a.onOff == false) {
+
+        }
+      };
+
+      //USE COLOR IN FOR ALL OG THE PARAMATERS!!!!!!!!!
+              colorIn(a, b, c){
+                a.style.fill = this.color;
+                a.note = this.note;
+                b.innerHTML = this.note;
+                c.noteName = this.noteName;
+                c.sound = this.sound;
+                c.correct = this.correct;
+      //HERE WE ADD A CLASS CORESPONDING TO THE FRETS NAME SO THAT WE CAN TARGET IT USING A QUERY SELECTOR
+                c.classList.add(c.noteName);
+                c.classList.add("incorrect");
+                //c.sound = this.sound;
+              }
+
+              soundOn(a){
+                var x = document.createElement("AUDIO");
+                x.setAttribute("src","sounds/" + a + ".wav");
+                //console.log(x.volume);
+                document.body.appendChild(x).play();
+                x.volume=0.1;
+               }
+
+    };
+
+  let activeNote
+
+    class fret extends  button {
+      // constructor(note, noteName, color, sound, onOff, correct){
+      super(note, noteName, color, sound, onOff, correct){
+      }
+
+      fretVisibility(a, b){
+        if (a.onOff==true) {
+          b.classList.remove("noteButton");
+          a.classList.remove("noteButton");
+        }
+        else if (a.onOff != true){
+
+          b.classList.add("noteButton");
+          a.classList.add("noteButton");
+        }
+      }
+
+      clickUp(a, b, c){
+          if(c.noteName == activeNote){
+            c.classList.remove("incorrect");
+          }
+        }
+//ADDS AND REMOVES COLOR ON HOVER
+
+        clickOn(a, b, c){
+          a.classList.add("clickedIt");
+          // if (this.correct == false) {
+          //         fretScore.correct();
+          //         console.log(this.correct);
+          // }
+          if (a.onOff===true) {
+            a.classList.remove("noteButton");
+            b.classList.remove("noteButton");
+            //console.log(b);
+            //console.log(a);
+            fretScore.correct();
+          }
+          else if (a.onOff != true){
+            a.classList.add("noteButton");
+            b.classList.add("noteButton");
+            a.classList.remove("noteHover");
+          }
+        }
+
+
+        //triggered by the click event ()
+        OnOrOff(a, b, c){
+
+          if (a.noteName == activeNote) {
+            //console.log(a.noteName);
+            a.onOff = true;
+            b.classList.remove("noteButton");
+            c.classList.remove("noteButton");
+          }
+           else if(a.noteName != activeNote) {
+            //alert(a.noteName);
+            a.onOff = false;
+            fretScore.inCorrect();
+            //alert(a.onOff);
+          }
+        };
+        // if(a.noteName == correct){
+        //
+        // }
+        // else if (a.noteName != correct) {
+        //
+        // }
+
+        checkAnswer(a, b, c){
+          if(c.noteName == activeNote){
+            fretScore.correct();
+          }
+        }
+
+          clickOn(a, b, c){
+            a.classList.add("clickedIt");
+            // if (this.correct == false) {
+            //         fretScore.correct();
+            //         console.log(this.correct);
+            // }
+            if (a.onOff===true) {
+              a.classList.remove("noteButton");
+              b.classList.remove("noteButton");
+              //console.log(b);
+              //console.log(a);
+              fretScore.correct();
+            }
+            else if (a.onOff != true){
+              a.classList.add("noteButton");
+              b.classList.add("noteButton");
+              a.classList.remove("noteHover");
+            }
+          }
+        }
+
+//END OF FRET CONSTRUCTOR-------END OF FRET CONSTRUCTOR-------   END OF FRET CONSTRUCTOR-------   END OF FRET CONSTRUCTOR-------   END OF FRET CONSTRUCTOR-------   END OF FRET CONSTRUCTOR-------
+
+
+
+
+
+
+
+//BUBBLE MESSAGES--------BUBBLE MESSAGES--------BUBBLE MESSAGES--------BUBBLE MESSAGES--------BUBBLE MESSAGES--------BUBBLE MESSAGES--------BUBBLE MESSAGES--------BUBBLE MESSAGES--------BUBBLE MESSAGES--------
+
+        //THIS HOLDS THE MESSAGES BEING SENT TO THE USER VIA THE BUBBLE AND TRIGGERED USING THE APPROPRIATE METHODS
+        let bubbleMessage = (function(){
+            let message = document.querySelector(".message");
+
+            function initialAsk(a){
+
+              message.innerHTML=" gz " +  "all the " + a + "'s' please";
+              }
+              function wellDoneFret(a, b){
+                  if (a < 3){
+                  message.innerHTML="nice one! gz " + (4 - a) + " more " + b + "'s'";
+                  }
+
+                else if (a == 3) {
+                message.innerHTML="nice one! gz " + (4 - a) + " more " + b;
+                }
+              }
+
+              function naeluck(a, b){
+                  if (a < 3){
+                message.innerHTML="not quite, gz " + (4 - a) + " more " + b + "'s'";
+                  }
+
+                else if (a == 3) {
+                message.innerHTML="not quite, gz " + (4 - a) + " more " + b;
+                }
+              }
+
+            function wellDoneNote(b){
+                message.innerHTML="well done you got all the " + b + "s !";
+            }
+            return {  noteAsk: initialAsk,
+                      congratsFret: wellDoneFret,
+                      tryAgain: naeluck,
+                      congratsNote: wellDoneNote
+            }
+            //return returnsss;
+        })();
+
+//FRETS------ FRETS------  FRETS------  FRETS------  FRETS------  FRETS------  FRETS------  FRETS------  FRETS------  FRETS------  FRETS------  FRETS------  FRETS------  FRETS------
+
+//THESE ARE THE ARRAYS WHICH WILL FILL THE CONSTRUCTORS
+
+let noteColors =["ffff99", "FFCC33","FF9933", "cc3300", "333399", "666699", "336666", "66CC33", "99CC33", "CCCC33", "99CC33", "ffff66", "ffff99", "FFCC33","FF9933", "cc3300", "333399", "666699", "336666", "66CC33", "99CC33", "CCCC33", "99CC33", "ffff66"];
+let noteLetters = ["a", "aSharp", "b", "c", "cSharp", "d", "dSharp", "e", "f", "fSharp", "g", "gSharp", "a2", "aSharp2", "b2", "c2", "cSharp2", "d2", "dSharp2", "e2", "f2", "fSharp2", "g2", "gSharp2", "a3", "aSharp3", "b3", "c3"];
+let noteNames = ["a", "aSharp", "b", "c", "cSharp", "d", "dSharp", "e", "f", "fSharp", "g", "gsharp", "a", "aSharp", "b", "c", "cSharp", "d", "dSharp", "e", "f", "fSharp", "g", "gsharp"];
+let noteScore = ["a", "aSharp", "b", "c", "cSharp", "d", "dSharp", "e", "f", "fSharp", "g", "gsharp"];
+let notelabels = ["a", "a#", "b", "c", "c#", "d", "d#", "e", "f", "f#", "g", "g#", "a", "a#", "b", "a", "aSharp", "b", "c", "c#", "d", "d#", "e", "f", "f#", "g", "g#", "a", "a#", "b"];
+
+//FRETBOARD! THIS BUILDS THE NOTES USING THE FRET COUNSTRUCTOR/ CLASS
+function popNote(){
+
+}
+//NOTE SCORE COUNTER------NOTE SCORE COUNTER------NOTE SCORE COUNTER------NOTE SCORE COUNTER------NOTE SCORE COUNTER------NOTE SCORE COUNTER------NOTE SCORE COUNTER------NOTE SCORE COUNTER------NOTE SCORE COUNTER------
+
+
+let rndomNote = function(){
+
+        let rndmNoteNumber = Math.floor(Math.random() * noteScore.length);
+        let scoreArray = noteScore;
+        let rndmNote = (scoreArray[rndmNoteNumber]);
+        console.log(noteScore.length);
+        function popNote(){
+          var popThis = rndmNoteNumber;
+          var popped = scoreArray.splice(popThis, 1);
+        };
+        function message(popCallback){
+         bubbleMessage.noteAsk(rndmNote);
+         //console.log(rndmNoteNumber);
+        }
+        message(popNote());
+        return rndmNote;
+      };
+  //REUSE THE RNDOMNOTE FUNCTION ALONGSIDE THE NOTEQUESTION FUNCTION IN A CALLBACK ON THE NOTECORRECT, THIS WILL INCRIMENT A SCORE UNTIL TWELVE- AFTER WHICH THE ANIMATION WILL PLAY AND THE CONGRATS MESSAGE BE DISPLAYED!!!!!!!
+
+  let randomNote = (function (){
+    let newNote = rndomNote();
+    return newNote
+})();
+
+//END OF RANDOM NOTE GENERATOR FUNCTION----END OF RANDOM NOTE GENERATOR FUNCTION----END OF RANDOM NOTE GENERATOR FUNCTION----END OF RANDOM NOTE GENERATOR FUNCTION----END OF RANDOM NOTE GENERATOR FUNCTION----END OF RANDOM NOTE GENERATOR FUNCTION----
+//BUILDING FRET OBJECTS-------BUILDING FRET OBJECTS-------BUILDING FRET OBJECTS-------BUILDING FRET OBJECTS-------BUILDING FRET OBJECTS-------BUILDING FRET OBJECTS-------BUILDING FRET OBJECTS-------
+
+let noteObjects=(function(){
+//ATTEMPT AT A FUNCTION TO CREATE OBJECTS! HELP!
+// function fretConstructor(a, b, c, d, e){
+//e: new fret(noteLabels[a], noteNames[b], noteColors[c], noteLetters[d]) ffff99
+//}
+// for (var i = 0; i < 26; i++) {
+//   array[i]
+// }
+//THIS INVOLVES FAAAAAAAAR TO MUCH TYPING!!!
+    return {
+            a: new fret(notelabels[0], noteNames[0], noteColors[0], noteLetters[0]),
+            aSharp: new fret(notelabels[1], noteNames[1], noteColors[1], noteLetters[1]),
+            b: new fret(notelabels[2], noteNames[2], noteColors[2], noteLetters[2]),
+            c: new fret(notelabels[3], noteNames[3], noteColors[3], noteLetters[3]),
+            cSharp: new fret(notelabels[4], noteNames[4], noteColors[4], noteLetters[4]),
+            d: new fret(notelabels[5], noteNames[5], noteColors[5], noteLetters[5]),
+            dSharp: new fret(notelabels[6], noteNames[6], noteColors[6], noteLetters[6]),
+            e: new fret(notelabels[7], noteNames[7], noteColors[7], noteLetters[7]),
+            f: new fret(notelabels[8], noteNames[8], noteColors[8], noteLetters[8]),
+            fSharp: new fret(notelabels[9], noteNames[9], noteColors[9], noteLetters[9]),
+            g: new fret(notelabels[10], noteNames[10], noteColors[10], noteLetters[10]),
+            gSharp: new fret(notelabels[11], noteNames[11], noteColors[11], noteLetters[11]),
+            a2: new fret(notelabels[0], noteNames[0], noteColors[0], noteLetters[12]),
+            aSharp2: new fret(notelabels[1], noteNames[1], noteColors[1], noteLetters[13]),
+            b2: new fret(notelabels[2], noteNames[2], noteColors[2], noteLetters[14]),
+            c2: new fret(notelabels[3], noteNames[3], noteColors[3], noteLetters[15]),
+            cSharp2: new fret(notelabels[4], noteNames[4], noteColors[4], noteLetters[16]),
+            d2: new fret(notelabels[5], noteNames[5], noteColors[5], noteLetters[17]),
+            dSharp2: new fret(notelabels[6], noteNames[6], noteColors[6], noteLetters[18]),
+            e2: new fret(notelabels[7], noteNames[7], noteColors[7], noteLetters[19]),
+            f2: new fret(notelabels[8], noteNames[8], noteColors[8], noteLetters[20]),
+            fSharp2: new fret(notelabels[9], noteNames[9], noteColors[9], noteLetters[21]),
+            g2: new fret(notelabels[10], noteNames[10], noteColors[10], noteLetters[22]),
+            gSharp2: new fret(notelabels[11], noteNames[11], noteColors[11], noteLetters[23]),
+            a3: new fret(notelabels[0], noteNames[0], noteColors[0], noteLetters[24]),
+            aSharp3: new fret(notelabels[1], noteNames[1], noteColors[1], noteLetters[25]),
+            b3: new fret(notelabels[2], noteNames[2], noteColors[2], noteLetters[26]),
+            c3: new fret(notelabels[3], noteNames[3], noteColors[3], noteLetters[27])
+          }
+        })();
+//this array contains two lots of the above note objects/ instanations for applying to the fretBoard
+let notes = [noteObjects.a, noteObjects.a, noteObjects.aSharp, noteObjects.b, noteObjects.c, noteObjects.cSharp, noteObjects.d, noteObjects.dSharp, noteObjects.e, noteObjects.f, noteObjects.fSharp, noteObjects.g, noteObjects.gSharp, noteObjects.a2, noteObjects.aSharp2, noteObjects.b2, noteObjects.c2, noteObjects.cSharp2, noteObjects.d2, noteObjects.dSharp2, noteObjects.e2, noteObjects.f2, noteObjects.fSharp2, noteObjects.g2, noteObjects.gSharp2, noteObjects.a3, noteObjects.aSharp3, noteObjects.b3, noteObjects.c3];
+
+//ATTACH FRET METHODS------ATTACH FRET METHODS------ATTACH FRET METHODS------ATTACH FRET METHODS------ATTACH FRET METHODS------ATTACH FRET METHODS------ATTACH FRET METHODS------ATTACH FRET METHODS------ATTACH FRET METHODS------
+
+let eventBuilder = (function(){
+
+let strings = document.querySelectorAll(".string");
+
+//these events attach the methods to the frets
+//this loops through the strings and in turn the frets attaching the methods
+  function buildFretEvents(a){
+    strings.forEach(function(string){
+
+      for(i=0; i < string.children.length; i++){
+
+//TRY REPLACING ONMOUSEOVER WITH FOCUS ON AND OFF!!!
+          string.children[i].onmouseover=function(){
+            notes[i + a].hoverOn(this, this.children[0], this.children[1]);
+            notes[i + a].soundOn(this.sound);
+          }
+          //console.log(notes[i]);
+          string.children[i].onmouseleave=function(){
+              notes[i + a].hoverOff(this, this.children[0], this.children[1]);
+            }
+          string.children[i].onmousedown=function(){
+
+              notes[i + a].clickOn(this.children[0], this.children[1], this);
+              notes[i + a].OnOrOff(this, this.children[0], this.children[1]);
+              notes[i + a].soundOn(this.sound);
+//ON MOUSE DOWN WE CHECK THE ANSWER, DISPLAY THE RESULT AND INCRIMENT THE SCORE
+
+              if (this.classList.contains("incorrect")){
+                    notes[i + a].checkAnswer(this.children[0], this.children[1], this);
+              }
+              //console.log(this);
+                    }
+//ON MOUSE UP WE REMOVE THE INCORRECT CLASS SO THAT THE BUTTON CANNOT BE USED AS A CORRECT ANSWER TWICE
+            string.children[i].onmouseup=function(){
+                    notes[i + a].clickUp(this.children[0], this.children[1], this);
+                    }
+                  };
+              });
+            }
+
+  for (var i = 0; i < strings.length; i++) {
+    buildFretEvents(i);
+  }
+})();
+//END OF FRETBOARD-----//END OF FRETBOARD-----//END OF FRETBOARD-----//END OF FRETBOARD-----//END OF FRETBOARD-----//END OF FRETBOARD-----//END OF FRETBOARD-----//END OF FRETBOARD-----//END OF FRETBOARD-----//END OF FRETBOARD-----
+
+
+//BUTTONS FOR SHOW AND HiDE FRETS-----BUTTONS FOR SHOW AND HiDE FRETS-----BUTTONS FOR SHOW AND HiDE FRETS-----BUTTONS FOR SHOW AND HiDE FRETS-----BUTTONS FOR SHOW AND HiDE FRETS-----BUTTONS FOR SHOW AND HiDE FRETS-----BUTTONS FOR SHOW AND HiDE FRETS-----
+
+        let offOnFrets = (function(){
+
+              let noteButtonAnimationClasses = ["noteButtonOneCorrect", "noteButtonTwoCorrect", "noteButtonThreeCorrect", "noteButtonFourCorrect"];
+              let noteButtonAnimationOffClasses = ["noteButtonOneCorrectOFF", "noteButtonTwoCorrectOFF", "noteButtonThreeCorrectOFF", "noteButtonFourCorrectOFF"];
+
+              function hide(a){
+                let correctFretsHide = document.querySelectorAll(a);
+                for (var i = 0; i < noteButtonAnimationClasses.length; i++) {
+                  correctFretsHide[i].classList.remove(noteButtonAnimationOffClasses[i]);
+                  correctFretsHide[i].classList.add(noteButtonAnimationClasses[i]);
+                  correctFretsHide[i].style.fillOpacity = 1;
+                  //console.log(a);
+                }
+              }
+              function show(a){
+                let correctFrets = document.querySelectorAll(a);
+                for (var i = 0; i < noteButtonAnimationClasses.length; i++) {
+                  let correctFretsShow = document.querySelectorAll(a);
+                   correctFretsShow[i].classList.remove(noteButtonAnimationClasses[i]);
+                   correctFretsShow[i].classList.add(noteButtonAnimationOffClasses[i]);
+                   correctFretsShow[i].style.fillOpacity = 0;
+                 }
+              }
+
+              function celebrationAnimatiOn(){
+                  let  celebrate =  document.querySelectorAll(".aSharp");
+                  for (var i = 0; i < 4; i++) {
+                    celebrate[i].children[0].classList.remove("noteButton");
+                    celebrate[i].children[1].classList.remove("noteButton");
+                    show(".aSharp");
+                  }
+              }
+              function offCallback(){
+                  celebrate[i].children[0].classList.add("noteButton");
+                  celebrate[i].children[1].classList.add("noteButton");
+              }
+              function celebrationAnimatiOff(animatOffCallback){
+                  // let  celebrate =  document.querySelectorAll(".aSharp");
+                    for (var i = 0; i < 4; i++) {
+                    hide(".aSharp");
+                  }
+                    animatOffCallback(offCallback);
+              }
+              function celebrationANIMATION(){
+                function back(){
+                    celebrationAnimatiOff();
+                  }
+
+                      function call(back){
+                        celebrationAnimatiOn(back);
+                        back();
+                      }
+                      call(back);
+                    }
+
+
+
+
+
+
+              return {
+                        hide: hide,
+                        show: show,
+                        celebrationAnimatiOn: celebrationAnimatiOn,
+                        celebrationAnimatiOff: celebrationAnimatiOff,
+                        offCallback: offCallback,
+                        celebrationANIMATION: celebrationANIMATION
+                    }
+          })();
+
+//FRET SCORE COUNTER-----FRET SCORE COUNTER-----FRET SCORE COUNTER-----FRET SCORE COUNTER-----FRET SCORE COUNTER-----FRET SCORE COUNTER-----FRET SCORE COUNTER-----FRET SCORE COUNTER-----FRET SCORE COUNTER-----FRET SCORE COUNTER-----
+
+          let fretScore = (function(){
+            activeNote = randomNote;
+          var activeNoteScore = 0;
+
+          function correctCallback(){
+
+
+            activeNoteScore = 0;
+            activeNote  = (function (){
+              let newNote = rndomNote();
+              return newNote
+          })();
+            console.log(activeNote);
+          }
+          //console.log(activeNote);
+          function correct(){
+            if (activeNoteScore < 3){
+                activeNoteScore++;
+                 bubbleMessage.congratsFret(activeNoteScore, activeNote);
+
+               }
+              else if (activeNoteScore >= 3) {
+                function correctWTHCallback(cllback){
+                bubbleMessage.congratsNote(activeNote);
+                pushButtonsOnOff.turnOnOffOnButton(activeNote);
+                console.log(this);
+                cllback();
+                }
+              correctWTHCallback(correctCallback);
+
+
+            }
+          }
+
+          function inCorrect(){
+              console.log(activeNote);
+              bubbleMessage.tryAgain(activeNoteScore, activeNote);
+          }
+
+          return {
+                    correct: correct,
+                    inCorrect: inCorrect
+                  }
+          })();
+
+//SHOW HIDE FRET BUTTON CLASS--------SHOW HIDE FRET BUTTON CLASS--------SHOW HIDE FRET BUTTON CLASS--------SHOW HIDE FRET BUTTON CLASS--------SHOW HIDE FRET BUTTON CLASS--------SHOW HIDE FRET BUTTON CLASS--------SHOW HIDE FRET BUTTON CLASS--------SHOW HIDE FRET BUTTON CLASS--------
+
+        class onOff extends  button {
+          super(note, noteName, color, sound, onOff, correct){
+          }
+          colorStroke(a, b){
+            a.style.stroke = this.color;
+          }
+          fretVisibilityOnOff(a, b){
+            if (a.onOff==true) {
+              a.classList.remove("onOffNoteButton");
+            }
+            else if (a.onOff != true){
+              a.classList.add("onOffNoteButton");
+            }
+          }
+          clicked(a, b, c){
+
+          }
+          active(a, b, c){
+
+          }
+          inactive(a, b, c){
+
+          }
+        }
+
+
+
+  //INSTANATIONS FOR SHOWHIDE BUTTONS-----INSTANATIONS FOR SHOWHIDE BUTTONS-----INSTANATIONS FOR SHOWHIDE BUTTONS-----INSTANATIONS FOR SHOWHIDE BUTTONS-----INSTANATIONS FOR SHOWHIDE BUTTONS-----
+ //there MUST be a better way of doing this!!!
+          let noteButtonObjects=(function(){
+              return {
+                      a: new onOff(notelabels[0], noteNames[0], noteColors[0], noteLetters[0], true),
+                      aSharp: new onOff(notelabels[1], noteNames[1], noteColors[1], noteLetters[1], true),
+                      b: new onOff(notelabels[2], noteNames[2], noteColors[2], noteLetters[2], true),
+                      c: new onOff(notelabels[3], noteNames[3], noteColors[3], noteLetters[3], true),
+                      cSharp: new onOff(notelabels[4], noteNames[4], noteColors[4], noteLetters[4], true),
+                      d: new onOff(notelabels[5], noteNames[5], noteColors[5], noteLetters[5], true),
+                      dSharp: new onOff(notelabels[6], noteNames[6], noteColors[6], noteLetters[6], true),
+                      e: new onOff(notelabels[7], noteNames[7], noteColors[7], noteLetters[7], true),
+                      f: new onOff(notelabels[8], noteNames[8], noteColors[8], noteLetters[8], true),
+                      fSharp: new onOff(notelabels[9], noteNames[9], noteColors[9], noteLetters[9], true),
+                      g: new onOff(notelabels[10], noteNames[10], noteColors[10], noteLetters[10], true),
+                      gSharp: new onOff(notelabels[11], noteNames[11], noteColors[11], noteLetters[11], true),
+                    }
+                  })();
+
+
+//EVENT BUILDERS FOR ON OFF BUTTONS--------//EVENT BUILDERS FOR ON OFF BUTTONS--------//EVENT BUILDERS FOR ON OFF BUTTONS--------//EVENT BUILDERS FOR ON OFF BUTTONS--------//EVENT BUILDERS FOR ON OFF BUTTONS--------
+
+let onOffButtonGroup = document.querySelectorAll(".onOffBtns");
+let onOffButtons = onOffButtonGroup[0].children[0].children;
+
+let noteButtons=["empty", noteButtonObjects.a, noteButtonObjects.aSharp, noteButtonObjects.b, noteButtonObjects.c, noteButtonObjects.cSharp, noteButtonObjects.d, noteButtonObjects.dSharp, noteButtonObjects.e, noteButtonObjects.f, noteButtonObjects.fSharp, noteButtonObjects.g, noteButtonObjects.gSharp];
+
+for (var i = 1; i < onOffButtons.length; i++) {
+
+        noteButtons[i].colorStroke(onOffButtons[i]);
+        onOffButtons[i].onmousedown=function(){
+          //console.log(this.sound);
+          //noteButtons[i].clickOn(this.children[0], this.children[1], this);
+          noteButtons[i].soundOn(this.sound);
+
+        }
+        onOffButtons[i].onmouseover=function(){
+            noteButtons[i].hoverOn(this, this.children[0], this.children[1]);
+            noteButtons[i].soundOn(this.sound);
+          }
+          onOffButtons[i].onmouseleave=function(){
+          noteButtons[i].hoverOff(this, this.children[0]);
+      }
+}
+
+
+//COLOR/ ADD PROPERTIES TO IN ONOFF BUTTONS-----COLOR/ ADD PROPERTIES TO IN ONOFF BUTTONS-----COLOR/ ADD PROPERTIES TO IN ONOFF BUTTONS-----COLOR/ ADD PROPERTIES TO IN ONOFF BUTTONS-----COLOR/ ADD PROPERTIES TO IN ONOFF BUTTONS-----COLOR/ ADD PROPERTIES TO IN ONOFF BUTTONS-----
+for (var i = 1; i < onOffButtons.length; i++) {
+        noteButtons[i].colorIn(onOffButtons[i].children[0], onOffButtons[i].children[1], onOffButtons[i]);
+        //console.log(noteButtons[i]);
+        noteButtons[i].fretVisibilityOnOff(onOffButtons[i].children[0], onOffButtons[i].children[1])
+}
+
+//ENABLES BUTTONS TO SHOW AND HIDES FRETS OF CORRECT ANSWERS-----ENABLES BUTTONS TO SHOW AND HIDES FRETS OF CORRECT ANSWERS-----ENABLES BUTTONS TO SHOW AND HIDES FRETS OF CORRECT ANSWERS-----ENABLES BUTTONS TO SHOW AND HIDES FRETS OF CORRECT ANSWERS-----ENABLES BUTTONS TO SHOW AND HIDES FRETS OF CORRECT ANSWERS-----
+
+let pushButtonsOnOff = (function(){
+  function turnOnOffOnButton(a){
+        let onOffNote = a;
+
+      for (var i = 1; i < onOffButtons.length; i++) {
+        // var activeButton = noteButtons[i].noteName;
+
+          offOnFrets.hide("." + onOffNote);
+          if(onOffButtons[i].classList.contains(onOffNote)){
+            //console.log(activeButton);
+            console.log(onOffButtons[i]);
+
+             onOffButtons[i].children[0].classList.remove("onOffNoteButton");
+             onOffButtons[i].style.stroke="black";
+
+             onOffButtons[i].classList.remove("incorrect");
+             onOffButtons[i].classList.add("onOffCorrect");
+           }
+          let on = true;
+           if(onOffButtons[i].classList.contains("onOffCorrect")){
+                 onOffButtons[i].onclick=function(){
+
+
+              if (on == true) {
+                  offOnFrets.show("." + this.noteName);
+                  on = false;
+
+                }
+                else if (on == false) {
+                  //console.log(noteButtons[i].noteName);
+                  offOnFrets.hide("." + this.noteName);
+                  on = true;
+                }
+               }
+             }
+         }
+       }
+       return{
+          turnOnOffOnButton: turnOnOffOnButton
+       }
+})();
+
+
+//MODAL-WINDOW-----MODAL-WINDOW-----MODAL-WINDOW-----MODAL-WINDOW-----MODAL-WINDOW-----MODAL-WINDOW-----MODAL-WINDOW-----MODAL-WINDOW-----MODAL-WINDOW
+
+
+
+
+function reset(){
+  // WE NEED TO RETURN EVERYTHING TO THE WAY IT WAS AT THE BEGINNING
+
+// REMOVE--- NOTEBUTTONCORRECT, ADD INCORRECT CLASS TO ALL, !!!CAN WE JUST INVOKE COLORINMETHOD? REMOVE ALL CLASSES THEN USE COLORIN METHOD
+
+}
+//MAKE THE ON BUTTON REMOVE THE ON ANIMATION CLASS AND THE ON REMOVE THE OFF- CONDITINAL STATEMENT, THEN WHEN THE USER GETS ALL THE ANSWERS RIGHT(INCRIMENTATON) IT REMOVES ALL OF THE CLASSES
+// ANIMATION SOMEHOW ADDS ALL THE ON CLASSES THEN REMOVES THEM AGAIN...CALLBACK? if everyon
+
+// WE NEED TO RETURN EVERYTHING TO THE WAY IT WAS AT THE BEGINNING
+
+// REMOVE--- NOTEBUTTONCORRECT, ADD INCORRECT CLASS TO ALL, !!!CAN WE JUST INVOKE COLORINMETHOD? REMOVE ALL CLASSES THEN USE COLORIN METHOD
+
+
+// COLORIZE FRET INSTANATIONS------COLORIZE FRET INSTANATIONS------COLORIZE FRET INSTANATIONS------COLORIZE FRET INSTANATIONS------COLORIZE FRET INSTANATIONS------COLORIZE FRET INSTANATIONS------
+
+//COLOR IN FRETS------COLOR IN FRETS------COLOR IN FRETS------COLOR IN FRETS------COLOR IN FRETS------COLOR IN FRETS------COLOR IN FRETS------COLOR IN FRETS------COLOR IN FRETS------
+//the COLOR IN must be BELOW the GAME------the COLOR IN must be BELOW the GAME------the COLOR IN must be BELOW the GAME------the COLOR IN must be BELOW the GAME------the COLOR IN must be BELOW the GAME------
+//colorIn attaches the object properties- color, name, sound etc to the SVG element
+  let colorInFrets = (function(){
+  let strings = document.querySelectorAll(".string");
+  let ukeStringNote = [11, 4, 8, 13];
+
+//console.log(strings.length);
+
+
+
+function colorFrets(a, b, c){
+  for(i=0; i < strings[0].children.length; i++){
+    for (var j = 0; j < strings.length; j++) {
+        notes[i + ukeStringNote[j]].fretVisibility(strings[j].children[i].children[0], strings[j].children[i].children[1], strings[j].children[i]);
+        notes[i + ukeStringNote[j]].colorIn(strings[j].children[i].children[0], strings[j].children[i].children[1], strings[j].children[i]);
+        //console.log(strings[j].children[i].note);
+      }
+        }
+            }
+    colorFrets();
+    // for (var i = 0; i < strings.length; i++) {
+    //       colorFrets(i);
+    //   }
+})();
+
+document.querySelector('body').style.display='none'
+
+
+
+</script>
+</html>
