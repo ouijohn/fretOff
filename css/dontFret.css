@@ -1,0 +1,403 @@
+
+      /* .letter{
+        display: none;
+      } */
+      /* .noteLetter{
+        fill: pink;
+      }
+      .noteLetterVisible{
+        animation: visibleNote 2s forward;
+      } */
+    *{
+        font-family:'Amatic SC', cursive;
+      }
+      body{
+        margin: 0em;
+        width: 100%;
+      }
+
+      figure{
+        margin: 0em;
+        flex: 1;
+        width: 100%;
+      }
+
+      .drawing{
+        width: 100%;
+      }
+
+
+     /* MENU BUTTONS MENU BUTTONS MENU BUTTONS--- delete as and when */
+
+     .mmenuButton{
+       fill: yellow;
+     }
+
+      .clickedIt{
+          animation: clicked 0.5s forwards;
+      }
+
+      .noteButton{
+        fill-opacity: 0;
+        fill: white;
+      }
+      /* scoreCard button to turn right answers on and off*/
+      .onOffNoteButton{
+        fill-opacity: 0;
+        fill: #ffffff;
+        /* stroke-width: 0.35; */
+
+       }
+       .onOffNoteButtonBckground{
+         fill-opacity: 1;
+         fill: white;
+         z-index: -10;
+       }
+       .onOffNoteButtonBckground:hover{
+         fill-opacity: 0.25;
+        }
+        .onOffBtns{
+          width: 100%;
+        }
+        .onOffButtonBackground{
+          z-index: -10;
+          opacity: 1;
+          transition: opacity 1s;
+        }
+        .onOffNoteButton{
+          z-index: 20;
+        }
+        /* general layout--- header, footer etc */
+        footer{
+          margin-top: -4em;
+        }
+        header{
+          width: 100%;
+        }
+        .heads{
+          width: 100%;
+        }
+        .headsvg{
+          width: 100%;
+        }
+        
+       /* classes for each correct note--- should this not be one class??? */
+      .noteButtonOneCorrect{
+            animation: noteButtonCorrectOn 1s forwards;
+            animation-delay: 0.25s;
+            -webkit-animation: noteButtonCorrectOn 1s forwards;
+            -webkit-animation-delay: 0.25s;
+      }
+      .noteButtonTwoCorrect{
+          animation: noteButtonCorrectOn 1s forwards;
+          animation-delay: 0.25s;
+          -webkit-animation: noteButtonCorrectOn 1s forwards;
+          -webkit-animation-delay: 0.25s;
+      }
+      .noteButtonThreeCorrect{
+          animation: noteButtonCorrectOn 1s forwards;
+          animation-delay: 0.5s;
+          -webkit-animation: noteButtonCorrectOn 1s forwards;
+          -webkit-animation-delay: 0.5s;
+      }
+      .noteButtonFourCorrect{
+            animation: noteButtonCorrectOn 1s forwards;
+            animation-delay: 0.75s;
+            -webkit-animation: noteButtonCorrectOn 1s forwards;
+            -webkit-animation-delay: 0.75s;
+      }
+
+      .noteButtonOneCorrectOFF{
+          animation: noteButtonCorrectOff 1s forwards;
+          animation-delay: 0.75s;
+          -webkit-animation: noteButtonCorrectOff 1s forwards;
+          -webkit-animation-delay: 0.75s;
+      }
+      .noteButtonTwoCorrectOFF{
+
+          animation: noteButtonCorrectOff 1s forwards;
+          animation-delay: 0.5s;
+          -webkit-animation: noteButtonCorrectOff 1s forwards;
+          -webkit-animation-delay: 0.5s;
+      }
+      .noteButtonThreeCorrectOFF{
+
+          animation: noteButtonCorrectOff 1s forwards;
+          animation-delay: 0.25s;
+          -webkit-animation: noteButtonCorrectOff 1s forwards;
+          -webkit-animation-delay: 0.25s;
+      }
+      .noteButtonFourCorrectOFF{
+            animation: noteButtonCorrectOff 1s forwards;
+            -webkit-animation: noteButtonCorrectOff 1s forwards;
+        }
+        /* WELL DONE GAME OVER/ WELCOME GAME START ANIMATIONS */
+
+        /*FROM OFF*/
+        .noteONECorrectANIMATION{
+          animation: noteButtonCorrectOff 1s alternate;
+          animation-iteration-count: 2;
+          animation-delay: 0.75s;
+          -webkit-animation: noteButtonCorrectOff 1s alternate;
+          -webkit-animation-iteration-count: 2;
+          -webkit-animation-delay: 0.75s;
+        }
+        .noteTWOCorrectANIMATION{
+          animation: noteButtonCorrectOff 1s alternate;
+          animation-iteration-count: 2;
+          animation-delay: 0.5s;
+          -webkit-animation: noteButtonCorrectOff 1s alternate;
+          -webkit-animation-iteration-count: 2;
+          -webkit-animation-delay: 0.5s;
+        }
+        .noteTHREECorrectANIMATION{
+
+            animation: noteButtonCorrectOff 1s alternate;
+            animation-iteration-count: 2;
+            animation-delay: 0.25s;
+            -webkit-animation: noteButtonCorrectOff 1s alternate;
+            -webkit-animation-iteration-count: 2;
+            -webkit-animation-delay: 0.25s;
+          }
+        .noteFOURCorrectANIMATION{
+              animation: noteButtonCorrectOff 1s alternate;
+              animation-iteration-count: 2;
+              -webkit-animation: noteButtonCorrectOff 1s alternate;
+              -webkit-animation-iteration-count: 2;
+          }
+          /* FROM ON */
+          .noteONECorrectANIMATION{
+              animation: noteButtonCorrectOn 1s alternate;
+              animation-iteration-count: 2;
+              animation-delay: 0.75s;
+              -webkit-animation: noteButtonCorrectOn 1s alternate;
+              -webkit-animation-iteration-count: 2;
+              -webkit-animation-delay: 0.75s;
+          }
+          .noteTWOCorrectANIMATION{
+              animation: noteButtonCorrectOn 1s alternate;
+              animation-iteration-count: 2;
+              animation-delay: 0.5s;
+              -webkit-animation: noteButtonCorrectOn 1s alternate;
+              -webkit-animation-iteration-count: 2;
+              -webkit-animation-delay: 0.5s;
+          }
+          .noteTHREECorrectANIMATION{
+             -webkit-animation: noteButtonCorrectOn 1s alternate;
+             -webkit-animation-iteration-count: 2;
+             -webkit-animation-delay: 0.25s;
+             animation: noteButtonCorrectOn 1s alternate;
+             animation-iteration-count: 2;
+             animation-delay: 0.25s;
+            }
+          .noteFOURCorrectANIMATION{
+            animation: noteButtonCorrectOn 1s alternate;
+            animation-iteration-count: 2;
+            -webkit-animation: noteButtonCorrectOn 1s alternate;
+            -webkit-animation-iteration-count: 2;
+            }
+
+
+
+
+
+
+      .noteHover{
+          animation: hoverOn 2s forwards;
+       }
+      .noteHoverOff{
+          animation: hoverOff 2s forwards;
+      }
+      .noteKeyDown{
+        animation: noteDown 2s forwards;
+      }
+      main{
+        display: flex;
+        flex: 3;
+        flex-direction: column;
+        height: 100;
+      }
+      .fretBoard{
+          flex: 1;
+      }
+      header{
+        flex: 1;
+        height: 30em;
+      }
+      footer{
+        flex: 1 auto;
+        height: 30em;
+      }
+      /* USE THIS HOVER TECHNIQUE FOR THE ON OFF BUTTONS ASWELL!!! */
+      /* MENUBUTTONS------MENUBUTTONS------MENUBUTTONS */
+
+      .menuButton{
+      fill: white;
+      transition: all 1.5s ease;
+      }
+      .menuText:hover + .menuButton{
+        fill: yellow;
+        fill-opacity: 0.5;
+      }
+
+      .menuButton:hover{
+        fill: yellow;
+        fill-opacity: 0.5;
+        transition: all 1.5s ease;
+      }
+      .menuButton:click{
+        fill: yellow;
+        fill-opacity: 0.75;
+        transition: all 1.5s ease;
+      }
+      .menuButton:hover{
+        fill: yellow;
+        fill-opacity: 0.25;
+        transition: all 1.5s ease;
+      }
+      .menuButton:active{
+        fill: yellow;
+        fill-opacity: 1;
+        transition: all 1.5s ease;
+      }
+
+
+      .onOffCorrect{
+        opacity: 0;
+        animation: offOnFadeIn 1s forwards;
+        /* transition: all 1s ease; */
+      }
+
+      .onOffCorrect:hover{
+        fill-opacity: 0.5;
+        transition: all 1s ease;
+        /* color: white; */
+      }
+      .onOffInCorrect{
+        opacity: 0;
+      }
+
+      .activeOn{
+        /* opacity: 0; */
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /* MODAL STYLES TAKEN FROM HTML---DELETE AS AND WHEN*/
+      /* ---REMEMBER TO CHANGE MODALS DISPLAY TO BLOCK!---REMEMBER TO CHANGE MODALS DISPLAY TO BLOCK!---REMEMBER TO CHANGE MODALS DISPLAY TO BLOCK! */
+
+      .modal{
+        display: none;
+        margin: auto;
+        position: fixed;
+        z-index: 1;
+        padding-top: 0em;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.6);
+     }
+  
+  
+     .modalGrid{
+       display: flex;
+       flex-direction: column;
+       background-color: #fefefe;
+       margin: auto;
+       padding: 3em;
+       border: solid #888;
+       /* width: 100%; */
+  
+     }
+      .modalContent{
+        display: flex;
+        flex-direction: row;
+        font-size: 8em;
+        /* padding: 1em; */
+        flex: 3;
+  
+      }
+      .fBoard{
+        /* width: 95%;
+        margin: auto; */
+        /* height: 100%; */
+      }
+      .fBoardImg{
+  
+        width: 100%;
+        height: 100%;
+        /* flex 3; */
+      }
+  
+  
+      /* .modalContent:nth-child(2){
+          background-color: pink;
+  
+      } */
+  .modalGrid{
+    background-color: transparent;
+  }
+  .close {
+    color: #aaaaaa;
+    background-color: transparent;
+    margin-top: -0.45em;
+    font-size: 1.25em;
+    font-weight: bold;
+    height: 100%;
+    flex: 1;
+    float: right;
+  
+  }
+  .close:hover,
+  .close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .closeButton{
+    height: 1em;
+  }
+  
+  /*MENU BUTTONS----MENU BUTTONS----MENU BUTTONS----MENU BUTTONS----MENU BUTTONS----MENU BUTTONS----MENU BUTTONS----MENU BUTTONS*/
+  
+  .buttonStart{
+  
+  }
+  .buttonInfo{
+  
+  }
+  .buttonRestart{
+  
+  }
+  
+  /* .mmenuButton:hover{
+  
+  } */
+
+    /* THE ACTUAL WINDOW---THE ACTUAL WINDOW---THE ACTUAL WINDOW---THE ACTUAL WINDOW---THE ACTUAL WINDOW---THE ACTUAL WINDOW---THE ACTUAL WINDOW  */
+
+    
+    /*MENU BUTTONS----MENU BUTTONS----MENU BUTTONS----MENU BUTTONS----MENU BUTTONS----MENU BUTTONS----MENU BUTTONS----MENU BUTTONS*/
+    
+    .buttonStart{
+    
+    }
+    .buttonInfo{
+    
+    }
+    .buttonRestart{
+    
+    }

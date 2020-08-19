@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -86,30 +86,30 @@
 
   //EVENTS FOR LIGHTING UP THE BUTTONS USING JS
 
-              // let menuEvents = (function(a){
-              //   function hoverMenu(){
-              //     menuButton[1].classList.add("hoverMenu");
-              //   }
-              //   function clickMenu(){menuButton[1].classList.add("clickMenu")}
-              //     return{
-              //         hoverMenu: hoverMenu;
-              //     }
-              // })();
+              let menuEvents = (function(a){
+                function hoverMenu(){
+                  menuButton[1].classList.add("hoverMenu");
+                }
+                function clickMenu(){menuButton[1].classList.add("clickMenu")}
+                  return{
+                      hoverMenu: hoverMenu
+                  }
+              })();
 
-            //   for (var i = 0; i < buttonText.length; i++) {
-            //     menuText[i].onmouseover=function(){
-            //         buttonInfo();
-            //     }
-            //     menuText[i].onmousedown=function(){
-            //         buttonInfo();
-            //     }
-            //     menuText[i].onmouseleave=function(){
-            //         buttonInfo();
-            //     }
-            //     menuText[i].onmouseup=function(){
-            //       buttonInfo();
-            //   }
-            // }
+              for (var i = 0; i < buttonText.length; i++) {
+                menuText[i].onmouseover=function(){
+                    buttonInfo();
+                }
+                menuText[i].onmousedown=function(){
+                    buttonInfo();
+                }
+                menuText[i].onmouseleave=function(){
+                    buttonInfo();
+                }
+                menuText[i].onmouseup=function(){
+                  buttonInfo();
+              }
+            }
 
           </script>
 </header>

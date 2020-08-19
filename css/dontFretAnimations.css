@@ -1,0 +1,122 @@
+/* NOT SURE WHERE THESE ARE FROM */
+
+@keyframes messageIn{
+    0%{
+      opacity: 0;
+    }
+    5%{
+    display: block;
+  }
+    100%{
+      opacity: 1;
+    }
+}
+@keyframes messageOut{
+    0%{
+      opacity: 1;
+    }
+    5%{
+      display: block;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
+/* fret events to be triggered by js events */
+
+@keyframes noteDown{
+    0%{
+     fill-opacity: 0.35;
+    }
+    100%{
+      fill-opacity: 1;
+     }
+  }
+  @keyframes hoverOn{
+    0%{
+      fill-opacity: 0;
+     }
+    100%{
+      fill-opacity: 0.35;
+
+    }
+  }
+  @keyframes hoverOff{
+    0%{
+      fill-opacity: 0.35;
+   }
+    100%{
+     fill-opacity: 0;
+     fill: white;
+    }
+  }
+  @keyframes clicked{
+    0%{
+      fill-opacity: 0.1;
+   }
+    50%{
+     fill-opacity: 0.75;
+   }
+    50%{
+     fill-opacity: 0.5;
+
+    }
+  }
+
+  /* turns the notes that have been answered correctlly on and off via the score buttons */
+
+  @keyframes noteButtonCorrectOn {
+    0%{fill-opacity: 1;}
+    100%{fill-opacity: 0;}
+  }
+  @keyframes noteButtonCorrectOff{
+    0%{fill-opacity: 0;}
+    100%{fill-opacity: 1;}
+  }
+
+  /* menu buttons animations */
+
+
+  @keyframes offOnFadeIn {
+    0% {opacity: 0}
+    100%{opacity: 0.85}
+  }
+  @keyframes offOnFadeOut {
+    0% {opacity: 0.85}
+    100%{opacity: 0}
+  }
+  @keyframes offOnHov {
+    0% {opacity: 1}
+    50%{opacity: 0}
+    100%{opacity: 1}
+  }
+
+  /* I think this is the score card buttons */
+
+  @keyframes onOffHoverOn{
+    0%{fill-opacity: 0}
+    100%{fill-opacity: 0.5}
+}
+@keyframes onOffHoverOff{
+    0%{fill-opacity: 0.5}
+    100%{fill-opacity: 0}
+}
+@keyframes activeOnOffHoverOff{
+    0%{fill-opacity: 0.85}
+    50%{fill-opacity: 0.5}
+    100%{fill-opacity: 0.85}
+}
+@keyframes activeOnOffHoverOn {
+  0%{fill-opacity: 0.5}
+  100%{fill-opacity: 0.5}
+}
+@keyframes inactiveOnOffHoverOff{
+    0%{fill-opacity: 0.85}
+    100%{fill-opacity: 0}
+}
+@keyframes onOffClick{
+  0%{fill-opacity: 0.5}
+  50%{fill-opacity: 0.75}
+  100%{fill-opacity: 0.5}
+}
