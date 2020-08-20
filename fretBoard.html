@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -1043,6 +1043,9 @@ let noteObjects=(function(){
 //   array[i]
 // }
 //THIS INVOLVES FAAAAAAAAR TO MUCH TYPING!!!
+
+     
+
     return {
             a: new fret(notelabels[0], noteNames[0], noteColors[0], noteLetters[0]),
             aSharp: new fret(notelabels[1], noteNames[1], noteColors[1], noteLetters[1]),
@@ -1056,6 +1059,7 @@ let noteObjects=(function(){
             fSharp: new fret(notelabels[9], noteNames[9], noteColors[9], noteLetters[9]),
             g: new fret(notelabels[10], noteNames[10], noteColors[10], noteLetters[10]),
             gSharp: new fret(notelabels[11], noteNames[11], noteColors[11], noteLetters[11]),
+            
             a2: new fret(notelabels[0], noteNames[0], noteColors[0], noteLetters[12]),
             aSharp2: new fret(notelabels[1], noteNames[1], noteColors[1], noteLetters[13]),
             b2: new fret(notelabels[2], noteNames[2], noteColors[2], noteLetters[14]),
@@ -1328,7 +1332,8 @@ let strings = document.querySelectorAll(".string");
 //EVENT BUILDERS FOR ON OFF BUTTONS--------//EVENT BUILDERS FOR ON OFF BUTTONS--------//EVENT BUILDERS FOR ON OFF BUTTONS--------//EVENT BUILDERS FOR ON OFF BUTTONS--------//EVENT BUILDERS FOR ON OFF BUTTONS--------
 
 let onOffButtonGroup = document.querySelectorAll(".onOffBtns");
-let onOffButtons = onOffButtonGroup[0].children[0].children;
+let onOffButtons = onOffButtonGroup[0].children[0].children; 
+let onOffBtns = Array.prototype.slice.call( onOffButtons );
 
 let noteButtons=["empty", noteButtonObjects.a, noteButtonObjects.aSharp, noteButtonObjects.b, noteButtonObjects.c, noteButtonObjects.cSharp, noteButtonObjects.d, noteButtonObjects.dSharp, noteButtonObjects.e, noteButtonObjects.f, noteButtonObjects.fSharp, noteButtonObjects.g, noteButtonObjects.gSharp];
 
