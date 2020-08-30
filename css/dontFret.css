@@ -214,11 +214,26 @@
       .noteKeyDown{
         animation: noteDown 2s forwards;
       }
+
       main{
         display: flex;
         flex: 3;
         flex-direction: column;
         height: 100;
+        touch-action: none;
+      }
+      /* .fret:first-child{
+        
+        fill-opacity: 0;
+      } */
+      /* .fret:hover{
+        animation: hoverOn 1s;
+      } */
+      .fret{
+        touch-action: all;
+      }
+      .fretNote{
+        pointer-events: none;
       }
       .fretBoard{
           flex: 1;
