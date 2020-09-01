@@ -50,71 +50,7 @@
       </audio>
     
     
-    <script type="text/javascript">
-          let buttonInfo =  document.querySelector(".buttonInfo");
-                  let openInfo = document.querySelector(".buttonInfo");
-                  let start = document.querySelector(".buttonStart");
-                  let restart = document.querySelector(".buttonRestart");
-                  let menuText = document.querySelectorAll(".menuText");
-                  let menuButton = document.querySelectorAll(".menuButton");
-                  let  x = document.querySelector(".ukuleleAudio");
-    
-    //THIS OPENS THE MODAL WINDOW BACK UP- do this with CSS instead!!!
-    
-      let menuFunctions = (function(){
-    
-          menuButton[0].onclick = function(){
-              open(playAudio);
-            }
-            menuText[0].onclick = function(){
-              open(playAudio);
-            }
-            function open(callback){
-              modal.style.display = "block";
-              modal.style.transition = "all 2s";
-              callback();
-          }
-        // let closeIt = document.querySelector(".close");
-        // closeIt.onclick=function(){
-        //   alert("working?");
-        // }
-        function playAudio(){
-            x.play();
-          }
-          function pauseAudio() {
-            x.pause();
-          }
-    })();
-    
-    
-      //EVENTS FOR LIGHTING UP THE BUTTONS USING JS
-    
-                  // let menuEvents = (function(a){
-                  //   function hoverMenu(){
-                  //     menuButton[1].classList.add("hoverMenu");
-                  //   }
-                  //   function clickMenu(){menuButton[1].classList.add("clickMenu")}
-                  //     return{
-                  //         hoverMenu: hoverMenu;
-                  //     }
-                  // })();
-    
-                //   for (var i = 0; i < buttonText.length; i++) {
-                //     menuText[i].onmouseover=function(){
-                //         buttonInfo();
-                //     }
-                //     menuText[i].onmousedown=function(){
-                //         buttonInfo();
-                //     }
-                //     menuText[i].onmouseleave=function(){
-                //         buttonInfo();
-                //     }
-                //     menuText[i].onmouseup=function(){
-                //       buttonInfo();
-                //   }
-                // }
-    
-              </script>
+
     </header>
     
     <figure class="fretBoard">
@@ -600,17 +536,7 @@
       <!-- MODAL-WINDOW-----MODAL-WINDOW-----MODAL-WINDOW-----MODAL-WINDOW-----MODAL-WINDOW-----MODAL-WINDOW-----MODAL-WINDOW-----MODAL-WINDOW-----MODAL-WINDOW -->
     
       <!-- ---REMEMBER TO CHANGE MODALS DISPLAY TO BLOCK!---REMEMBER TO CHANGE MODALS DISPLAY TO BLOCK!---REMEMBER TO CHANGE MODALS DISPLAY TO BLOCK! -->
-      <style media="screen">
-
-    
-
-    
-    
-    
-    
-    </style>
-    
-      <section id="myModal" class="modal">
+    <section id="myModal" class="modal">
         <section class="modalGrid" >
           <aside class="modalContent">
             <svg xmlns="http://www.w3.org/2000/svg" width="1360.5" height="252" viewBox="0 0 359.96564 66.675005">
