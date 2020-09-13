@@ -29,18 +29,35 @@
     0%{
      fill-opacity: 0.35;
     }
-    100%{
+    50%{
       fill-opacity: 1;
+    }
+    100%{
+      fill-opacity: 0.5;
      }
   }
+ @keyframes activeNoteDown{
+  0%{
+    fill-opacity: 0.35;
+   }
+   50%{
+     fill-opacity: 1;
+   }
+   100%{
+     fill-opacity: 0.5;
+    }
+ }
   @keyframes hoverOn{
     0%{
       fill-opacity: 0;
      }
     100%{
       fill-opacity: 0.35;
-
     }
+  }
+  @keyframes activeHoverOn{
+    0%{fill-opacity: 0.85}
+    100%{fill-opacity: 0.55}
   }
   @keyframes hoverOff{
     0%{
@@ -50,6 +67,10 @@
      fill-opacity: 0;
      fill: white;
     }
+  }
+  @keyframes activeHoverOff{
+    0%{fill-opacity: 0.5;}
+    100%{fill-opacity: 0.85}
   }
   @keyframes touchOver{
     0%{
@@ -62,23 +83,64 @@
       fill-opacity: 0;
     }
   }
-  @keyframes clicked{
+  @keyframes activeTouchOver{
     0%{
-      fill-opacity: 0.1;
-   }
+      fill-opacity: 0.85;
+    }
     50%{
-     fill-opacity: 0.75;
-   }
-    50%{
-     fill-opacity: 0.5;
-
+      fill-opacity: 0.5;
+    }
+    100%{
+      fill-opacity: 0.85;
     }
   }
+
+  @keyframes activeLetterHoverOn{
+    0%{
+      fill-opacity: 1;
+    }
+    75%{
+      fill-opacity: 1;
+    }
+  100%{
+      fill-opacity: 0.25;
+    }
+  }
+  @keyframes activeLetterHoverOff{
+    0%{
+      fill-opacity: 0.25;
+    }
+    75%{
+      fill-opacity: 1;
+    }
+    100%{
+      fill-opacity: 1;
+    }
+  }
+  @keyframes activeLetterClickOn{
+    0%{
+      fill-opacity: 0.85;
+    }
+    75%{
+      fill-opacity: 0.25;
+    }
+    100%{
+      fill-opacity: 0.85;
+    }
+  }
+
+
+
+
+  /* .correct{
+    fill-opacity: 0.75;
+  } */
 
   /* turns the notes that have been answered correctlly on and off via the score buttons */
 
   @keyframes noteButtonCorrectOn {
-    0%{fill-opacity: 1;}
+    0%{fill-opacity: 1;
+    }
     100%{fill-opacity: 0;}
   }
   @keyframes noteButtonCorrectOff{
@@ -107,21 +169,15 @@
 
   @keyframes onOffHoverOn{
     0%{fill-opacity: 0}
-    100%{fill-opacity: 0.5}
+    100%{fill-opacity: 0.95}
 }
 @keyframes onOffHoverOff{
     0%{fill-opacity: 0.5}
     100%{fill-opacity: 0}
 }
-@keyframes activeOnOffHoverOff{
-    0%{fill-opacity: 0.85}
-    50%{fill-opacity: 0.5}
-    100%{fill-opacity: 0.85}
-}
-@keyframes activeOnOffHoverOn {
-  0%{fill-opacity: 0.5}
-  100%{fill-opacity: 0.5}
-}
+
+
+
 @keyframes inactiveOnOffHoverOff{
     0%{fill-opacity: 0.85}
     100%{fill-opacity: 0}

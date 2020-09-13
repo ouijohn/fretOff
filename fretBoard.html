@@ -792,7 +792,6 @@ class button {
         else if (a.onOff == false) {
           b.classList.add("noteButton");
           c.classList.add("noteButton");
-
         }
         if (c.classList.contains("onOffButtons")){
             alert("na?");
@@ -913,6 +912,7 @@ class button {
         //
         // }
 
+        
         checkAnswer(a, b, c){
           if(c.noteName == activeNote){
             fretScore.correct();
@@ -955,8 +955,7 @@ class button {
             let message = document.querySelector(".message");
 
             function initialAsk(a){
-
-              message.innerHTML=" gz " +  "all the " + a + "'s' please";
+                message.innerHTML=" gz " +  "all the " + a + "'s' please";
               }
               function wellDoneFret(a, b){
                   if (a < 3){

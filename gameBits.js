@@ -1,6 +1,8 @@
+//CREATE GAME, START TRAVERSY, READ ECONOMICS CHAPTER * 3
+
 class GameBits{
     constructor(randomNote, fretcounter, rightWrong, scoreCounter, bubbleMsg, notes){
-        this.question =this.randomGen();
+        this.question = this.randomGen();
         this.fretcounter = fretcounter;
         this.notes = notes;
         this.rightWrong = rightWrong;
@@ -8,23 +10,55 @@ class GameBits{
         this.bubbleMsg = bubbleMsg;
         
     }
-    
+    //CREATE ORDER AMOGST THE GAME METHODS (THEN TIDY THEM UP AS MUCH AS POSSIBLE)
+    //SORT ANIMATIONS FOR RIGHT/ WRONG
+    //SCORE COUNTER SCORE COUNTER SCORE COUNTER
+    //SORT ANIMATIONS ETC FOR END/ COMPLETION
+    //SORT BUTTONS FOR TURNING CORRECT ANSW ON AND OFF
+
+    //TRY AND BUILD SOME TEXT INTO BOLD!
     randomGen(){
-        let rndmNoteNumber = Math.floor(Math.random() * (notes('#').length));
-        let scoreArray = notes('#');
+        let rndmNoteNumber = Math.floor(Math.random() * (notes('Sharp').length));
+        let scoreArray = notes('Sharp');
         // console.log(scoreArray[rndmNoteNumber]);
         return(scoreArray[rndmNoteNumber]);
     }
-    takeSelected(a){
-        this.compare(a.getAttribute('id'));
+    // takeSelected(a){
+    //     let guess = this.compare(a.getAttribute('id'));
+    //     return(guess);
+    // }
+    initQuestionMessage(){
+        let quest = this.randomGen();
+        this.bubbleMsg.innerHTML=`gz all the ${this.question}'s please`
+        this.question = quest;
     }
-    compare(answer){
+    compare(){
+        // console.log(this.takeSelected.guess) 
+        let chosenFret = event.target.parentElement;
+        let answer = chosenFret.getAttribute('id');
         console.log(this.question);
-        console.log(answer);
-        if(answer === this.question){
-            // alert('hurray')
+       
+        if(answer === this.question && ! chosenFret.classList.contains('correct')){
+            chosenFret.classList.add('correct');
+            chosenFret.style.setProperty('--fretOpacity', '0.85');
+            // chosenFret.style.fillOpacity='1';
+            
+
+            this.scoreCounter --;
+            chosenFret.style.animation='';
+            this.bubbleMsg.innerHTML=`nice one! ${this.scoreCounter} more ${this.question}'s please`
+
+            setTimeout(()=>{
+
+            }, 1000)
+
         }else{
-            // alert('boooo');
+            console.log(this.bubbleMsg.innerHTML);   
+            this.bubbleMsg.innerHTML= `nope! I'm looking for ${this.question}' s`; 
+            setTimeout(()=>{
+                this.bubbleMsg.innerHTML=`gz all the ${this.question}'s please`
+            }, 2000)      
+           
         }
         
     }
@@ -39,5 +73,5 @@ class GameBits{
     // }
 
 }
-const ukulele = new GameBits('uke' ,'uke','uke','uke','uke','uke');
-ukulele.randomGen();
+const ukulele = new GameBits('uke' ,'uke','uke','4', messageBubble,'uke');
+// ukulele.questionMessage();
