@@ -11,6 +11,12 @@
     *{
         font-family:'Amatic SC', cursive;
       }
+      tspan{
+        pointer-events: none;
+      }
+      text{
+        pointer-events: none;
+      }
       body{
         margin: 0em;
         width: 100%;

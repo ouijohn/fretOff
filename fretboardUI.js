@@ -36,7 +36,6 @@ class FretBoard{
         let chosenFret = event.target.parentElement;
         let fretFill = event.target;
         let chosenFretNote = event.target.parentElement.children[1].firstElementChild;
-        console.log(chosenFretNote);
 
    
     //these react to events set in the notify loop with an event listener atached to each fret
@@ -81,7 +80,9 @@ class FretBoard{
             let activeNote = chosenFret.getAttribute('data-fret-sound');
             this.soundOn(activeNote);
             // ukulele.takeSelected(event.target.parentElement);
-            ukulele.compare(element);
+            // ukulele.compare(element);
+            ukulele.score(element);
+            
         }
     //the touch event is set just bellow the notify loop
         if(event.type === 'touchmove'){
@@ -117,7 +118,6 @@ class FretBoard{
             let activeNote = elem.parentElement.getAttribute('data-fret-sound');
             this.touchtivity.push(activeNote);
 
-            console.log(elem.parentElement.children[1].firstChild);
         }
     }
 
