@@ -138,12 +138,45 @@
 
   /* turns the notes that have been answered correctlly on and off via the score buttons */
 
-  @keyframes noteButtonCorrectOn {
+  
+  @keyframes buttonOff{
+    0%{
+      fill-opacity: 0.85;
+    }
+    25%{
+      fill-opacity: 1;
+    }
+    100%{
+      fill-opacity: 0;}
+    }
+  @keyframes letterOff{
+    0%{
+      fill-opacity: 1;
+    }
+    75%{
+      fill-opacity: 0;
+    }
+    100%{
+      fill-opacity: 0;
+    }
+  }
+
+  @keyframes buttonOn{
     0%{fill-opacity: 1;
     }
     100%{fill-opacity: 0;}
   }
-  @keyframes noteButtonCorrectOff{
+  @keyframes letterOn{
+    0%{fill-opacity: 0;}
+    100%{fill-opacity: 1;}
+  }
+
+  @keyframes buttonCorrectOn{
+    0%{fill-opacity: 0;
+    }
+    100%{fill-opacity: 1;}
+  }
+  @keyframes letterCorrectButtonOn{
     0%{fill-opacity: 0;}
     100%{fill-opacity: 1;}
   }
@@ -151,10 +184,93 @@
   /* menu buttons animations */
 
 
-  @keyframes offOnFadeIn {
+  @keyframes offOnFadeIn{
     0% {opacity: 0}
     100%{opacity: 0.85}
   }
+
+  /* ------------------------------------------------- */
+
+  @keyframes buttonStart{
+    0%{fill-opacity: 0}
+    100%{fill-opacity: 0}
+  }
+  
+  @keyframes getOn{
+    0%{fill-opacity: 0}
+    50%{fill-opacity: 1}
+    100%{fill-opacity: 0.85}
+  }
+
+  @keyframes getOff{
+    0%{fill-opacity: 0.85}
+    50%{fill-opacity: 1}
+    100%{fill-opacity: 0}
+  }
+  @keyframes overInActive{
+    0%{fill-opacity: 0}
+    50%{fill-opacity: 0.85}
+    100%{fill-opacity: 0.45}
+  }
+
+  @keyframes offInActive{
+    0%{fill-opacity: 0.45}
+    100%{fill-opacity: 0} 
+  }
+  @keyframes overActive{
+    0%{fill-opacity: 0.85}
+    50%{fill-opacity: 1}
+    100%{fill-opacity: 0.95}
+  }
+  @keyframes offActive{
+    0%{fill-opacity: 0.95}
+    100%{fill-opacity: 0.85}
+  }
+:root{
+  --animate: buttonStart;
+}
+ .buttonBehaviour{
+    animation: var(--animate) 1s forwards;
+ }
+  .onOffButtons{
+    fill-opacity: 0;
+  }
+  .getOn{
+    animation: getOn 1s forwards;
+    /* opacity: 0.85; */
+  }
+  .getOff{
+    animation: getOff 1s forwards;
+    /* opacity: 0; */
+  }
+  .mouseOVERinActive{
+    animation: overInActive 1s forwards;
+
+  }
+  .mouseOFFinActive{
+    animation: offInActive 1s forwards;
+  }
+  .mouseOVERActive{
+    animation: offInActive 1s forwards;
+  }
+  .mouseOFFActive{
+
+  }
+  
+
+  .clickActive{
+
+  }
+  .clickInactive{
+
+  }
+  .TouchOVERactive{
+
+  }
+  .TouchOVERinActive{
+
+  }
+  
   @keyframes offOnFadeOut {
     0% {opacity: 0.85}
     100%{opacity: 0}

@@ -5,6 +5,7 @@ const frets = document.querySelectorAll('.fret');
 const fretNotes = document.querySelectorAll('.fretNoteLetter')
 const modal = document.querySelector(".modal");
 const close = document.querySelector(".close");
+const onOff = document.querySelector('footer');
 const onOffButtonGroup = document.querySelectorAll(".onOffBtns");
 const onOffButtons = onOffButtonGroup[0].children[0].children;
 const onOffBtns = Array.prototype.slice.call( onOffButtons );
@@ -12,7 +13,7 @@ const onOffBtns = Array.prototype.slice.call( onOffButtons );
 const ukuleleStrings = ['g', 'c', 'e', 'a'];
 
 
-//turning the notes into an expression allows us to change the suffix on the sharp notes
+// turning the notes into an expression allows us to change the suffix on the sharp notes
 const notes = function(shrp){
     return [`a`, `a${shrp}`, `b`, `c`, `c${shrp}`, `d`, `d${shrp}`, `e`, `f`, `f${shrp}`, `g`, `g${shrp}`, `a`, `a${shrp}`, `b`, `c`, `c${shrp}`, `d`, `d${shrp}`, `e`, `f`, `f${shrp}`, `g`, `g${shrp}`];
 }
@@ -33,6 +34,7 @@ class FretBoard{
     }
     //here is where we react to the events relating to the frets color (and trigger the sounds)
     fretColor(element){
+        event.stopPropagation();
         let chosenFret = event.target.parentElement;
         let fretFill = event.target;
         let chosenFretNote = event.target.parentElement.children[1].firstElementChild;
@@ -40,6 +42,8 @@ class FretBoard{
    
     //these react to events set in the notify loop with an event listener atached to each fret
         if(event.type === 'mouseover'){
+            event.stopPropagation();
+
             if(chosenFret.classList.contains('correct')){
                 fretFill.style.animation='activeHoverOn 1s forwards'
                 chosenFretNote.style.animation='activeLetterHoverOn 1s forwards';
@@ -47,6 +51,9 @@ class FretBoard{
                     chosenFretNote.style.animation='';
                 }, 500)
             } 
+            if(chosenFret.classList.contains('onOn')){
+                fretFill.style.animation='activeHoverOn 1s forwards'
+            }
             else{
                 fretFill.style.animation='hoverOn 1s forwards';
             }
@@ -55,13 +62,19 @@ class FretBoard{
         }
 
         if(event.type === 'mouseleave'){
-            if(chosenFret.classList.contains('correct')){
+            if(chosenFret.classList.contains('correct') || chosenFret.classList.contains('onOn')){
                 fretFill.style.animation='activeHoverOff 1s forwards'
                 chosenFretNote.style.animation='activeLetterHoverOn 1s forwards';
                 setTimeout(()=>{
                     chosenFretNote.style.animation='';
                 }, 500)
-            }else{
+
+            }
+            // if(chosenFret.classList.contains('onOn')){
+            //     fretFill.style.animation='activeHoverOff 1s forwards'
+            // }
+            
+            else{
                 fretFill.style.animation='hoverOff 1s forwards';
             }
         }
@@ -82,7 +95,6 @@ class FretBoard{
             // ukulele.takeSelected(event.target.parentElement);
             // ukulele.compare(element);
             ukulele.score(element);
-            
         }
     //the touch event is set just bellow the notify loop
         if(event.type === 'touchmove'){
@@ -113,8 +125,6 @@ class FretBoard{
                 }, 600)
             }
             
-
-
             let activeNote = elem.parentElement.getAttribute('data-fret-sound');
             this.touchtivity.push(activeNote);
 
@@ -217,9 +227,14 @@ class FretBoard{
     //attach a listener to the whole page then trigger an event to each finger drag
         theWholeThing.addEventListener('touchmove', (ev)=>{
             this.fretColor(event.target);
-
         });
     } 
+ //this will make the animation begaviour much simpler!   
+    fretBehaviour(a){
+        this.behave={
+
+        }
+    }
 //triggers all the building etc
     fretify(stringNote, startFret, startNote){
     //CREATE AND DISPATCH CUSTOM EVENTS- both the values have to be reduced by 1 to take the index to 0!

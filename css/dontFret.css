@@ -243,7 +243,9 @@
       .fret{
         touch-action: all;
         fill-opacity: var(--fretOpacity);
-        
+      }
+      .onOffButtons{
+        fill-opacity: 0;
       }
       .fretNote{
         pointer-events: none;

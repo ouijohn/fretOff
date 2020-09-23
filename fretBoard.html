@@ -803,6 +803,7 @@ class button {
             b.classList.remove("noteButton");
             b.classList.remove("noteHoverOff");
             if (a.classList.contains("onOffButtons")){
+              console.log("fingers crossed");
             }
         if (a.onOff===true) {
 
@@ -927,7 +928,8 @@ class button {
             if (a.onOff===true) {
               a.classList.remove("noteButton");
               b.classList.remove("noteButton");
-   
+              //console.log(b);
+              //console.log(a);
               fretScore.correct();
             }
             else if (a.onOff != true){
@@ -1013,6 +1015,7 @@ let rndomNote = function(){
         let rndmNoteNumber = Math.floor(Math.random() * noteScore.length);
         let scoreArray = noteScore;
         let rndmNote = (scoreArray[rndmNoteNumber]);
+        console.log(noteScore.length);
         function popNote(){
           var popThis = rndmNoteNumber;
           var popped = scoreArray.splice(popThis, 1);
@@ -1180,6 +1183,7 @@ let strings = document.querySelectorAll(".string");
 
 //this calls the on off function- changing the opacity aswell as removing the class hiding the button, then after a timeout triggers the callback hiding the m again
               function celebrationAnimatiOn(callback){
+                console.log(a);
                 let celebration = document.querySelectorAll(a);
                 for (var i = 0; i < celebration.length; i++) {
 
@@ -1252,6 +1256,7 @@ let strings = document.querySelectorAll(".string");
               let newNote = rndomNote();
               return newNote
           })();
+            console.log(activeNote);
           }
           //console.log(activeNote);
           function correct(){
@@ -1264,6 +1269,7 @@ let strings = document.querySelectorAll(".string");
                 function correctWTHCallback(cllback){
                 bubbleMessage.congratsNote(activeNote);
                 pushButtonsOnOff.turnOnOffOnButton(activeNote);
+                console.log(this);
                 cllback();
                 }
               correctWTHCallback(correctCallback);
@@ -1273,6 +1279,7 @@ let strings = document.querySelectorAll(".string");
           }
 
           function inCorrect(){
+               console.log(activeNote);
                bubbleMessage.tryAgain(activeNoteScore, activeNote);
           }
 

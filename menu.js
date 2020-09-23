@@ -58,9 +58,9 @@ class Fret{
     //variables i and len MIGHT need to be this'd or maybe just be paramatered in the method!?
         
 
-        for (this.I = C; this.I < 12 + C; this.I++) {
-            this.fretArray.push(this.frets[CStringStart ++]);
-        }
+    //onOffButtons.forEach((element)=>{element.addEventListener('click', ()=>{console.log(element)})})
+    
+      
         // console.log(this.fretArray);
         
         // this.fretArray.forEach(element => {console.log(element)});
