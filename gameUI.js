@@ -21,12 +21,14 @@ class GameUI{
             element.children[0].style.fill=this.colors[index - 1];
             element.children[0].classList.add('onOffButtons');
             element.children[0].classList.add('buttonBehaviour');
+            element.children[1].classList.add('letterBehaviour');
 
-        
+        //ANIMATE THE LETTERS THEN APPLY THE SYSTEM TO THE FRETS!!!
             element.addEventListener('click', ()=>{
                 ukulele.rightOrWrong(this.onOffButtons());
                 //this takes the button/ target and dictates how it behaves
                 this.buttonBehaviour(event.target.parentElement).push();
+                
                 if(event.target.parentElement.classList.contains('onButtonOn')){
                     event.target.parentElement.classList.remove('onButtonOn');
                 }else{
@@ -34,8 +36,8 @@ class GameUI{
                 }
             });
             //I am not sure why but we have to target the parent element to get the element???
-            element.addEventListener('mouseover', ()=>{
-                this.buttonBehaviour(event.target.parentElement).hoverOn()
+            element.addEventListener('mouseenter', ()=>{
+                this.buttonBehaviour(event.target).hoverOn()
             });
             element.addEventListener('mouseleave', ()=>{
                 this.buttonBehaviour(event.target).hoverOff()
@@ -56,35 +58,35 @@ class GameUI{
         event.stopPropagation();
         let button = a;
         let backGround = a.firstElementChild;
+        // let backGround = a.children[0];
+        let letters = a.children[1];
+        console.log(letters);
+
         let root = document.documentElement;
         this.behave={
             push: ()=>{
-                //backGround.classList.add('getOff'); (can still go back to add remove class!)
+                letters.style.setProperty('--animateLetter', 'letterClick')
+
                 if(button.classList.contains('onButtonOn')){
-                    backGround.style.setProperty('--animate', 'getOn');
+                    backGround.style.setProperty('--animate', 'clickActive');
                 }else{
-                    backGround.style.setProperty('--animate', 'getOff');
+                    backGround.style.setProperty('--animate', 'clickInactive');
                 }
             },
             hoverOn: ()=>{
-                // backGround.classList.add('mouseOVERinActive')
-                // backGround.classList.remove('mouseOFFinActive')
-                // backGround.classList.remove('onOffButtons');
-                // backGround.style.setProperty('--animate', 'overInActive');
+                letters.style.setProperty('--animateLetter', 'letterOver')
+
                 if(button.classList.contains('onButtonOn')){
                     backGround.style.setProperty('--animate', 'overActive');
                 }else{
                     backGround.style.setProperty('--animate', 'overInActive');
                 }
-
+                console.log(letters);
             },
             hoverOff: ()=>{
-                // let backGround = a.firstElementChild;
-                // backGround.classList.remove('mouseOVERinActive')
-                // backGround.classList.add('mouseOFFinActive')
-                // backGround.style.setProperty('--animate', 'offInActive');
-                
-                if(button.classList.contains('onButtonOn')){
+                letters.style.setProperty('--animateLetter', 'letterOff')
+
+               if(button.classList.contains('onButtonOn')){
                     backGround.style.setProperty('--animate', 'offActive');
                 }else{
                     backGround.style.setProperty('--animate', 'offInActive');
