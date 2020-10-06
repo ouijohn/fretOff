@@ -6,14 +6,14 @@ class GameUI{
     }
     completed(a){
         // let butt = `#${a}`
+        // let completeButton = document.querySelectorAll(`#${a}`)[4].firstElementChild;
         let completeButton = document.querySelectorAll(`#${a}`)[4];
         completeButton.classList.add('complete');
-        this.buttonBehaviour(completeButton).getOn(a);
+        completeButton.classList.add('buttonOn');
+        ukuleleBoard.buttonBehaviour(completeButton).getOn(a);
     }
     buttonify(){
 
-        console.log(onOffBtns);
-        
         onOffBtns.forEach((element, index)=> {
             element.classList.remove
             element.classList.add('pushIt')
@@ -22,98 +22,58 @@ class GameUI{
             element.children[0].classList.add('onOffButtons');
             element.children[0].classList.add('buttonBehaviour');
             element.children[1].classList.add('letterBehaviour');
+            element.children[1].classList.add('letterStart');
 
         //ANIMATE THE LETTERS THEN APPLY THE SYSTEM TO THE FRETS!!!
+        //(maybe remove the listener onclick then add it again after animations finished)
             element.addEventListener('click', ()=>{
-                ukulele.rightOrWrong(this.onOffButtons());
                 //this takes the button/ target and dictates how it behaves
-                this.buttonBehaviour(event.target.parentElement).push();
-                
-                if(event.target.parentElement.classList.contains('onButtonOn')){
-                    event.target.parentElement.classList.remove('onButtonOn');
-                }else{
-                    event.target.parentElement.classList.add('onButtonOn')
-                }
+                ukuleleBoard.buttonBehaviour(element).push();
+                //this dictates what it does- ie on/ off
+                this.onOffButtons(element);
             });
             //I am not sure why but we have to target the parent element to get the element???
             element.addEventListener('mouseenter', ()=>{
-                this.buttonBehaviour(event.target).hoverOn()
+                ukuleleBoard.buttonBehaviour(element).hoverOn()
+                ukuleleBoard.buttonBehaviour(element).btnHvrON()
             });
             element.addEventListener('mouseleave', ()=>{
-                this.buttonBehaviour(event.target).hoverOff()
+                ukuleleBoard.buttonBehaviour(element).hoverOff()
+                ukuleleBoard.buttonBehaviour(element).btnHvrOFF()
             });
         });
     }
         
-
-    onOffButtons(){
-        let pushed = event.target;
-        if(pushed.parentElement.classList.contains('pushIt') && pushed.parentElement.classList.contains('complete')){
-            return event.target.parentElement.getAttribute('id');
-        }
+    getFretID(a){
+        let fretID = a.getAttribute('id');
+        return fretID;
     }
-    //a seperate method for the behaviour of the buttons helps seperate things and make it more controlable
-    //(do this for the fretboard too!)
-    buttonBehaviour(a){
-        event.stopPropagation();
-        let button = a;
-        let backGround = a.firstElementChild;
-        // let backGround = a.children[0];
-        let letters = a.children[1];
-        console.log(letters);
-
-        let root = document.documentElement;
-        this.behave={
-            push: ()=>{
-                letters.style.setProperty('--animateLetter', 'letterClick')
-
-                if(button.classList.contains('onButtonOn')){
-                    backGround.style.setProperty('--animate', 'clickActive');
-                }else{
-                    backGround.style.setProperty('--animate', 'clickInactive');
-                }
-            },
-            hoverOn: ()=>{
-                letters.style.setProperty('--animateLetter', 'letterOver')
-
-                if(button.classList.contains('onButtonOn')){
-                    backGround.style.setProperty('--animate', 'overActive');
-                }else{
-                    backGround.style.setProperty('--animate', 'overInActive');
-                }
-                console.log(letters);
-            },
-            hoverOff: ()=>{
-                letters.style.setProperty('--animateLetter', 'letterOff')
-
-               if(button.classList.contains('onButtonOn')){
-                    backGround.style.setProperty('--animate', 'offActive');
-                }else{
-                    backGround.style.setProperty('--animate', 'offInActive');
-                }
-
-                
-            },
-            getOn: ()=>{
-                // let backGround = a.firstElementChild;
-                // event.stopPropagation();
-                // backGround.classList.remove('onOffButtons');
-                // backGround.classList.add('getOn');
-                backGround.style.setProperty('--animate', 'getOn');
-
-            },
-            getOff: ()=>{
-                // let backGround = a.firstElementChild;
-                // event.stopPropagation();
-                // backGround.classList.remove('onOffButtons');
-                // backGround.classList.add('getOn');
-                backGround.style.setProperty('--animate', 'getOff');
-
+    onOffButtons(a){
+        let targetFret = a;
+        let pushedBGround = event.target;
+        let pushedLetter = a.children[1];
+        // if(pushed.parentElement.classList.contains('pushIt') && pushed.parentElement.classList.contains('complete')){
+        //     return event.target.parentElement.getAttribute('id');
+        // }
+        // console.log(targetFret);
+        // console.log(pushedBGround);
+        // console.log(pushedLetter);
+        if(targetFret.classList.contains('complete')){
+            let targetNote = this.getFretID(targetFret);
+            if(event.target.parentElement.classList.contains('buttonOn')){
+                console.log(a)
+                event.target.parentElement.classList.remove('buttonOn');
+                ukulele.rightOrWrong(targetNote);
+                // ukuleleBoard.buttonBehaviour(a).clickOn();
+            }else{
+                console.log('off');
+                event.target.parentElement.classList.add('buttonOn');
+                ukulele.rightOrWrong(targetNote);
+                // ukuleleBoard.buttonBehaviour(a).clickOff();
             }
-            
         }
-        return this.behave;
     }
+
 
 }
 

@@ -242,10 +242,16 @@
       }
       .fret{
         touch-action: all;
-        fill-opacity: var(--fretOpacity);
+
+      }
+      .letterBehaviour{
+        font-size: 1.15em;
       }
       .onOffButtons{
         fill-opacity: 0;
+      }
+      .pushIt{
+        fill-opacity: 1;
       }
       .fretNote{
         pointer-events: none;
