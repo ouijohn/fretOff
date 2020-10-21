@@ -1,5 +1,7 @@
 const theWholeThing = document.querySelector('main');
-const messageBubble = document.querySelector(".message");
+const 
+
+Bubble = document.querySelector(".message");
 const strings = document.querySelectorAll(".string");
 const frets = document.querySelectorAll('.fret');
 const fretNotes = document.querySelectorAll('.fretNoteLetter')
@@ -32,6 +34,8 @@ class FretBoard{
         this.strtFrt;
         this.touchtivity = touchtivity;
         this.fretsForRndm = Array.from(frets);
+        this.randoms;
+        this.animators;
     }
     //here is where we react to the events relating to the frets color (and trigger the sounds)
 
@@ -87,7 +91,7 @@ class FretBoard{
         
        
     //loop targets each fret and adds the corosponding notes, colors and events
-            for(i = 0; i < 12; i++){
+        for(i = 0; i < 12; i++){
     //incriments the note and fret numbers in oder for us to target each fret on the string
             startFret++;
             startNote++; 
@@ -110,7 +114,7 @@ class FretBoard{
     //setting frets id with the relevant note gives us access to it's title quickly and easilly  
             fretBackGround.classList.add('buttonBehaviour');
             fretNoteText.classList.add('letterBehaviour');
-            fretNoteText.style.setProperty('--animateLetter', 'letterStart');
+            // fretNoteText.style.setProperty('--animateLetter', 'letterStart');
 
             targetFret.id=(this.notes('Sharp')[startNote]);
     //takes the relevant note and it's key and sets the sound
@@ -155,7 +159,22 @@ class FretBoard{
             }
         })
     }; 
+    animators(){
+        this.animators={
+            animateFrets:()=>{
+            
+            },
+            animateButtone:()=>{
 
+            },
+            animateLetters:()=>{
+
+            }, 
+            animationRemoved:()=>{
+
+            }
+        }
+    };
     buttonBehaviour(a){
         //button and onOff button both target the outer buttons. 
         //not sure why but the onOff buttons feed a different 
@@ -166,11 +185,11 @@ class FretBoard{
         // let backGround = a.children[0];
         let letters = button.children[1].firstElementChild;
         let btnLetters = onOffBtn.children[1];
-
         let touchFret = a.parentElement;
         let touchBack = a;
         let touchLetter = touchFret.children[1];
         let root = document.documentElement;
+        //methods asign animations to targeted css variables
         this.behave={
             //MAKE MOUSE DOWN THE EVENT TYPE!!!!!
             push:()=>{
@@ -190,7 +209,6 @@ class FretBoard{
                 }else{
                    if(eventType==='mouseup'){
                     backGround.style.setProperty('--animate', 'clickInactive');
-
                     }
                     if(eventType === 'touchend'){
                         backGround.style.setProperty('--animate', 'touchDownINActive');
@@ -204,7 +222,6 @@ class FretBoard{
                     backGround.style.setProperty('--animate', 'overActive');
                 }else{
                     backGround.style.setProperty('--animate', 'overInActive');
-                    
                 }
             },
             //the on off buttons MIGHT need their own methods--- instead of using the frets ones!
@@ -251,13 +268,21 @@ class FretBoard{
             //re-organises the fret array randomly and fills them in in that order
             randimation: ()=>{
                 backGround.style.setProperty('--animate', 'randimation');
+                setTimeout(()=>{
+                    backGround.style.setProperty('--animate', '');
+                }, 2550)
             },
             afterRandimation: ()=>{
                 backGround.style.setProperty('--animate', 'afterRandimation');
             },
-            lettersAfterRandimation: ()=>{
-                letters.style.setProperty('--animateLetter', 'lettersAfterRandimation')
+            letterRandimation: ()=>{
+                     onOffBtn.children[1].style.setProperty('--animateLetter', 'letterRandimation')
+                setTimeout(()=>{
+                    onOffBtn.children[1].style.setProperty('--animateLetter', '')
+                }, 2500)
             },
+
+            
             touchOver: ()=>{
                 if(! touchFret.classList.contains('buttonOn')){
                     touchBack.style.setProperty('--animate', 'touchOver');
@@ -282,35 +307,57 @@ class FretBoard{
         return this.behave;
     }
 
-    shuffle(array){
-        array.sort(() => Math.random() - 0.5);
+    shuffle(button){
+        button.sort(() => Math.random() - 0.5);
       }
-        
-      randimateukule=(a)=>{
-        
-           this.shuffle(this.fretsForRndm);
-           this.fretsForRndm.forEach((element, index, arr) => {
-                setTimeout(()=>{
-                    this.buttonBehaviour(element).randimation();
-                }, 25 * index)
-            });
-            setTimeout(()=>{
-                this.fretsForRndm.forEach((element, index)=>{
-                    this.buttonBehaviour(element).afterRandimation();
-                })
-                let i = 1;
-                onOffBtns.forEach((element, index)=>{
-                    setTimeout(()=>{
-                        this.buttonBehaviour(element).afterRandimation();
-                        i++;
-                        this.buttonBehaviour(element).lettersAfterRandimation();
-                    }, 25 * index)
-                })
-            }, 35 * this.fretsForRndm.length)  
-        
-        }
-    
+    //turn this into an object with two methods--> frets and onoff buttons
 
+        //turning this into an object means we can use it for  start, completed and reset
+        //we will set the animation as a variable so it can start at different opacities
+        randomate(a){
+            this.randoms ={
+                shuffle:(a)=>{
+                    a.sort(() => Math.random() - 0.5);
+                },
+                //shuffles an array built from the frets and animates them one after another--- via timeout
+                frets:()=>{
+                    this.shuffle(this.fretsForRndm);
+
+                    this.fretsForRndm.forEach((fret, index, arr)=>{
+                        setTimeout(()=>{
+                            this.buttonBehaviour(fret).randimation();
+                            // this.buttonBehaviour().letterRandimation();
+                        }, 12.5 * index)
+                    })
+
+                },
+                buttons:(a)=>{
+                    onOffBtns.forEach((button, index, arr)=>{
+                        setTimeout(()=>{
+                            this.buttonBehaviour(button).randimation();
+                            this.buttonBehaviour(button).letterRandimation();                           
+                        }, 12.5 * index)
+                    })
+
+                },
+                letters:(letter)=>{
+                    
+
+                },
+                fretOff:(a)=>{
+                    this.buttonBehaviour(button).letterRandimation(a);
+                }
+            }
+            return this.randoms;
+            
+        }
+    //DISPLAY CSS STYLE--- BLOCK ETC CANNOT BE ANIMATED
+        fretInit(){
+            ukuleleBoard.randomate().frets()
+        }
+        fretRenit(){
+
+        }
 
       
 
@@ -323,12 +370,14 @@ class FretBoard{
             this.notify(startFret, startNote - 1);
         })
        }
-}
+       
+    }
+
 
 const ukuleleBoard = new FretBoard(notes, noteColors, frets, fretNotes, 'sound', 'uke', 'uke', 'uke','uke', []);
 
-ukuleleBoard.randimateukule();
 ukuleleBoard.fretify(ukuleleStrings);
+ukuleleBoard.fretInit();
 
 
 
@@ -369,3 +418,28 @@ ukuleleBoard.fretify(ukuleleStrings);
 
 //     }, timeOut);
 // }
+
+// randimateukule=(a)=>{
+        
+//     this.shuffle(this.fretsForRndm);
+//     this.fretsForRndm.forEach((element, index, arr) => {
+//          setTimeout(()=>{
+//              this.buttonBehaviour(element).randimation();
+             
+//          }, 12.5 * index)
+//      });
+//      setTimeout(()=>{
+//          this.fretsForRndm.forEach((element, index)=>{
+//              this.buttonBehaviour(element).letterRandimation();
+//          })
+//          let i = 1;
+//          onOffBtns.forEach((element, index)=>{
+//              setTimeout(()=>{
+//                  // this.buttonBehaviour(element).randimation();
+//                  i++; 
+//                  this.buttonBehaviour(element).letterRandimation();
+//              }, 22.5 * index)
+//          })
+//      }, 20 * this.fretsForRndm.length)  
+ 
+//  }

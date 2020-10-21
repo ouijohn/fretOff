@@ -40,10 +40,14 @@
     100%{fill-opacity: 0}
   }
   @keyframes letterStart{
-    0%{fill-opacity: 0}
-    75%{fill-opacity: 0}  
-    0%{fill-opacity: 0}
+    0%{fill-opacity: 1}
+    100%{fill-opacity: 1}
   }
+  @keyframes modalBegin{
+    0%{display: block}
+    100%{display: block}
+  }
+
   
   @keyframes getOn{
     0%{fill-opacity: 0}
@@ -53,7 +57,7 @@
 
   @keyframes getOff{
     0%{fill-opacity: 0.85}
-    50%{fill-opacity: 1}
+    25%{fill-opacity: 1}
     100%{fill-opacity: 0}
   }
   @keyframes overInActive{
@@ -136,11 +140,24 @@
   }
   @keyframes afterRandimation{
     0%{fill-opacity: 0}
-    50%{fill-opacity: 0.5}
+    50%{fill-opacity: 0}
     100%{fill-opacity: 0}
   }
-  @keyframes lettersAfterRandimation{
+  @keyframes fretRandimation{
+
+  }
+  @keyframes buttonRandimation{
+
+  }
+  /* display is nto animimatable!!! */
+
+  @keyframes letterRandimation{
     0%{fill-opacity: 1}
+    50%{fill-opacity: 0}
+    100%{fill-opacity: 1}
+  }
+  @keyframes lettersOnAnimate{
+    0%{fill-opacity: 0}
     50%{fill-opacity: 0}
     100%{fill-opacity: 1}
   }
@@ -154,17 +171,58 @@
     50%{fill-opacity: 0.85}
     100%{fill-opacity: 0}
   }
+  @keyframes randomBubbleON{
+    0%{fill: white}
+    50%{fill: black}
+    100%{fill: black}
+  }
+  @keyframes randomBubbleOFF{
+    0%{fill: black}
+    50%{fill: white}
+    100%{fill: white}
+  }
+  @keyframes modalOn{
+    0%{
+      opacity: 0;
+    }
+
+    100%{
+      opacity: 1;
+    }
+  }
+  @keyframes modalOff{
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
 
 :root{
   --animate: buttonStart;
   --animateLetter: letterStart;
+  --animateBubble: bubbleLetterStart;
+  --animateModal: modalBegin;
 }
+  .message{
+    opacity: 0;
+  }
  .buttonBehaviour{
     animation: var(--animate) 1s forwards;
  }
  .letterBehaviour{
-   /* fill-opacity: 0; */
-    animation: var(--animateLetter) 1.5s forwards 0.25s;
+    animation: var(--animateLetter) 1s forwards 0.15s;
+  }
+  .bubbleLetter{
+    fill: white;
+    animation: var(--animateBubble) 2s forwards 0.15s;
+  }
+  .modal{
+    display: none;
+    opacity: 0;
+    animation: var(--animateModal) 1s forwards;
+
   }
   .pushIt{
     fill-opacity: 1;
@@ -172,4 +230,5 @@
   .fret{
     fill-opacity: 0;
   }
+
   

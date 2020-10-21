@@ -3,6 +3,14 @@ class GameUI{
     constructor(colors){
         this.colors = colors;
         this.onOffBtns = onOffBtns;
+        this.modal = modal;
+        this.infoButton;
+        this.closeButton;
+        this.restartButton;
+        this.startButton;
+        this.init;
+        this.menuButtons;
+        
     }
     completed(a){
         // let butt = `#${a}`
@@ -12,10 +20,29 @@ class GameUI{
         completeButton.classList.add('buttonOn');
         ukuleleBoard.buttonBehaviour(completeButton).getOn(a);
     }
+
     buttonify(){
+        this.restartButton = document.querySelector('.restartButton');
+        this.infoButton = document.querySelector('.infoButton');
+        this.startButton = document.querySelector('.startButton')
+        this.closeButton = document.querySelector('.close')
+        this.infoButton.addEventListener('click', ()=>{
+            this.menuButtons().modalOn(this.modal);
+        });
+        this.restartButton.addEventListener('click', ()=>{
+            this.menuButtons().restart();
+
+        });
+        this.startButton.addEventListener('click', ()=>{
+            this.menuButtons().restart();
+
+        });
+        this.closeButton.addEventListener('click', ()=>{
+            this.menuButtons().modalOff(this.modal);
+        });
 
         onOffBtns.forEach((element, index)=> {
-            element.classList.remove
+            // element.classList.remove
             element.classList.add('pushIt')
             element.setAttribute('id', notes('Sharp')[index - 1]);
             element.children[0].style.fill=this.colors[index - 1];
@@ -55,13 +82,9 @@ class GameUI{
         // if(pushed.parentElement.classList.contains('pushIt') && pushed.parentElement.classList.contains('complete')){
         //     return event.target.parentElement.getAttribute('id');
         // }
-        // console.log(targetFret);
-        // console.log(pushedBGround);
-        // console.log(pushedLetter);
         if(targetFret.classList.contains('complete')){
             let targetNote = this.getFretID(targetFret);
             if(event.target.parentElement.classList.contains('buttonOn')){
-                console.log(a)
                 event.target.parentElement.classList.remove('buttonOn');
                 ukulele.rightOrWrong(targetNote);
                 // ukuleleBoard.buttonBehaviour(a).clickOn();
@@ -72,11 +95,40 @@ class GameUI{
                 // ukuleleBoard.buttonBehaviour(a).clickOff();
             }
         }
+
+    }
+    menuButtons(a){
+        let infoButton={
+            modalOn:(a)=>{
+                let root = document.documentElement;
+                a.style.display='block';
+                a.style.setProperty('--animateModal', 'modalOn');
+            },
+            modalOff:(a)=>{
+                a.style.setProperty('--animateModal', 'modalOff')
+                setTimeout(()=>{
+                    a.style.display='none';
+                }, 2000)
+            },
+            restart:()=>{
+                ukuleleBoard.randomate().buttons();
+                ukuleleBoard.randomate().frets()
+
+                console.log('cunto');
+            }
+        }
+        return infoButton;
     }
 
+    init(){
+        setTimeout(()=>{
+            ukuleleBoard.randomate().buttons();
+        }, 1250)
+    }
 
 }
 
 
-const UkeGameBits = new GameUI(noteColors);
+const UkeGameBits = new GameUI(noteColors, document.querySelector('.module'));
 UkeGameBits.buttonify();
+UkeGameBits.init();
