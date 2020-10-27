@@ -393,15 +393,22 @@
   .closeButton{
     height: 1em;
   }
-  
+
+  circle{
+    z-index: 0;
+    height: 1em;
+    width: 1em;
+    fill: grey;
+  }
+  circle:hover{
+    fill-opacity: 0;
+  }
+  circle:active{
+    display: none;
+  }
+  .fret{
+    z-index: 50;
+  }
     /*MENU BUTTONS----MENU BUTTONS----MENU BUTTONS----MENU BUTTONS----MENU BUTTONS----MENU BUTTONS----MENU BUTTONS----MENU BUTTONS*/
     
-    .buttonStart{
-    
-    }
-    .buttonInfo{
-    
-    }
-    .buttonRestart{
-    
-    }
+   

@@ -1,162 +1,133 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1360.5" height="252.5" viewBox="0 0 359.96564 66.807295">
-  <g>
-    <path class="fretBack" fill="#dbdbdb" stroke="#000" stroke-width=".12692405" d="M72.558487 57.14965h284.78137V12.160114H72.558487z"/>
-    <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M84.067917 56.42058h24.318367V45.453657H84.067917z"/>
-    <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M84.067917 45.45363h24.318367V34.486707H84.067917z"/>
-    <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M84.067917 34.48671h24.318367V23.519787H84.067917z"/>
-    <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M108.82634 34.48671h24.318367V23.519787H108.82634z"/>
-    <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M133.72008 34.48671h24.318367V23.519787H133.72008z"/>
-    <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M158.47856 34.48668h24.318367V23.519757H158.47856z"/>
-    <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M183.37228 34.48668h24.318367V23.519757H183.37228z"/>
-    <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M208.13072 34.48668h24.318367V23.519757H208.13072z"/>
-    <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M233.02443 34.48668h24.318367V23.519757H233.02443z"/>
-    <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M257.78284 34.48665h24.318367V23.519727H257.78284z"/>
-    <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M282.67654 34.48665h24.318367V23.519727H282.67654z"/>
-    <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M307.43497 34.48665h24.318367V23.519727H307.43497z"/>
-    <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M332.3287 34.48665h24.318367V23.519727H332.3287z"/>
-    <g class="string">
-      <g class="fret">
-        <path fill="grey" stroke="#040404" stroke-width=".15430754" d="M84.067917 23.519798h24.318367V12.552875H84.067917z"/>
-        <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-64.166463 -213.478952)" word-spacing="0">
-          <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
-        </text>
-      </g>
-      <g class="fret">
-        <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M84.067917 23.519798h24.318367V12.552875H84.067917z"/>
-        <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-64.166463 -213.478952)" word-spacing="0">
-          <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
-        </text>
-      </g>
-      <g class="fret">
-        <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M84.067917 23.519798h24.318367V12.552875H84.067917z"/>
-        <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-64.166463 -213.478952)" word-spacing="0">
-          <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
-        </text>
-      </g>
-      <g class="fret">
-        <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M84.067917 23.519798h24.318367V12.552875H84.067917z"/>
-        <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-64.166463 -213.478952)" word-spacing="0">
-          <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
-        </text>
-      </g>
-      <g class="fret">
-        <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M84.067917 23.519798h24.318367V12.552875H84.067917z"/>
-        <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-64.166463 -213.478952)" word-spacing="0">
-          <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
-        </text>
-      </g>
-      <g class="fret">
-        <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M84.067917 23.519798h24.318367V12.552875H84.067917z"/>
-        <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-64.166463 -213.478952)" word-spacing="0">
-          <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
-        </text>
-      </g>
-      <g class="fret">
-        <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M84.067917 23.519798h24.318367V12.552875H84.067917z"/>
-        <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-64.166463 -213.478952)" word-spacing="0">
-          <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
-        </text>
-      </g>
-      <g class="fret">
-        <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M84.067917 23.519798h24.318367V12.552875H84.067917z"/>
-        <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-64.166463 -213.478952)" word-spacing="0">
-          <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
-        </text>
-      </g>
-      <g class="fret">
-        <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M84.067917 23.519798h24.318367V12.552875H84.067917z"/>
-        <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-64.166463 -213.478952)" word-spacing="0">
-          <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
-        </text>
-      </g>
-      <g class="fret">
-        <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M84.067917 23.519798h24.318367V12.552875H84.067917z"/>
-        <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-64.166463 -213.478952)" word-spacing="0">
-          <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
-        </text>
-      </g>
-      <g class="fret">
-        <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M84.067917 23.519798h24.318367V12.552875H84.067917z"/>
-        <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-64.166463 -213.478952)" word-spacing="0">
-          <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
-        </text>
-      </g>
-      <g class="fret">
-        <path fill="#fff" stroke="#040404" stroke-width=".15430754" d="M84.067917 23.519798h24.318367V12.552875H84.067917z"/>
-        <text class="fretNote" x="158.26093" y="236.05843" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-64.166463 -213.478952)" word-spacing="0">
-          <tspan class="fretNoteLetter" x="158.26093" y="236.05843" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
-        </text>
-      </g>
-    </g>
-    <g>
-      <path fill="#fff" stroke="#000" stroke-width=".345" d="M81.274906 34.25505V12.98773s-37.499103-.94215-47.819579-7.0891c-3.626975-2.16024-3.727856-1.80468-4.165871-1.84933H1.081886m80.19302 30.20575v21.26729s-37.499103.94213-47.819579 7.08909c-3.626975 2.16025-3.727856 1.80469-4.165871 1.84933H1.081886V4.0493"/>
-      <path fill="none" stroke="#000" stroke-width=".14772786" d="M32.32459 47.71868l40.145568 3.19947"/>
-      <g transform="matrix(.65225 0 0 .60152 -35.253866 104.83284)">
-        <g>
-          <ellipse cx="97.116264" cy="-93.236458" fill="#f2f2f2" stroke="#000" stroke-width=".28965709" rx="6.6437573" ry="6.796617"/>
-        </g>
-        <ellipse cx="96.972801" cy="-93.066902" fill="#fff" stroke="#04090c" stroke-width=".12713526" rx="2.9160545" ry="2.9831471"/>
-      </g>
-      <path fill="none" stroke="#000" stroke-width=".14037323" d="M9.5425989 44.37213l62.5673521-6.1221.33105-.45915"/>
-      <g transform="matrix(.65225 0 0 -.60152 -57.089292 -9.09971)">
-        <g>
-          <ellipse cx="97.116264" cy="-93.236458" fill="#f2f2f2" stroke="#000" stroke-width=".28965709" rx="6.6437573" ry="6.796617"/>
-        </g>
-        <ellipse cx="96.972801" cy="-93.066902" fill="#fff" stroke="#04090c" stroke-width=".12713526" rx="2.9160545" ry="2.9831471"/>
-      </g>
-      <path fill="none" stroke="#000" stroke-width=".1483742" d="M32.361643 20.85266l40.10521-3.19969"/>
-      <g transform="matrix(.65225 0 0 -.60152 -34.96235 -36.79079)">
-        <g>
-          <ellipse cx="97.116264" cy="-93.236458" fill="#f2f2f2" stroke="#000" stroke-width=".28965709" rx="6.6437573" ry="6.796617"/>
-        </g>
-        <ellipse cx="96.972801" cy="-93.066902" fill="#fff" stroke="#04090c" stroke-width=".12713526" rx="2.9160545" ry="2.9831471"/>
-      </g>
-      <path fill="none" stroke="#000" stroke-width=".14054473" d="M9.3982742 23.83378l62.7203168 6.12209.331859.45916"/>
-      <g transform="matrix(.65225 0 0 .60152 -56.797776 76.80516)">
-        <g>
-          <ellipse cx="97.116264" cy="-93.236458" fill="#f2f2f2" stroke="#000" stroke-width=".28965709" rx="6.6437573" ry="6.796617"/>
-        </g>
-        <ellipse cx="96.972801" cy="-93.066902" fill="#fff" stroke="#04090c" stroke-width=".12713526" rx="2.9160545" ry="2.9831471"/>
-      </g>
-      <path fill="#f2f2f2" stroke="#040404" stroke-width=".15608783" d="M64.895676 56.37654h6.172658V12.167517h-6.172658z" opacity=".83300003"/>
-      <text x="67.527496" y="250.68034" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(0 -230.1927)" word-spacing="0">
-        <tspan x="67.527496" y="250.68034" font-family="Amatic SC" font-size="7.76111078" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">1</tspan>
-      </text>
-      <text x="67.195534" y="261.18958" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(0 -230.1927)" word-spacing="0">
-        <tspan x="67.195534" y="261.18958" font-family="Amatic SC" font-size="7.76111078" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">2</tspan>
-      </text>
-      <text x="66.942116" y="271.98828" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(0 -230.1927)" word-spacing="0">
-        <tspan x="66.942116" y="271.98828" font-family="Amatic SC" font-size="7.76111078" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">3</tspan>
-      </text>
-      <text x="67.280418" y="282.66516" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(0 -230.1927)" word-spacing="0">
-        <tspan x="67.280418" y="282.66516" font-family="Amatic SC" font-size="7.76111078" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">4</tspan>
-      </text>
-      <g>
-        <g>
-          <path fill="#fff" stroke="#040404" stroke-width=".20177935" d="M71.906967 34.279502h10.947536V22.457366H71.906967z"/>
-          <text x="139.62405" y="235.01895" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-64.166463 -201.656808)" word-spacing="0">
-            <tspan x="139.62405" y="235.01895" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">e</tspan>
-          </text>
-        </g>
-        <g>
-          <path fill="#fff" stroke="#040404" stroke-width=".20177935" d="M71.906967 46.101646h10.947536V34.27951H71.906967z"/>
-          <text x="139.62405" y="235.01895" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-64.166463 -189.834664)" word-spacing="0">
-            <tspan x="139.62405" y="235.01895" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">c</tspan>
-          </text>
-        </g>
-        <g>
-          <path fill="#fff" stroke="#040404" stroke-width=".20177935" d="M71.906967 57.92379h10.947536V46.101654H71.906967z"/>
-          <text x="139.62405" y="235.01895" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-64.166463 -178.01252)" word-spacing="0">
-            <tspan x="139.62405" y="235.01895" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">g</tspan>
-          </text>
-        </g>
-        <g>
-          <path fill="#fff" stroke="#040404" stroke-width=".20177935" d="M71.906967 22.457358h10.947536V10.635222H71.906967z"/>
-          <text opacity="0" x="139.62405" y="235.01895" stroke-width=".26458332" font-family="sans-serif" font-size="10.58333302" font-weight="400" letter-spacing="0" style="line-height:1.25" transform="translate(-64.166463 -213.478952)" word-spacing="0">
-            <tspan x="139.62405" y="235.01895" font-family="Amatic SC" font-size="14.11111069" font-weight="700" style="-inkscape-font-specification:'Amatic SC Bold'">a</tspan>
-          </text>
-        </g>
-      </g>
-    </g>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1360.5px" height="252.5px" viewBox="0 0 1360.5 252.5" enable-background="new 0 0 1360.5 252.5" xml:space="preserve">
+<g>
+	<path fill="#DBDBDB" stroke="#000000" stroke-width="0.1269" d="M274.237,215.998h1076.338V45.959H274.237V215.998z"/>
+	<path fill="#FFFFFF" stroke="#040404" stroke-width="0.1543" d="M317.737,213.243h91.912v-41.45h-91.912V213.243z"/>
+	<path fill="#FFFFFF" stroke="#040404" stroke-width="0.1543" d="M317.737,171.793h91.912v-41.449h-91.912V171.793z"/>
+	<path fill="#FFFFFF" stroke="#040404" stroke-width="0.1543" d="M317.737,130.344h91.912v-41.45h-91.912V130.344z"/>
+	<path fill="#FFFFFF" stroke="#040404" stroke-width="0.1543" d="M411.313,130.344h91.911v-41.45h-91.911V130.344z"/>
+	<path fill="#FFFFFF" stroke="#040404" stroke-width="0.1543" d="M505.398,130.344h91.912v-41.45h-91.912V130.344z"/>
+	<path fill="#FFFFFF" stroke="#040404" stroke-width="0.1543" d="M598.974,130.344h91.912v-41.45h-91.912V130.344z"/>
+	<path fill="#FFFFFF" stroke="#040404" stroke-width="0.1543" d="M693.061,130.344h91.912v-41.45h-91.912V130.344z"/>
+	<path fill="#FFFFFF" stroke="#040404" stroke-width="0.1543" d="M786.636,130.344h91.912v-41.45h-91.912V130.344z"/>
+	<path fill="#FFFFFF" stroke="#040404" stroke-width="0.1543" d="M880.723,130.344h91.911v-41.45h-91.911V130.344z"/>
+	<path fill="#FFFFFF" stroke="#040404" stroke-width="0.1543" d="M974.297,130.344h91.912v-41.45h-91.912V130.344z"/>
+	<path fill="#FFFFFF" stroke="#040404" stroke-width="0.1543" d="M1068.384,130.344h91.912v-41.45h-91.912V130.344z"/>
+	<path fill="#FFFFFF" stroke="#040404" stroke-width="0.1543" d="M1161.959,130.344h91.912v-41.45h-91.912V130.344z"/>
+	<path fill="#FFFFFF" stroke="#040404" stroke-width="0.1543" d="M1256.046,130.344h91.911v-41.45h-91.911V130.344z"/>
+	<g>
+		<g>
+			<path fill="#808080" stroke="#040404" stroke-width="0.1543" d="M317.737,88.894h91.912v-41.45h-91.912V88.894z"/>
+			<text transform="matrix(1 0 0 1 355.6318 85.3398)" font-family="'Arial-BoldMT'" font-size="53.3333">a</text>
+		</g>
+		<g>
+			<path fill="#FFFFFF" stroke="#040404" stroke-width="0.1543" d="M317.737,88.894h91.912v-41.45h-91.912V88.894z"/>
+			<text transform="matrix(1 0 0 1 355.6318 85.3398)" font-family="'Arial-BoldMT'" font-size="53.3333">a</text>
+		</g>
+		<g>
+			<path fill="#FFFFFF" stroke="#040404" stroke-width="0.1543" d="M317.737,88.894h91.912v-41.45h-91.912V88.894z"/>
+			<text transform="matrix(1 0 0 1 355.6318 85.3398)" font-family="'Arial-BoldMT'" font-size="53.3333">a</text>
+		</g>
+		<g>
+			<path fill="#FFFFFF" stroke="#040404" stroke-width="0.1543" d="M317.737,88.894h91.912v-41.45h-91.912V88.894z"/>
+			<text transform="matrix(1 0 0 1 355.6318 85.3398)" font-family="'Arial-BoldMT'" font-size="53.3333">a</text>
+		</g>
+		<g>
+			<path fill="#FFFFFF" stroke="#040404" stroke-width="0.1543" d="M317.737,88.894h91.912v-41.45h-91.912V88.894z"/>
+			<text transform="matrix(1 0 0 1 355.6318 85.3398)" font-family="'Arial-BoldMT'" font-size="53.3333">a</text>
+		</g>
+		<g>
+			<path fill="#FFFFFF" stroke="#040404" stroke-width="0.1543" d="M317.737,88.894h91.912v-41.45h-91.912V88.894z"/>
+			<text transform="matrix(1 0 0 1 355.6318 85.3398)" font-family="'Arial-BoldMT'" font-size="53.3333">a</text>
+		</g>
+		<g>
+			<path fill="#FFFFFF" stroke="#040404" stroke-width="0.1543" d="M317.737,88.894h91.912v-41.45h-91.912V88.894z"/>
+			<text transform="matrix(1 0 0 1 355.6318 85.3398)" font-family="'Arial-BoldMT'" font-size="53.3333">a</text>
+		</g>
+		<g>
+			<path fill="#FFFFFF" stroke="#040404" stroke-width="0.1543" d="M317.737,88.894h91.912v-41.45h-91.912V88.894z"/>
+			<text transform="matrix(1 0 0 1 355.6318 85.3398)" font-family="'Arial-BoldMT'" font-size="53.3333">a</text>
+		</g>
+		<g>
+			<path fill="#FFFFFF" stroke="#040404" stroke-width="0.1543" d="M317.737,88.894h91.912v-41.45h-91.912V88.894z"/>
+			<text transform="matrix(1 0 0 1 355.6318 85.3398)" font-family="'Arial-BoldMT'" font-size="53.3333">a</text>
+		</g>
+		<g>
+			<path fill="#FFFFFF" stroke="#040404" stroke-width="0.1543" d="M317.737,88.894h91.912v-41.45h-91.912V88.894z"/>
+			<text transform="matrix(1 0 0 1 355.6318 85.3398)" font-family="'Arial-BoldMT'" font-size="53.3333">a</text>
+		</g>
+		<g>
+			<path fill="#FFFFFF" stroke="#040404" stroke-width="0.1543" d="M317.737,88.894h91.912v-41.45h-91.912V88.894z"/>
+			<text transform="matrix(1 0 0 1 355.6318 85.3398)" font-family="'Arial-BoldMT'" font-size="53.3333">a</text>
+		</g>
+		<g>
+			<path fill="#FFFFFF" stroke="#040404" stroke-width="0.1543" d="M317.737,88.894h91.912v-41.45h-91.912V88.894z"/>
+			<text transform="matrix(1 0 0 1 355.6318 85.3398)" font-family="'Arial-BoldMT'" font-size="53.3333">a</text>
+		</g>
+	</g>
+	<g>
+		<path fill="#FFFFFF" stroke="#000000" stroke-width="0.345" d="M307.181,129.468v-80.38c0,0-141.729-3.561-180.735-26.793
+			c-13.708-8.165-14.089-6.821-15.745-6.989H4.089 M307.181,129.468v80.38c0,0-141.729,3.562-180.735,26.794
+			c-13.708,8.165-14.089,6.821-15.745,6.989H4.089V15.305"/>
+		<path fill="none" stroke="#000000" stroke-width="0.1477" d="M122.172,180.354l151.731,12.093"/>
+		<g transform="matrix(.65225 0 0 .60152 -35.253866 104.83284)">
+			<g>
+				<ellipse fill="#F2F2F2" stroke="#000000" stroke-width="0.2897" cx="216.821" cy="132.026" rx="25.11" ry="25.689"/>
+			</g>
+			<ellipse fill="#FFFFFF" stroke="#04090C" stroke-width="0.1271" cx="216.279" cy="132.666" rx="11.022" ry="11.274"/>
+		</g>
+		<path fill="none" stroke="#000000" stroke-width="0.1404" d="M36.066,167.705l236.475-23.139l1.251-1.734"/>
+		<g transform="matrix(.65225 0 0 -.60152 -57.089292 -9.09971)">
+			<g>
+				<ellipse fill="#F2F2F2" stroke="#000000" stroke-width="0.2897" cx="123.771" cy="-310.342" rx="25.111" ry="-25.689"/>
+			</g>
+			<ellipse fill="#FFFFFF" stroke="#04090C" stroke-width="0.1271" cx="123.229" cy="-309.701" rx="11.021" ry="-11.275"/>
+		</g>
+		<path fill="none" stroke="#000000" stroke-width="0.1484" d="M122.312,78.813L273.891,66.72"/>
+		<g transform="matrix(.65225 0 0 -.60152 -34.96235 -36.79079)">
+			<g>
+				<ellipse fill="#F2F2F2" stroke="#000000" stroke-width="0.2897" cx="218.063" cy="-182.385" rx="25.111" ry="-25.688"/>
+			</g>
+			<ellipse fill="#FFFFFF" stroke="#04090C" stroke-width="0.1271" cx="217.521" cy="-181.745" rx="11.021" ry="-11.275"/>
+		</g>
+		<path fill="none" stroke="#000000" stroke-width="0.1405" d="M35.521,90.081l237.053,23.139l1.254,1.735"/>
+		<g transform="matrix(.65225 0 0 .60152 -56.797776 76.80516)">
+			<g>
+				<ellipse fill="#F2F2F2" stroke="#000000" stroke-width="0.2897" cx="125.013" cy="2.514" rx="25.11" ry="25.688"/>
+			</g>
+			<ellipse fill="#FFFFFF" stroke="#04090C" stroke-width="0.1271" cx="124.471" cy="3.155" rx="11.022" ry="11.275"/>
+		</g>
+		<path opacity="0.833" fill="#F2F2F2" stroke="#040404" stroke-width="0.1561" enable-background="new    " d="M245.275,213.076
+			h23.33V45.987h-23.33V213.076z"/>
+		<text transform="matrix(1 0 0 1 255.2216 77.4336)" font-family="'Arial-BoldMT'" font-size="29.3333">1</text>
+		<text transform="matrix(1 0 0 1 253.9677 117.1543)" font-family="'Arial-BoldMT'" font-size="29.3333">2</text>
+		<text transform="matrix(1 0 0 1 253.0087 157.9668)" font-family="'Arial-BoldMT'" font-size="29.3333">3</text>
+		<text transform="matrix(1 0 0 1 254.288 198.3203)" font-family="'Arial-BoldMT'" font-size="29.3333">4</text>
+		<g>
+			<g>
+				<path fill="#FFFFFF" stroke="#040404" stroke-width="0.2018" d="M271.774,129.561h41.377V84.878h-41.377V129.561z"/>
+				<text transform="matrix(1 0 0 1 285.1943 126.0938)" font-family="'Arial-BoldMT'" font-size="53.3333">e</text>
+			</g>
+			<g>
+				<path fill="#FFFFFF" stroke="#040404" stroke-width="0.2018" d="M271.774,174.242h41.377v-44.682h-41.377V174.242z"/>
+				<text transform="matrix(1 0 0 1 285.1943 170.7754)" font-family="'Arial-BoldMT'" font-size="53.3333">c</text>
+			</g>
+			<g>
+				<path fill="#FFFFFF" stroke="#040404" stroke-width="0.2018" d="M271.774,218.924h41.377v-44.682h-41.377V218.924z"/>
+				<text transform="matrix(1 0 0 1 285.1943 215.4571)" font-family="'Arial-BoldMT'" font-size="53.3333">g</text>
+			</g>
+			<g>
+				<path fill="#FFFFFF" stroke="#040404" stroke-width="0.2018" d="M271.774,84.878h41.377V40.196h-41.377V84.878z"/>
+				<text transform="matrix(1 0 0 1 285.1943 81.4102)" font-family="'Arial-BoldMT'" font-size="53.3333">a</text>
+			</g>
+		</g>
+	</g>
+</g>
+<circle fill="#868686" cx="739.017" cy="110.076" r="7.559"/>
+<circle fill="#868686" cx="927.009" cy="110.619" r="7.559"/>
+<circle fill="#868686" cx="8.45" cy="8.617" r="7.559"/>
+<circle fill="#868686" cx="1302.001" cy="110.619" r="7.559"/>
 </svg>

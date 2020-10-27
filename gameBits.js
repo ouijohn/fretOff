@@ -44,37 +44,11 @@
         filterThis(letters){
             return  letters !== 0;
         }
-        initQuestionMessage(){
-            let quest = this.randomGen();
-            this.question = quest;
-            this.bubbleMsg.innerHTML=this.bubble().welcome;
-            this.bubbleMessageBuilder();
-            //-------------//
-            setTimeout(()=>{
-                this.bubbleMessageBuilder();
-                setTimeout(()=>{
-                    this.bubbleMsg.innerHTML=this.bubble(this.question, this.scoreCounter).question;
-                }, 2000)
-                setTimeout(()=>{
-                    this.bubbleMessageBuilder();
-                }, 2000)
-            }, 2200)
-            
+        initBubbleMessage(){
+            ukulele.bubbleMessageBuilder().bubbleInit()
+            ukulele.bubbleMessageBuilder().bubbleNewQuest();
         }
-        //
-        bubbleThingy(question, score, message){
-            setTimeout(()=>{
-                this.bubbleMessageBuilder();
-                setTimeout(()=>{
-                    this.bubbleMsg.innerHTML=this.bubble(this.question, this.scoreCounter).question;
-                    this.bubbleMsg.innerHTML=this.bubble(this.question, this.scoreCounter).question;
-                }, 2000)
-                setTimeout(()=>{
-                    this.bubbleMessageBuilder();
-                }, 2000)
-            }, 2200)
-        }
-        
+
         randomGen(a){
             let noteArray = this.buildArray(a);
             console.log(noteArray.length);
@@ -86,19 +60,12 @@
        bubbleAnimation(a){
         let root = document.documentElement;
             let babble={
-                
+    //REMOVE ANIMATION AFTERAFTERAFTER EACH TIME!?            
                 bubbleON:()=>{
                     a.style.setProperty('--animateBubble', 'randomBubbleON')
-                    
                 },
                 bubbleOFF:()=>{
-                    a.style.setProperty('--animateBubble', '')
-
-                    setTimeout(()=>{
-                        a.style.setProperty('--animateBubble', 'randomBubbleOFF')
-
-                    }, 500)
-
+                    a.style.setProperty('--animateBubble', 'randomBubbleOFF')
                 },
             }
             return babble;
@@ -111,69 +78,145 @@
             let root = document.documentElement;
             let bubble = document.querySelector(".message");
             let bubbleUp = bubble.innerHTML;
-            // bubble.getElementsByClassName.display='none';
             let bubbleSplit = bubbleUp.split("")
             let bassage = []
             //take each letter and 'thurns it into' a tspan object---targetable with css
             bubbleSplit.forEach((letter)=>{bassage.push(`<tspan class='bubbleLetter'>${letter}</tspan>`)})
-            
+            //this dictates the spaces between off and on letters          
             setTimeout(()=>{
                 //inserts our new tspaned letters
+                // this.bubbleMsg.
                 this.bubbleMsg.innerHTML= bassage.join("");
-                this.bubbleMsg.style.opacity='1';
-                this.bubbleOnOff();
-            }, 250)
+
+                
+            }, 200)
         }
+
         bubbleOnOff(a){
             //take the letters and create a shuffled array with them
             let way = a;
             let letters = document.querySelectorAll('.bubbleLetter');
             let randomLetters = Array.from(letters);
             ukuleleBoard.shuffle(randomLetters);
-            randomLetters.forEach((letter, index)=>{
-                setTimeout(()=>{
-                    if(this.bubbleMsg.classList.contains('ON')){
-
-                        this.bubbleAnimation(letter).bubbleOFF();
-                    }
-                    else{
-                        this.bubbleAnimation(letter).bubbleON();
-                    }
-                }, 12.5 * index)
-            })
+            let timeoutTime = (randomLetters.length * 20) + 300;
+            let bubbleIT = {
+                bubbleON:()=>{
+                   
+                    randomLetters.forEach((letter, index)=>{
+                        setTimeout(()=>{
+                            this.bubbleAnimation(letter).bubbleON();
+                        }, 20 * index)
+                    })
+                },
+                bubbleOFF:()=>{
+                  randomLetters.forEach((letter, index)=>{
+                        setTimeout(()=>{
+                            this.bubbleAnimation(letter).bubbleOFF();
+                        }, 20 * index)
+                    })
+                }
+            }
+                return bubbleIT
         }
         
         bubble(a, b){
-            
-            this.messages={
+           let messages={
                 welcome: `welcome to fret off ukulele'r`,
                 question: `can I get ${b} ${a}'s please`,
                 congratsFret: `nice one! ${b} more ${a}'s please`,
                 copyFret: `HEARD IT!`,
                 wrongFret: `nice try but NOPE not quite!`,
-                congratsNote: `congrats! you got all the ${a}'s`,
+                congratsNote: `yaas! you got all the ${a}'s`,
                 heardIt: `nice try but NOPE! Heard it!`,
                 completed: 'you have mastered the fretboard!'
             };
-            return this.messages;
+            return messages;
         }
-        bubbleMessageBuilder(){
-            if(this.bubbleMsg.classList.contains('ON')){
-                this.bubbleOnOff();
-                setTimeout(()=>{
-                    this.bubbleMsg.classList.remove('ON')
-                    setTimeout(()=>{
-                        this.bubbleMsg.style.opacity='0';
-                        this.bubbleMsg.innerHTML='';
-                    }, 100)
-                }, 500)
-            }else{
-                console.log('why')
-                this.splitMessage();
-                setTimeout(()=>{
-                    this.bubbleMsg.classList.add('ON');
-                }, 1000)
+
+        bubbleMessageBuilder(a){
+            
+            let bubbleTrans={
+                    
+                    bubbleInit(){
+                        console.log(ukulele.bubble().a)
+                        ukulele.bubbleMsg.innerHTML=ukulele.bubble(this.question, this.scoreCounter).welcome;
+                        
+                        ukulele.splitMessage()
+                        setTimeout(() => {
+                            ukulele.bubbleMsg.style.opacity='1';
+                            ukulele.bubbleOnOff().bubbleON();
+                        }, 250);
+                    },
+
+
+                    bubbleMsg(a){
+                        setTimeout(() => {
+                            ukulele.bubbleOnOff().bubbleOFF();
+                        }, 50);
+                        setTimeout(() => {
+                            setTimeout(() => {
+                                ukulele.bubbleMsg.style.opacity=0;
+                            }, 250);
+                        }, 500);
+                        setTimeout(()=>{
+                            ukulele.bubbleMsg.innerHTML=a;
+                            ukulele.splitMessage();
+                            setTimeout(() => {
+                                ukulele.bubbleMsg.style.opacity='1';
+                            }, 250);
+                        }, 775);
+                        setTimeout(() => {
+                            ukulele.bubbleOnOff().bubbleON();
+                        }, 1000);
+                    },
+                        //find new question and ask
+                    bubbleQuest:(a)=>{
+                        setTimeout(() => {
+                            this.bubbleOnOff().bubbleOFF();
+                        }, 4000);
+                        setTimeout(() => {
+                            
+                            setTimeout(() => {
+                                this.bubbleMsg.style.opacity=0;
+                            }, 50);
+                        }, 4500);
+                        
+                        setTimeout(() => {
+                            this.bubbleMsg.innerHTML=this.bubble(this.question, this.scoreCounter).question; 
+                            // this.bubbleMsg.innerHTML=a; 
+                            this.splitMessage();
+                            setTimeout(() => {
+                                this.bubbleMsg.style.opacity='1';
+                                this.bubbleOnOff().bubbleON();
+                            }, 250);
+                        }, 4550);
+                    },
+                        //asks question with remaining note/ question
+                   
+                    bubbleNewQuest:(a)=>{
+                        setTimeout(() =>{
+                            this.bubbleOnOff().bubbleOFF();
+                        }, 4000);
+                        setTimeout(() => {
+                            let quest = this.randomGen();
+                            this.question = quest;
+                            setTimeout(() => {
+                                this.bubbleMsg.style.opacity=0;
+                            }, 50);
+                        }, 4500);
+                        
+                        setTimeout(() => {
+                            this.bubbleMsg.innerHTML=this.bubble(this.question, '4').question; 
+                            // this.bubbleMsg.innerHTML=a; 
+                            this.splitMessage();
+                            setTimeout(() => {
+                                this.bubbleMsg.style.opacity='1';
+                                this.bubbleOnOff().bubbleON();
+                            }, 250);
+                        }, 4550);
+                }
             }
+            return bubbleTrans
         }
        
 
@@ -195,8 +238,8 @@
                     setTimeout(()=>{
                             ukuleleBoard.buttonBehaviour(element.firstElementChild).getOff();
                         setTimeout(()=>{
-                            element.classList.remove('correct');
                             active = [];
+                            element.classList.remove('correct');
                             element.classList.remove('buttonOn');
                         }, 2001);
                     }, i * 250); 
@@ -210,9 +253,9 @@
                         setTimeout(()=>{
                             //correct checks whether the user has aleady used this fret as an answer
                             element.classList.add('correct');
-                            active = '';
                             element.classList.add('buttonOn');
-                        }, 2001)
+                            active = '';
+                        }, 250)
                     }, i * 250)
                 })
              }
@@ -223,62 +266,74 @@
             //if total < 12 else randomCelebration!-- tray random apear and disapearing letters too!
           if(this.totalScore < 12){
             this.noteCompare(a);
+            console.log('compare')
 
             if(this.fretcounter === 0 && a.parentElement.classList.contains('correct')){
-                this.noteComplete(a);
-                this.totalScore++;
+                
+                    this.totalScore++;
+                    this.noteComplete(a);
+                    console.log('comeplete')
+            }else{
+
             }
           }  
-
-            if(this.totalScore === 12){
-
-                ukuleleBoard.randomate().frets()
-                setTimeout(()=>{
-                    ukuleleBoard.randomate().buttons()
-                }, 1250);
-                this.bubbleMsg.innerHTML=this.bubble().completed;
-            }
         }
         noteCompare(a){
-                
+        
             let chosenFret = event.target.parentElement;
             let answer = chosenFret.getAttribute('id');
 
             if(answer === this.question){
                 if(chosenFret.classList.contains('correct')){
-                    this.bubbleMsg.innerHTML=this.bubble().heardIt;
-                    setTimeout(()=>{
-                        this.bubbleMsg.innerHTML=this.bubble(this.question, this.fretcounter).question;
-                    },2500)
+                    ukulele.bubbleMessageBuilder().bubbleMsg(this.bubble(this.question, this.scoreCounter).heardIt);
+                    ukulele.bubbleMessageBuilder().bubbleQuest();
+                }
+                if(chosenFret.classList.contains('correct')){
+                    ukulele.bubbleMessageBuilder().bubbleMsg(this.bubble(this.question, this.scoreCounter).heardIt);
+                    ukulele.bubbleMessageBuilder().bubbleQuest();
                 }
                 else{
+                    this.fretcounter --;
+                    this.scoreCounter --;
                     chosenFret.classList.add('correct');
                     chosenFret.classList.add('buttonOn');
-                    this.bubbleMsg.innerHTML=this.bubble(this.question, this.fretcounter).congratsFret;
-                    this.fretcounter --;
+                    setTimeout(() => {
+                        ukulele.bubbleMessageBuilder().bubbleMsg(this.bubble(this.question, this.scoreCounter).congratsFret);
+                    }, 100);
                 }
             }else{
-                this.bubbleMsg.innerHTML=this.bubble().wrongFret; 
-                setTimeout(()=>{
-                    this.bubbleMsg.innerHTML=this.bubble(this.question, this.fretcounter).question;
-                }, 2000)      
-            }
+                    ukulele.bubbleMessageBuilder().bubbleMsg(this.bubble(this.question, this.scoreCounter).wrongFret);
+                    ukulele.bubbleMessageBuilder().bubbleQuest();
+                    console.log('wrong')
+                }
         }
     
         noteComplete(){
-            this.bubbleMsg.innerHTML=this.bubble(this.question, this.fretcounter).congratsNote;
-            this.fretcounter = 4;
-            this.rightOrWrong(this.question);
-            UkeGameBits.completed(this.question);
             setTimeout(()=>{
-                let quest = this.randomGen(this.question);
-                this.question = quest;
-                this.bubbleMsg.innerHTML=this.bubble(this.question, this.scoreCounter).question;
-            }, 250)
+                if(this.totalScore === 12){
+                    this.bubbleMsg.classList.add('complete');
+                    ukulele.bubbleMessageBuilder().bubbleMsg(this.bubble().completed);
+                    UkeGameBits.completeIt();
+                }else{
+                    this.rightOrWrong(this.question);
+                    console.log(this);
+                    setTimeout(() => {
+                        this.fretcounter = 4;
+                        this.scorecounter = 4;
+                        UkeGameBits.completed(this.question);
+                        ukulele.bubbleMessageBuilder().bubbleMsg(this.bubble(this.question, this.scoreCounter).congratsNote);  
+                       setTimeout(() => {
+                        ukulele.bubbleMessageBuilder().bubbleNewQuest(this.question, '4');
+                        console.log(this.question);
+                       }, 200);
+
+                        
+                    }, 500);
+                }
+            }, 250) 
         }
-        
-    
     }
     const ukulele = new GameBits('uke' , 4 ,'uke','4', 'messageBubble','uke', 0);
     ukulele.buildArray();
-    ukulele.initQuestionMessage();
+
+

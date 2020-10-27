@@ -40,8 +40,8 @@
     100%{fill-opacity: 0}
   }
   @keyframes letterStart{
-    0%{fill-opacity: 1}
-    100%{fill-opacity: 1}
+    0%{fill-opacity: 0}
+    100%{fill-opacity: 0}
   }
   @keyframes modalBegin{
     0%{display: block}
@@ -138,6 +138,11 @@
     50%{fill-opacity: 0.5}
     100%{fill-opacity: 0}
   }
+  @keyframes completeRandimation{
+    0%{fill-opacity: 0.25}
+    50%{fill-opacity: 0.75}
+    100%{fill-opacity: 0.25}
+  }
   @keyframes afterRandimation{
     0%{fill-opacity: 0}
     50%{fill-opacity: 0}
@@ -172,14 +177,30 @@
     100%{fill-opacity: 0}
   }
   @keyframes randomBubbleON{
-    0%{fill: white}
-    50%{fill: black}
-    100%{fill: black}
+    0%{
+        opacity: 0;
+       /* fill: white; */
+       /* stroke: white */
+    }
+    
+    100%{
+         opacity: 1;
+         /* fill: black; */
+         /* stroke: black */
+        }
   }
   @keyframes randomBubbleOFF{
-    0%{fill: black}
-    50%{fill: white}
-    100%{fill: white}
+    100%{
+       opacity: 1;
+      /* fill: black; */
+      /* stroke: black */
+     }
+   
+    100%{
+      opacity: 0;
+      /* fill: white; */
+      /* stroke: white */
+   }
   }
   @keyframes modalOn{
     0%{
@@ -198,6 +219,15 @@
       opacity: 0;
     }
   }
+ @keyframes buttonLetterStart{
+  0%{fill-opacity: 1}
+  100%{fill-opacity: 1}
+ }
+  @keyframes buttonLetterRandimation{
+    0%{fill-opacity: 1}
+    50%{fill-opacity: 0.25}
+    100%{fill-opacity: 1}
+  }
 
 :root{
   --animate: buttonStart;
@@ -212,17 +242,22 @@
     animation: var(--animate) 1s forwards;
  }
  .letterBehaviour{
+    fill-opacity: 0;
     animation: var(--animateLetter) 1s forwards 0.15s;
   }
   .bubbleLetter{
-    fill: white;
+    opacity: 0;
+    /* fill: white;
+    stroke: white; */
     animation: var(--animateBubble) 2s forwards 0.15s;
+  }
+  .bubbleMess{
+    opacity: 0;
   }
   .modal{
     display: none;
     opacity: 0;
     animation: var(--animateModal) 1s forwards;
-
   }
   .pushIt{
     fill-opacity: 1;
@@ -230,5 +265,10 @@
   .fret{
     fill-opacity: 0;
   }
+  .buttonText{
+    fill-opacity: 1;
+    animation: var(--buttonLetterAnimate) 1s forwards 0.5s;
+  }
+ 
 
   

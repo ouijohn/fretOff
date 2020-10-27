@@ -19,6 +19,7 @@ class GameUI{
         completeButton.classList.add('complete');
         completeButton.classList.add('buttonOn');
         ukuleleBoard.buttonBehaviour(completeButton).getOn(a);
+        console.log(completeButton)
     }
 
     buttonify(){
@@ -59,6 +60,7 @@ class GameUI{
                 //this dictates what it does- ie on/ off
                 this.onOffButtons(element);
             });
+            
             //I am not sure why but we have to target the parent element to get the element???
             element.addEventListener('mouseenter', ()=>{
                 ukuleleBoard.buttonBehaviour(element).hoverOn()
@@ -111,21 +113,36 @@ class GameUI{
                 }, 2000)
             },
             restart:()=>{
+                ukulele.bubbleMsg.classList.remove('complete');
                 ukuleleBoard.randomate().buttons();
                 ukuleleBoard.randomate().frets()
-
-                console.log('cunto');
+                setTimeout(()=>{
+                    ukulele.scoreCounter = 0;
+                    let buttonOn = document.querySelectorAll('.buttonOn');
+                    let complete = document.querySelectorAll('.complete');
+                    buttonOn.forEach((buttonON)=>{buttonON.classList.remove('buttonOn')})
+                    complete.forEach((complete)=>{complete.classList.remove('complete')})
+                })
             }
         }
         return infoButton;
     }
+    
 
     init(){
+        ukuleleBoard.randomate().frets()
         setTimeout(()=>{
             ukuleleBoard.randomate().buttons();
-        }, 1250)
+            ukulele.initBubbleMessage();
+        }, 250)
     }
-
+    
+    completeIt(){
+        ukuleleBoard.randomate().frets()
+        setTimeout(()=>{
+            ukuleleBoard.randomate().buttons()
+        }, 1250);
+    }
 }
 
 
