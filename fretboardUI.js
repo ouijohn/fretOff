@@ -1,7 +1,9 @@
-const theWholeThing = document.querySelector('main');
-const 
+//LOOK AT ALL OF THE EVENTS FROM THE FIRST ONE AND FIGURE OUT
+//WHYWHYWHY THE COMPLETE DOESN'T WORK
+//AND WHY THE FUCKING ON OFF BUTTON DOESN'T WORK UNTIL THEIR HAS BEEN A CLICK/ HOVERoff!!!!
 
-Bubble = document.querySelector(".message");
+const theWholeThing = document.querySelector('main');
+ Bubble = document.querySelector(".message");
 const strings = document.querySelectorAll(".string");
 const frets = document.querySelectorAll('.fret');
 const fretNotes = document.querySelectorAll('.fretNoteLetter')
@@ -37,6 +39,7 @@ class FretBoard{
         this.fretsForRndm = Array.from(frets);
         this.randoms;
         this.animators;
+        
     }
     //here is where we react to the events relating to the frets color (and trigger the sounds)
 
@@ -81,6 +84,12 @@ class FretBoard{
         }
 
     }
+    targetFret(){
+        let touchX = event.touches[0].clientX;
+        let touchY = event.touches[0].clientY;
+        let targetFret = document.elementFromPoint(touchX, touchY);
+        return targetFret
+    }
 
 //builds notes and note events then adds them to the frets!
     notify(startFret, startNote, i){
@@ -111,7 +120,9 @@ class FretBoard{
     //turns the shape/path's opacity down to 0 so that they can appear/ disapear on touch, hover, etc
             document.documentElement.style.setProperty('--fretOpacity', '0');
     //adds the relevant note number into the classlist (we could set the note colors in the css using this)
+            targetFret.classList.add(this.notes('sharp')[startNote]);
             targetFret.classList.add(this.notes('#')[startNote]);
+
     //setting frets id with the relevant note gives us access to it's title quickly and easilly  
             fretBackGround.classList.add('buttonBehaviour');
             fretNoteText.classList.add('letterBehaviour');
@@ -122,13 +133,7 @@ class FretBoard{
             targetFret.dataset.fretSound=this.notes('Sharp')[startNote];
     //attaches the class which allows us to change the way the button acts        
             
-            targetFret.addEventListener('mousedown', (event)=>{
-                // this.buttonBehaviour(event.target).push();
-                console.log('mouse')
-                ukulele.score(event.target);
-                let activeNote = targetFret.getAttribute('data-fret-sound');
-                this.soundOn(activeNote);
-            });
+
             targetFret.addEventListener('mouseenter', (event)=>{
                 this.buttonBehaviour(targetFret.firstElementChild).hoverOn();
                 let activeNote = targetFret.getAttribute('data-fret-sound');
@@ -138,38 +143,60 @@ class FretBoard{
                 this.buttonBehaviour(targetFret.firstElementChild).hoverOff();
             });
             targetFret.addEventListener('mouseup', (event)=>{
-                // ukulele.score(event.target);
-                this.buttonBehaviour(event.target).push();
+                ukuleleBoard.buttonBehaviour(event.target).push();
             })
-
+            targetFret.addEventListener('mousedown', this.clickEvents)
         }
+      
     //attach a listener to the whole page then trigger an event to each finger drag
         theWholeThing.addEventListener('touchmove', (event)=>{
             if(event.target.parentElement.classList.contains('fret')){
-                let touchX = event.touches[0].clientX;
-                let touchY = event.touches[0].clientY;
-                let targetFret = document.elementFromPoint(touchX, touchY);
+                let targetFret = this.touchTargetFret();
                 //this targets the fret container
-                this.touchSoundOn(touchX, touchY);
+                this.touchSoundOn(event.touches[0].clientX, event.touches[0].clientX);
                 this.buttonBehaviour(targetFret).touchOver();
             }
         });
 
-        theWholeThing.addEventListener('touchstart', (event)=>{
-            
-            if(event.target.parentElement.classList.contains('fret')){
-            //     ukulele.score(event.target);
-            //     console.log('touch')
-            //     console.log(event.target);
-            //    this.buttonBehaviour(event.target).push();
-                    console.log('toch')
-            setTimeout(()=>{
-                this.buttonBehaviour(event.target).hoverOff();
-                // event.target.style.setProperty('--animate', 'getOff'); 
-            }, 250)
-            }
-        })
+        theWholeThing.addEventListener('touchstart', this.touchEvents);
     }; 
+    //created to make it easier to add and remove the event listeners
+    touchEvents(event){
+        let targetFret = ukuleleBoard.touchTargetFret();
+        //this makes sure that the touch listener can only be fired off once on each touch (it does it 4 times otherwise!!!)
+        if(targetFret.parentElement.classList.contains('pushed')){
+            setTimeout(()=>{
+            targetFret.parentElement.classList.remove('pushed')
+        }, 1000)
+        //play the note once/ trigger soundOn(coords, coords) then add the class to 
+        }else{
+        //ensures the target is actually a fret
+            if(event.target.parentElement.classList.contains('fret')){
+                // ukulele.score(event.target);
+                ukuleleBoard.buttonBehaviour(targetFret).push();
+                setTimeout(()=>{
+                    ukuleleBoard.buttonBehaviour(targetFret).hoverOff();
+                }, 250)
+                setTimeout(() => {
+                    targetFret.parentElement.classList.remove('pushed')
+                }, 500);
+            }
+        }
+    }
+  
+    clickEvents(){
+        ukuleleBoard.buttonBehaviour(event.target).push();
+        ukulele.noteCompare(event.target);
+        let activeNote = event.target.parentElement.getAttribute('data-fret-sound');
+        ukuleleBoard.soundOn(activeNote);
+    }
+    //finds the touch target inside the thing
+    touchTargetFret(){
+        let touchX = event.touches[0].clientX;
+        let touchY = event.touches[0].clientY;
+        let targetFret = document.elementFromPoint(touchX, touchY); 
+        return targetFret
+    }
     //turn the animations into a single set of methods 
     //this will allow us to tighten up the animations
     animators(){
@@ -324,10 +351,17 @@ class FretBoard{
                         backGround.style.setProperty('--animate', '');
                     }, 250)
                 }
+            },
+            noteCompleteOff(){
+                
+            },
+            noteCompleteOn(){
+
             }
         }
         return this.behave;
     }
+
 
     shuffle(button){
         button.sort(() => Math.random() - 0.5);
@@ -400,6 +434,3 @@ class FretBoard{
 const ukuleleBoard = new FretBoard(notes, noteColors, frets, fretNotes, 'sound', 'uke', 'uke', 'uke','uke', []);
 
 ukuleleBoard.fretify(ukuleleStrings);
-
-
-

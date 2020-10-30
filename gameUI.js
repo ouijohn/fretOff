@@ -16,9 +16,8 @@ class GameUI{
         // let butt = `#${a}`
         // let completeButton = document.querySelectorAll(`#${a}`)[4].firstElementChild;
         let completeButton = document.querySelectorAll(`#${a}`)[4];
-        completeButton.classList.add('complete');
         completeButton.classList.add('buttonOn');
-        ukuleleBoard.buttonBehaviour(completeButton).getOn(a);
+        // ukuleleBoard.buttonBehaviour(completeButton).getOn(a);
         console.log(completeButton)
     }
 
@@ -78,26 +77,46 @@ class GameUI{
         return fretID;
     }
     onOffButtons(a){
+        
         let targetFret = a;
         let pushedBGround = event.target;
         let pushedLetter = a.children[1];
-        // if(pushed.parentElement.classList.contains('pushIt') && pushed.parentElement.classList.contains('complete')){
-        //     return event.target.parentElement.getAttribute('id');
-        // }
-        if(targetFret.classList.contains('complete')){
-            let targetNote = this.getFretID(targetFret);
-            if(event.target.parentElement.classList.contains('buttonOn')){
-                event.target.parentElement.classList.remove('buttonOn');
-                ukulele.rightOrWrong(targetNote);
-                // ukuleleBoard.buttonBehaviour(a).clickOn();
-            }else{
-                console.log('off');
-                event.target.parentElement.classList.add('buttonOn');
-                ukulele.rightOrWrong(targetNote);
-                // ukuleleBoard.buttonBehaviour(a).clickOff();
-            }
+        let targetFretID = this.getFretID(targetFret);
+        let targetFretSSS = document.querySelectorAll(`#${targetFretID}`);
+
+        if(targetFretSSS){
+            targetFretSSS.forEach((targetFret, index)=>{
+                if(targetFret.classList.contains('correct') && targetFret.classList.contains('buttonOn')){
+                        ukulele.onOrOff().OFF(targetFret, index);
+                }else{
+                    if(targetFret.classList.contains('correct')){
+                        console.log('FUCKFUCKFUCK')
+                        ukulele.onOrOff().ON(targetFret, index);
+                    }
+                }
+            })
         }
 
+        
+        // ukulele.correctOneS.forEach((targetFret, index)=>{
+        //     if(targetFret.classList.contains('correct') && targetFret.classList.contains('buttonOn')){
+        //             ukulele.onOrOff().OFF(ukulele.correctOneS[index -1], (index - 1));
+        //     }else{
+        //         if(targetFret.classList.contains('correct')){
+        //             ukulele.onOrOff().ON(ukulele.correctOneS[index -1], (index - 1));
+        //         }
+        //     }
+        // })
+        // let i;
+        // for(i = 0; i < 3; i++){
+        //     if(ukulele.correctOneS[i].classList.contains('correct') && ukulele.correctOneS[i].classList.contains('buttonOn')){
+        //             ukulele.onOrOff().ON(ukulele.correctOneS[i], i);
+        //     }else{
+        //         if(ukulele.correctOneS[i].classList.contains('correct')){
+        //             ukulele.onOrOff().OFF(ukulele.correctOneS[i], i);
+        //         }
+        //     }
+        // }    
     }
     menuButtons(a){
         let infoButton={
@@ -113,16 +132,19 @@ class GameUI{
                 }, 2000)
             },
             restart:()=>{
-                ukulele.bubbleMsg.classList.remove('complete');
+                let corrects = document.querySelectorAll('.correct')
+                console.log(corrects)
                 ukuleleBoard.randomate().buttons();
                 ukuleleBoard.randomate().frets()
                 setTimeout(()=>{
-                    ukulele.scoreCounter = 0;
+                    ukulele.totalScore = 0;
                     let buttonOn = document.querySelectorAll('.buttonOn');
                     let complete = document.querySelectorAll('.complete');
                     buttonOn.forEach((buttonON)=>{buttonON.classList.remove('buttonOn')})
                     complete.forEach((complete)=>{complete.classList.remove('complete')})
-                })
+                }, 100)
+                ukulele.question = ukulele.randomGen();
+                ukulele.bubbleMessageBuilder().bubbleNewQuest();
             }
         }
         return infoButton;
@@ -138,6 +160,8 @@ class GameUI{
     }
     
     completeIt(){
+        let corrects = document.querySelectorAll('.correct')
+        console.log(corrects)
         ukuleleBoard.randomate().frets()
         setTimeout(()=>{
             ukuleleBoard.randomate().buttons()
